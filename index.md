@@ -1,4 +1,4 @@
-<div><a href="#/page/profile">Profile</a></div>
+<div><a href="#/page/profile" class="jumbotron">Profile</a></div>
 
 [Yubikey 5のPIVで遊ぶ ( SSH鍵生成&保管 )](#/page/Yubikey)
 
