@@ -1,4 +1,4 @@
-[Profile](#/page/profile)
+<div><a href="#/page/profile">Profile</a></div>
 
 [Yubikey 5のPIVで遊ぶ ( SSH鍵生成&保管 )](#/page/Yubikey)
 
