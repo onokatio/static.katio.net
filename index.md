@@ -1,5 +1,6 @@
 <div class="jumbotron">
-<a class="display-4" href="#/page/profile">Profile</a>
+<h1 class="display-4">Profile</h1>
+<a class="btn btn-primary btn-lg" href="#/page/profile">Read more</a>
 </div>
 
 [Yubikey 5のPIVで遊ぶ ( SSH鍵生成&保管 )](#/page/Yubikey)
