@@ -5,7 +5,7 @@
   <a class="btn btn-primary btn-lg" href="#/page/Yubikey">Read more</a>
 </div>
 
-<div class="card-group">
+<div class="card-columns">
   
 <div class="card" style="width: 18rem;">
   <div class="card-body">
