@@ -1,5 +1,7 @@
 # 記事一覧
 
+<div class="card-group">
+  
 <div class="jumbotron">
   <h2>Yubikey 5のPIVで遊ぶ ( SSH鍵生成&保管 )</h1>
   <a class="btn btn-primary btn-lg" href="#/page/Yubikey">Read more</a>
@@ -49,4 +51,6 @@
     <p class="card-text">自分のプロフィールを簡単にまとめました。</p>
     <a class="btn btn-primary btn-lg" href="#/page/profile">Read more</a>
   </div>
+</div>
+
 </div>
