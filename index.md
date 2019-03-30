@@ -1,6 +1,7 @@
 # 記事一覧
   
 <div class="jumbotron">
+  <small class="text-muted">Latest article</small>
   <h2>Yubikey 5のPIVで遊ぶ ( SSH鍵生成&保管 )</h1>
   <a class="btn btn-primary btn-lg" href="#/page/Yubikey">Read more</a>
 </div>
