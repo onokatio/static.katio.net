@@ -1,5 +1,6 @@
 <div class="jumbotron">
 <h1 class="display-4">Profile</h1>
+<p class="lead">自分のプロフィールを簡単にまとめました。</p>
 <a class="btn btn-primary btn-lg" href="#/page/profile">Read more</a>
 </div>
 
