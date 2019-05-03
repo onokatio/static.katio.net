@@ -63,6 +63,8 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 
 ## スキルセット
 
+### コーディング
+
 - フレームワークを使わない、簡単なPHPアプリケーション（Mysql操作も含む）
 - Laravelを使ったPHPアプリケーション
 - 簡単なSQLを使ったデータ集計など（SUMとか）
@@ -71,29 +73,47 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 - HTML5,CSS3
 - JS（ES2015）。
 - C言語を使って簡単な実装（バブルソート等）
-- マイクロサービスアーキテクチャの設計
-- ブロックチェーン関係
-- - Solidityを使ったスマートコントラクトの実装
-- - Scillaを使ったスマートコントラクトの実装
-- - 仮想通貨のソース（coind）の修正、機能追加やテストの追加など
+- Go言語を使った実装
+- Ginを使ったGo言語でのWebサービス開発
+
+### インフラ
+
+- LAMP環境の構築
 - Ansibleを使ったプロビジョニングなど
 - Let's encryptを使ったSSL証明証の発行や導入
 - Nginxサーバー運用
 - Homebrewパッケージの自作
-- Gitを使った複数人での開発
 - Travis CI/CircleCIなど、CI使ったテストやビルドの自動化
 - WebコンソールやAzure cli、AnsibleなどでのAzure運用
 - terraformやブラウザコンソールからのAWS運用
 - Apache, Nginx, bind, unbound, squidなど、デーモンサービスの導入・運営
-- H8マイコンを使った自作OSの改造
 - Vagrant
 - TCP/IPの基本的な知識（応用情報技術者レベル）
 - Dockerfileの自作
 - Docker compose
-- Doker Swarm
+- Docker Swarm
 - Linuxブートディスクのフル暗号化
 - Archlinux Install battle （10回以上）
 - スイッチ/ルーターの設定 （富士通製、Cisco製）
+
+### ブロックチェーン
+
+- Solidityを使ったスマートコントラクトの実装
+- Scillaを使ったスマートコントラクトの実装
+- 仮想通貨のソース（coind）の修正、機能追加やテストの追加など
+- Bitcoin Script
+
+### セキュリティ
+
+- XSS, CSRF, SQLiなど基本的なWeb攻撃の理解
+- スタックオーバーフロー攻撃の理解
+- DoS, DDoS, SYN Flood攻撃
+
+### その他
+
+- Gitを使った複数人での開発
+- H8マイコンを使った自作OSの改造
+
 
 ## 苦手なこと、できないこと、やったことがないもの
 
