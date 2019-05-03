@@ -100,26 +100,26 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 
 ## イベント・大会での受賞、出場経験など
 
-- ICTトラブルシューティングコンテスト 第7回 本戦出場
-- ICTトラブルシューティングコンテスト 第8回 本戦出場
-- ICTトラブルシューティングコンテスト 第9回 本戦出場
-- 第12回情報危機管理コンテスト 経済産業大臣賞 兼 優勝
-- SECCON 2017 国内決勝 出場
+- ICTトラブルシューティングコンテスト 第7回 本戦出場 (2017年3月4日、5日)
+- ICTトラブルシューティングコンテスト 第8回 本戦出場 (2017年8月26日、27日)
+- ICTトラブルシューティングコンテスト 第9回 本戦出場 (2018年3月3日、4日)
+- 第12回情報危機管理コンテスト チームYonelabo 経済産業大臣賞 兼 優勝 (2017年5月24〜日)
+- SECCON 2017 国内決勝 出場 (2017年2月17日)
 
 ## 講演・LT登壇経験
 
-- ビットコインとか勉強会#6  ビットコインのトランザクションとScriptについて
-- ビットコインとか勉強会#15 Ethereum Smart Contract Security Best Practice
-- 基礎から学ぶ「ブロックチェーン」と「仮想通貨」 ビジネス特別講演
-- 学生LT#1 ブロックチェーンとは
-- 学生LT#3 目指せ変態エンジニア ショートコーディングのコツとワザ 
-- 学生LT#4 目指せ変態エンジニア シェル芸のコツとワザ~ 
-- 学生LT#5 不明
-- 学生LT#7 非rootな学校のマシンを遊び倒す話
-- 学生LT#8 OSが起動する前から嫁に会いたい
-- 学生LT#11 デスクトップ環境に頼らないLinux環境構築
-- 学生LT#14 マイクロサービスアーキテクチャの話
-- CombNaf 2 ブロックチェーンがすごい話
+- [ビットコインとか勉強会#6](https://cryptocurrency.connpass.com/event/54135/)  ビットコインのトランザクションとScriptについて (2017/04/11)
+- [ビットコインとか勉強会#15](https://cryptocurrency.connpass.com/event/79702/) Ethereum Smart Contract Security Best Practice (2018/02/27)
+- [基礎から学ぶ「ブロックチェーン」と「仮想通貨」 ビジネス](http://techfinancials.planet.bindcloud.jp/) 特別講演 (2017年7月15日)
+- [学生LT#1](https://student-lt.connpass.com/event/55850/) ブロックチェーンとは
+- [学生LT#3](https://student-lt.connpass.com/event/64271/) 目指せ変態エンジニア ショートコーディングのコツとワザ 
+- [学生LT#4](https://student-lt.connpass.com/event/67419/) 目指せ変態エンジニア シェル芸のコツとワザ~ 
+- [学生LT#5](https://student-lt.connpass.com/event/71838/) 不明
+- [学生LT#7](https://student-lt.connpass.com/event/73592/) 非rootな学校のマシンを遊び倒す話
+- [学生LT#8](https://student-lt.connpass.com/event/74758/) OSが起動する前から嫁に会いたい
+- [学生LT#11](https://student-lt.connpass.com/event/82379/) デスクトップ環境に頼らないLinux環境構築
+- [学生LT#14](https://student-lt.connpass.com/event/89978/) マイクロサービスアーキテクチャの話
+- [CombNaf 2](http://nafmo.hatenablog.jp/entry/2017/08/16/164020)ブロックチェーンがすごい話
 
 ## その他活動履歴
 
