@@ -36,6 +36,27 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 - 2018年9月 合同会社DMM.com （スマートコントラクト事業部/ブロックチェーン研究室）
 - 2018年11月 株式会社ラック デジタルフォレンジック
 
+## 成果物・今までに作ったもの
+
+- [へそのお](https://github.com/onokatio/hesonoo)
+- [Shitcoin](https://github.com/shitcoin-core/shitcoin)
+- [掲示板スマートコントラクト](https://github.com/onokatio/Solidity-Simpleboard-Webpack)
+- [3D演算っぽいもの](https://github.com/onokatio/minecraft-prs)
+- [Hutomomo Hub](https://github.com/onokatio/HutomomoHub)
+- [Share Block](https://github.com/onokatio/shareblock)
+- [Bitcoin Tools](https://github.com/onokatio/bitcoin-tools)
+- [Nano Wallet Browser App](https://github.com/onokatio/NanoWalletBrowserApp)
+- [Askmona Wrapper](https://github.com/onokatio/AskmonaWrapper)
+- [More Mona !](https://github.com/onokatio/moremona)
+- [Terminal Share](https://github.com/onokatio/terminalshare)
+- [Virtual Coin Exchange](https://github.com/onokatio/virtual-coin-exchange)
+- [2016年プロコン応募作品](https://github.com/onokatio/search-procon)
+- [ELIZA](https://github.com/onokatio/ELIZA)
+- [boxbot](https://github.com/onokatio/boxbot)
+- [マインスイーパー](https://github.com/onokatio/msweeper)
+- [短歌Bot](https://github.com/onokatio/tanka)
+- [Java勉強の成果みたいなの](https://github.com/onokatio/2world)
+
 ## スキルセット
 
 - フレームワークを使わない、簡単なPHPアプリケーション（Mysql操作も含む）
