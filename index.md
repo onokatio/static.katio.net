@@ -1,13 +1,21 @@
 # 記事一覧
-  
+
+
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>Yubikey 5のPIVで遊ぶ ( SSH鍵生成&保管 )</h1>
-  <a class="card-link" href="#/page/Yubikey">Read more</a>
+  <h2>ハードウェアビデオアクセラレーション</h2>
+  <a class="card-link" href="#/page/archlinux-video-acceleration">Read more</a>
 </div>
 
 <div class="card-columns">
-  
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title"Yubikey 5のPIVで遊ぶ ( SSH鍵生成&保管 )></h1>
+    <a class="card-link" href="#/page/Yubikey">Read more</a>
+  </div>
+</div>
+
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">Cloudflareが1.1.1.1で超高性能DNS始めたし、いっちょ俺のパソコンもDNS over HTTPSしてみる</h1>
