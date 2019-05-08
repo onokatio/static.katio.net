@@ -11,7 +11,7 @@
 
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title"Yubikey 5のPIVで遊ぶ ( SSH鍵生成&保管 )></h1>
+    <h5 class="card-title">Yubikey 5のPIVで遊ぶ ( SSH鍵生成&保管 )</h5>
     <a class="card-link" href="#/page/Yubikey">Read more</a>
   </div>
 </div>
