@@ -128,6 +128,7 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 - [ICTトラブルシューティングコンテスト 第9回](https://icttoracon.net/archives/category/%e7%ac%ac9%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2018年3月3日、4日)
 - [第12回情報危機管理コンテスト](https://www.riis.or.jp/symposium21/crisismanagement/) チームYonelabo 経済産業大臣賞 兼 優勝 (2017年5月24〜日)
 - [SECCON 2017](https://2017.seccon.jp/news/summary/seccon-20171/seccon2017.html) 国内決勝 出場 (2017年2月17日)
+- 株式会社ミクシィ git challenge 第11回 優勝
 
 ## 講演・LT登壇経験
 
