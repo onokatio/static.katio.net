@@ -1,5 +1,7 @@
 # 記事一覧
 
+<script>console.log("test")</script>
+
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
   <h2>Zpluginを使ってみる</h2>
