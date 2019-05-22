@@ -1,13 +1,19 @@
 # 記事一覧
 
-
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>ハードウェアビデオアクセラレーション</h2>
-  <a class="card-link" href="#/page/archlinux-video-acceleration">Read more</a>
+  <h2>Zpluginを使ってみる</h2>
+  <a class="card-link" href="#/page/zplugin">Read more</a>
 </div>
 
 <div class="card-columns">
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">ハードウェアビデオアクセラレーション</h5>
+    <a class="card-link" href="#/page/archlinux-video-acceleration">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
