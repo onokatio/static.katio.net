@@ -1,6 +1,6 @@
 # 記事一覧
 
-<script>console.log("test")</script>
+<script>console.log("https://api.github.com/repos/onokatio-blog/blog/git/trees/master")</script>
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
