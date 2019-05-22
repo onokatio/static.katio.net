@@ -97,11 +97,11 @@ zplugin light zsh-users/zsh-autosuggestions
 |  Modifier | Description |
 |-----------|-------------|
 | `proto`   |  cloneしてくるプロトコルを指定します。`git`,`ftp`,`ftps`,`ssh`, `rsync`などを指定できます。 デフォルトは`https`です。プラグインにのみ有効でスニペットにはできようされません。  |
-| `from`    | Clone plugin from given site. Supported are `from"github"` (default), `..."github-rel"`, `..."gitlab"`, `..."bitbucket"`, `..."notabug"` (short names: `gh`, `gh-r`, `gl`, `bb`, `nb`). Can also be a full domain name (e.g. for Github enterprise). |
-| `as`      | Can be `as"program"` (also alias `as"command"`), and will cause to add script/program to `$PATH` instead of sourcing (see `pick`). Can also be `as"completion"`. |
-| `id-as`   | Nickname a plugin or snippet, to e.g. create a short handler for long-url snippet. See [blog post](http://zdharma.org/2018-10-12/Nickname-a-plugin-or-snippet). |
-| `ver`     | Used with `from"gh-r"` (i.e. downloading a binary release, e.g. for use with `as"program"`) – selects which version to download. Default is latest, can also be explicitly `ver"latest"`. Works also with regular plugins, checkouts e.g. `ver"abranch"`, i.e. a specific version. |
-| `pick`    | Select the file to source, or the file to set as command (when using `snippet --command` or ICE `as"program"`), e.g. `zplugin ice pick"*.plugin.zsh"`. Works with plugins and snippets. |
+| `from`    | どこからプラグインをcloneしてくるのかを指定します。 指定できるのは `from"github"` (デフォルト), `..."github-rel"`, `..."gitlab"`, `..."bitbucket"`, `..."notabug"` (略称: `gh`, `gh-r`, `gl`, `bb`, `nb`). また、Github Enterpriseを使っている場合など、フルURLで指定することもできます。 |
+| `as`      | `as"program"` (もしくはエイリアスである `as"command"`), を指定すると、プラグインを`source`するのではなく `$PATH` に追加します。 (`pick`を参照). また`as"completion"`も指定できます。 |
+| `id-as`   | プラグインやスニペットにニックネームを追加できます。長いURLを短く管理したいときに使えます。 See [blog post](http://zdharma.org/2018-10-12/Nickname-a-plugin-or-snippet). |
+| `ver`     | `from"gh-r"`と一緒に使います。 (`as"program"`を使ってバイナリをダウンロードするときなどです。) – ダウンロードするバージョンを選べます。デフォルトは最新(`ver"latest"`)です。 Works also with regular plugins, checkouts e.g. `ver"abranch"`, i.e. a specific version. |
+| `pick`    | `snippet --command` や`as"program"`を使うときに、どのファイルを$PATHに追加するか指定します。たとえば`zplugin ice pick"*.plugin.zsh"`と指定することができます。 プラグインとスニペット両方で有効です。 |
 | `bpick`   | Used to select which release from Github Releases to download, e.g. `zplg ice from"gh-r" as"program" bpick"*Darwin*"; zplg load docker/compose` |
 | `depth`   | Pass `--depth` to `git`, i.e. limit how much of history to download. Works with plugins. |
 | `cloneopts`   | Pass the contents of `cloneopts` to `git clone`. Defaults to `--recursive` i.e. Change cloning options. Works with plugins. |
