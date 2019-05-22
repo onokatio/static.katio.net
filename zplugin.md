@@ -102,7 +102,7 @@ zplugin light zsh-users/zsh-autosuggestions
 | `id-as`   | プラグインやスニペットにニックネームを追加できます。長いURLを短く管理したいときに使えます。 See [blog post](http://zdharma.org/2018-10-12/Nickname-a-plugin-or-snippet). |
 | `ver`     | `from"gh-r"`と一緒に使います。 (`as"program"`を使ってバイナリをダウンロードするときなどです。) – ダウンロードするバージョンを選べます。デフォルトは最新(`ver"latest"`)です。 Works also with regular plugins, checkouts e.g. `ver"abranch"`, i.e. a specific version. |
 | `pick`    | `snippet --command` や`as"program"`を使うときに、どのファイルを$PATHに追加するか指定します。たとえば`zplugin ice pick"*.plugin.zsh"`と指定することができます。 プラグインとスニペット両方で有効です。 |
-| `bpick`   | Github Releaseからダウンロードする際のファイル名を指定できます。たとえば`zplugin ice from"gh-r" as"program" bpick"*Darwin*"; zplg load docker/compose`のように指定すると、Darwinが含まれる最新のReleaseのバイナリをダウンロードします。 |
+| `bpick`   | Github Releaseからダウンロードする際のファイル名を指定できます。たとえば`zplugin ice from"gh-r" as"program" bpick"*Darwin*"; zplugin load docker/compose`のように指定すると、Darwinが含まれる最新のReleaseのバイナリをダウンロードします。 |
 | `depth`   | gitコマンドに--depthとして渡されます。プラグインでのみ有効です。 |
 | `cloneopts`   | `git clone`コマンドに渡される `cloneopts`です。デフォルトは `--recursive`になっています。プラグインとスニペット両方で有効です。 |
 | `bindmap` | To hold `;`-separated strings like `Key(s)A -> Key(s)B`, e.g. `^R -> ^T; ^A -> ^B`. In general, `bindmap''`changes bindings (done with the `bindkey` builtin) the plugin does. The example would cause the plugin to map Ctrl-T instead of Ctrl-R, and Ctrl-B instead of Ctrl-A. |
