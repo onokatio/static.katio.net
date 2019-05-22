@@ -157,7 +157,7 @@ zplugin light zsh-users/zsh-autosuggestions
 | `nocompile` | `pick`されたファイルをコンパイル/makeしようとしません。先頭に`!`が渡された場合、`make''`や`atclone''`したあとにコンパイルします。 Makefileがファイルを生成する場合に有用です。 |
 | `multisrc` | 複数のファイルをsourceします。 例: `multisrc'misc.zsh grep.zsh'` またブランケット記法が有効です。 例: `multisrc'{misc,grep}.zsh'` |
 
-# 補完機能とblockfについて
+## 補完機能とblockfについて
 
 iceにblockfを追記すると、プラグインの中で`$fpath`に書き込むのを禁止（無効化）します。
 これはzpluginを使うときに有用です。zpluginはプラグインの中の補完用のファイルを自動で探索し、シンボリックリンクを使ってfpathに追加する特殊な機能があります。
@@ -187,3 +187,7 @@ Disabled cmake completion belonging to zsh-users/zsh-completions
 $ zplg cenable cmake
 Enabled cmake completion belonging to zsh-users/zsh-completions
 ```
+
+## アップデート
+
+`zplugin update --all`ですべてのプラグインをアップデートできます。
