@@ -3,6 +3,8 @@
 自分はzshのプラグイン管理にはzplugを使っていましたが、zpluginという高速なプラグインマネージャーがあるらしいので使ってみます。
 日本語でオプションなど解説した文書がなさそうなので備忘録も兼ねてここに書いておきます。
 
+またプラグインを「ロード」と「読み込み」と表記がぶれていますが、同じことです。
+
 # インストール
 
 zpluginを適当なところへインストールします。
@@ -54,3 +56,35 @@ zplugin light zsh-users/zsh-autosuggestions
 そのため、起動直後の0.2〜0.3秒ほど立たないと保管は聞かないがターミナルは早く起動するようになります。
 
 ちなみに、waitのあとの0は遅延読み込みの秒数です。0にした場合プロンプトが表示されてから0秒後、つまりすぐに遅延読み込みが実行されます。
+
+waitオプションは、非同期読み込みのため超早いです。ターミナル起動直後に必要ないプラグインをあとからゆっくり読み込めます。
+そのためturbo modeという別名もついています。
+
+### atinit
+
+atinitは、プラグインを読み込む前にコマンドを実行できます。
+
+例えば、以下のようなzshrcを書いたとします。
+
+```
+zplugin ice wait"0" atinit"zpcompinit; zpcdreplay"
+zplugin light zdharma/fast-syntax-highlighting
+```
+
+この場合、fast-syntax-highlightingが実行される直前にzcompinit; zpcdreplayを実行しています。
+
+ちなみに、zcompinitはzpluginが提供してるシェル関数で、中では'autoload compinit; compinit'を実行してるだけです。
+zpcdreplayも同じくシェル関数で、プラグインが実行しようとしているcompdefを解析して実行しています。
+
+### atload
+
+atloadは、プラグインを読み込んだあとにコマンドを実行できます。
+
+例えば以下のようなzshrcを書いたとします。
+
+```
+zplugin ice wait"0" atload"_zsh_autosuggest_start"
+zplugin light zsh-users/zsh-autosuggestions
+```
+
+この場合、zsh-autosuggestionが読み込まれた直後に_zsh_autosuggest_start`が実行されます。
