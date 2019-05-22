@@ -133,7 +133,7 @@ zplugin light zsh-users/zsh-autosuggestions
 | `bindmap` | To hold `;`-separated strings like `Key(s)A -> Key(s)B`, e.g. `^R -> ^T; ^A -> ^B`. In general, `bindmap''`changes bindings (done with the `bindkey` builtin) the plugin does. The example would cause the plugin to map Ctrl-T instead of Ctrl-R, and Ctrl-B instead of Ctrl-A. |
 | `trackbinds` | Shadow but only `bindkey` calls even with `zplugin light ...`, i.e. even with tracking disabled (fast loading), to allow `bindmap` to remap the key-binds. The same effect has `zplugin light -b ...`, i.e. additional `-b` option to the `light`-subcommand. |
 | `if`      | 渡されたシェル文の実行結果がtrueだった場合のみ読み込みを実行します。例: `zplugin ice if'[[ -n "$commands[otool]" ]]'; zplugin load ...`. |
-| `blockf`  | プラグインの`fpath`への変更を禁止します。保管系のプラグインを読み込んで、最後に自力でfpathに追加したい場合などに有効です。 |
+| `blockf`  | プラグインの`fpath`への変更を禁止します。下で説明しています。  |
 | `silent`  | プラグインやスニペットの `stderr` & `stdout`への出力を抑制します。また、`wait''`(turbo mode)時に表示される`Loaded ...`なども表示しません。 |
 | `lucid`   | `wait''`(turbo mode)時に表示される`Loaded ...`を表示しません。 |
 | `mv`      | `clone`や`update`したときに、ファイルをmvします。 たとえば`mv "fzf-* -> fzf"`。 `->`を古いファイル名と新しいファイル名の区切りに使います。 プラグインとスニペット両方で有効です。 |
@@ -154,3 +154,23 @@ zplugin light zsh-users/zsh-autosuggestions
 | `nocompletions` | プラグインの提供する保管をインストール/認識しません。 あとで`zplugin creinstall {plugin-spec}`を実行することで読み込めます。|
 | `nocompile` | `pick`されたファイルをコンパイル/makeしようとしません。先頭に`!`が渡された場合、`make''`や`atclone''`したあとにコンパイルします。 Makefileがファイルを生成する場合に有用です。 |
 | `multisrc` | 複数のファイルをsourceします。 例: `multisrc'misc.zsh grep.zsh'` またブランケット記法が有効です。 例: `multisrc'{misc,grep}.zsh'` |
+
+# 補完機能とblockfについて
+
+iceにblockfを追記すると、プラグインの中で`$fpath`に書き込むのを禁止（無効化）します。
+これはzpluginを使うときに有用です。zpluginはプラグインの中の補完用のファイルを自動で探索し、シンボリックリンクを使ってfpathに追加する特殊な機能があります。
+なので、プラグインの中のfpath追加を使わずにzpluginに面倒を見させるのほうが高速となります。
+
+なので、zsh-users/zsh-completionsを使うときは以下のようにすると高速になります。
+
+```
+zplugin ice blockf
+zplugin light zsh-users/zsh-completions
+```
+
+また、zpluginが探索した補完ファイルを、読み込ませるのをやめたり、やっぱり読み込ませたくなった場合は以下のコマンドが使えます。
+
+```
+$ zplg cuninstall zsh-users/zsh-completions   # uninstall
+$ zplg creinstall zsh-users/zsh-completions   # install
+```
