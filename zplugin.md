@@ -19,6 +19,8 @@ zshrcの中から読み込みます。
 source /path/to/zplugin/zplugin.zsh
 ```
 
+主なコマンドは`zplugin`です。また`zplug`でも`zplugin`が実行されます。(エイリアスです)
+
 # 使い方
 
 ## light
@@ -168,9 +170,20 @@ zplugin ice blockf
 zplugin light zsh-users/zsh-completions
 ```
 
-また、zpluginが探索した補完ファイルを、読み込ませるのをやめたり、やっぱり読み込ませたくなった場合は以下のコマンドが使えます。
+また、zpluginが探索して独自に追加した補完ファイルをアンインストールしたり、再インストールしたい場合は以下のコマンドが使えます。
 
 ```
 $ zplg cuninstall zsh-users/zsh-completions   # uninstall
 $ zplg creinstall zsh-users/zsh-completions   # install
+```
+
+
+全部の補完のリストは、`zplugin clist`で確認できます。
+また、補完を一時的に無効化したい場合は以下のコマンドが使えます。
+
+```
+$ zplg cdisable cmake
+Disabled cmake completion belonging to zsh-users/zsh-completions
+$ zplg cenable cmake
+Enabled cmake completion belonging to zsh-users/zsh-completions
 ```
