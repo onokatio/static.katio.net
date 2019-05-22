@@ -30,9 +30,34 @@ source /path/to/zplugin/zplugin.zsh
 zplugin light zsh-users/zsh-autosuggestions
 ```
 
+## snippet
+
+スニペットでは、githubリポジトリではなく特定のURLのファイルのみをダウンロードして読み込むことができます。
+
+```
+zplugin snippet https://hoge.fuga/hoge.zsh
+```
+
+また、Oh-My-ZshやPretzoの特定のファイルを読み込みたい場合、省略記号として`OMZ::`と`PZT::`を使用できます。
+
+例えば以下のように書いた場合
+
+```
+zplugin snippet OMZ::plugins/git/git.plugin.zsh
+zplugin snippet PZT::modules/helper/init.zsh
+```
+
+以下のように展開されます。
+
+```
+zplugin snippet 'https://github.com/robbyrussell/oh-my-zsh/raw/master/plugins/git/git.plugin.zsh'
+zplugin snippet 'https://github.com/sorin-ionescu/prezto/blob/master/modules/helper/init.zsh'
+```
+
+
 ## ice
 
-プラグインを読み込む際に、オプションをつけたい場合があります。
+プラグインやスニペットを読み込む際に、オプションをつけたい場合があります。
 その場合、`zplugin light`コマンドにオプションを増やさず、`zplugin light`コマンドの直前で`zplugin ice`コマンドを実行します。
 
 `zplugin ice`で指定されたオプションは直後に実行される`zplugin light`に適用されます。
