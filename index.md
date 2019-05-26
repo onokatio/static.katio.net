@@ -4,11 +4,18 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>Zpluginを使ってみる</h2>
-  <a class="card-link" href="#/page/zplugin">Read more</a>
+  <h2>中学生でもわかるSELinux</h2>
+  <a class="card-link" href="#/page/selinux">Read more</a>
 </div>
 
 <div class="card-columns">
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Zpluginを使ってみる</h5>
+    <a class="card-link" href="#/page/zplugin">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
