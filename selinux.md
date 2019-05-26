@@ -166,3 +166,5 @@ SELinuxには、コンテキストという概念があります。
 - ロールによって、起動できるドメインがことなる
 - ユーザーによって、持てるロールが異なる
 - sudoコマンドを使うことで、強制的に上位のロールへ権限昇格することができる
+
+参考: https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/index
