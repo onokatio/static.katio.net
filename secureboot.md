@@ -27,7 +27,7 @@ Linuxをインストールする際に無効化した覚えのある方は多い
 
 両方共、実際の設定方法やコマンドなどは、Archwikiや英語ドキュメントが充実しているため、あえてここでは説明しません。
 
-- https://wiki.archlinux.jp/index.php/%E3%82%BB%E3%82%AD%E3%83%A5%E3%82%A2%E3%83%96%E3%83%BC%E3%83%88
+- [https://wiki.archlinux.jp/index.php/セキュアブート](https://wiki.archlinux.jp/index.php/%E3%82%BB%E3%82%AD%E3%83%A5%E3%82%A2%E3%83%96%E3%83%BC%E3%83%88)
 - https://www.rodsbooks.com/efi-bootloaders/secureboot.html
 
 # 方法1. 署名済みブートローダーを使う
