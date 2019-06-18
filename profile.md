@@ -2,17 +2,21 @@
 
 ## 簡単な経歴、自己紹介など
 
-小学生で、ページ作りたいなーと思ってHTMLとCSSをさわり、
-今度はWebサイトも作りたいなーと思ってPHPをさわり、
-Webサーバー作りたいなーと思ってNginxをさわり、
+6時間でWebサービス作ったり自宅にラックサーバーとネットワークスイッチおいたりしてる人です。
+
+小学生の時、Webページ作りたいなーと思ってHTMLとCSSをさわり、
+今度はWebサービスも作りたいなーと思ってPHPをさわり、
+Webサーバー自力で作りたいなーと思ってNginxをさわり、
 サーバー構築したいなーと思ってラズパイとLinuxをさわり、
 自動化とかしたいなーと思ってDockerとGithubをさわり、
-気づいたらCPUとかLinuxカーネルとかBitcoinのソース弄るようになってました。
+レイヤが低くなっていってる感じです。
 
-自分が一番興味がある領域は、ネットワークインフラとブロックチェーンです。
+最近はCPUとかLinuxカーネル、アセンブリ等低レイヤーの勉強や、ブロックチェーンの開発をするようになってました。
 
-一人でモノを作るのが好きです。
-極度のめんどくさがり屋なので自動化とかは大好きです。
+自分が一番興味がある領域は、フルスタックと、ネットワークインフラ、ブロックチェーン、セキュリティです。
+
+まためんどくさがり屋なので、自動化とかは大好きです。
+
 ## 名前
 
 非公開
@@ -23,12 +27,12 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 
 ## 学歴・所属
 
-国立木更津工業高等専門学校
+国立木更津高専
 
 ## 資格
 
-- 基本情報技術者
-- 応用情報技術者
+- 基本情報技術者 (2016年)
+- 応用情報技術者 (2018年)
 
 ## 職歴・インターンシップ・アルバイト等
 
@@ -41,7 +45,7 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 
 ## 成果物・今までに作ったもの
 
-- ポートフォリオサイト（今見ているサイト）
+- ポートフォリオサイト（今見ているサイト & ブログ）
 - [へそのお](https://github.com/onokatio/hesonoo)
 - [Shitcoin](https://github.com/shitcoin-core/shitcoin)
 - [掲示板スマートコントラクト](https://github.com/onokatio/Solidity-Simpleboard-Webpack)
@@ -108,18 +112,12 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 - XSS, CSRF, SQLiなど基本的なWeb攻撃の理解
 - スタックオーバーフロー攻撃の理解
 - DoS, DDoS, SYN Flood攻撃
+- OWASP zapやmeta sploitフレームワークを使った簡単なペネトレーションテスト
 
 ### その他
 
 - Gitを使った複数人での開発
 - H8マイコンを使った自作OSの改造
-
-
-## 苦手なこと、できないこと、やったことがないもの
-
-- Windows Server
-- 大学数学
-- 競技プログラミング
 
 ## イベント・大会での受賞、出場経験など
 
@@ -128,7 +126,7 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 - [ICTトラブルシューティングコンテスト 第9回](https://icttoracon.net/archives/category/%e7%ac%ac9%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2018年3月3日、4日)
 - [第12回情報危機管理コンテスト](https://www.riis.or.jp/symposium21/crisismanagement/) チームYonelabo 経済産業大臣賞 兼 優勝 (2017年5月24〜日)
 - [SECCON 2017](https://2017.seccon.jp/news/summary/seccon-20171/seccon2017.html) 国内決勝 出場 (2017年2月17日)
-- 株式会社ミクシィ git challenge 第11回 優勝
+- 株式会社ミクシィ Git challenge 第11回 優勝
 
 ## 講演・LT登壇経験
 
@@ -138,7 +136,7 @@ Webサーバー作りたいなーと思ってNginxをさわり、
 - [学生LT#1](https://student-lt.connpass.com/event/55850/) ブロックチェーンとは
 - [学生LT#3](https://student-lt.connpass.com/event/64271/) 目指せ変態エンジニア ショートコーディングのコツとワザ 
 - [学生LT#4](https://student-lt.connpass.com/event/67419/) 目指せ変態エンジニア シェル芸のコツとワザ~ 
-- [学生LT#5](https://student-lt.connpass.com/event/71838/) 不明
+- [学生LT#5](https://student-lt.connpass.com/event/71838/) 
 - [学生LT#7](https://student-lt.connpass.com/event/73592/) 非rootな学校のマシンを遊び倒す話
 - [学生LT#8](https://student-lt.connpass.com/event/74758/) OSが起動する前から嫁に会いたい
 - [学生LT#11](https://student-lt.connpass.com/event/82379/) デスクトップ環境に頼らないLinux環境構築
