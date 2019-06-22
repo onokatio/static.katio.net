@@ -4,12 +4,19 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>Linuxでセキュアブートを使う</h2>
-  <a class="card-link" href="#/page/secureboot">Read more</a>
+  <h2>Chromium OSのアーキテクチャについて調べてみた</h2>
+  <a class="card-link" href="#/page/chrome-os">Read more</a>
 </div>
 
 <div class="card-columns">
-  
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Linuxでセキュアブートを使う</h5>
+    <a class="card-link" href="#/page/secureboot">Read more</a>
+  </div>
+</div>
+
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">中学生でもわかるSELinux</h5>
