@@ -179,6 +179,8 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - 高知高専 情報セキュリティ教材に関するコンテンツ展示会 展示運営・演習運営 2017年5月
 - 2017年 [高専セキュリテイコンテスト](https://sckosen2017.kisarazu.ac.jp/) 運営
 - [ICTトラブルシューティングコンテスト 2018](https://icttoracon.net/archives/category/%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b32018) 運営
+  - 予選問題作成 [問題解説: Docker 筆記 一問目](https://blog.icttoracon.net/2018/08/27/ictsc2018-prep01-docker-w/)
+  - 本線問題作成 [ICTSC2018 本戦 問題解説: バックアップは大事だよ](https://blog.icttoracon.net/2019/03/21/ictsc2018-f-18/)
 - ICTトラブルシューティングコンテスト 2019 運営
 
 ## リンク
