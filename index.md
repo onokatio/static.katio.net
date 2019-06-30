@@ -4,11 +4,18 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>Chromium OSのアーキテクチャについて調べてみた</h2>
-  <a class="card-link" href="#/page/chrome-os">Read more</a>
+  <h2>さくらのクラウドでVyOSを使用する 2019年版</h2>
+  <a class="card-link" href="#/page/vyos">Read more</a>
 </div>
 
 <div class="card-columns">
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Chromium OSのアーキテクチャについて調べてみた</h5>
+    <a class="card-link" href="#/page/chrome-os">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
