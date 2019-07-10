@@ -89,6 +89,20 @@ $ yay -S libinput-gestures
 $ sudo pacman -S vulkan-intel nvidia
 ```
 
+```
+diff --git a/modprobe.d/nvidia.conf b/modprobe.d/nvidia.conf
+index ba0948f..3ae4f6c 100644
+--- a/modprobe.d/nvidia.conf
++++ b/modprobe.d/nvidia.conf
+@@ -1 +1,5 @@
+-#blacklist nvidia
++blacklist nouveau
++blacklist lbm-nouveau
++options nouveau modeset=0
++alias nouveau off
++alias lbm-nouveau off
+```
+
 # makepkgの設定
 
 ```
