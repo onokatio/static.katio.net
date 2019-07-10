@@ -361,3 +361,7 @@ index c07a283..815641b 100644
  
  ## TCP SYN cookie protection (default)
 ```
+
+# 指紋認証
+
+https://wiki.archlinux.jp/index.php/Fprint を参考に
