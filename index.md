@@ -4,17 +4,24 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>人生15回目ぐらいの#ArchlinuxInstallBattle実践</h2>
-  <a class="card-link" href="#/page/archlinuxinstall-log">Read more</a>
+  <h2>ルート以下を吹き飛ばした男が作った、泣かない最強のファイルシステム構成</h2>
+  <a class="card-link" href="#/page/strong-filesystem">Read more</a>
 </div>
 
 
 <div class="d-flex flex-wrap justify-content-around">
 
+
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">人生15回目ぐらいの#ArchlinuxInstallBattle設計
-</h5>
+    <h5 class="card-title">人生15回目ぐらいの#ArchlinuxInstallBattle実践</h5>
+    <a class="card-link" href="#/page/archlinuxinstall-log">Read more</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">人生15回目ぐらいの#ArchlinuxInstallBattle設計</h5>
     <a class="card-link" href="#/page/archlinuxinstall">Read more</a>
   </div>
 </div>
