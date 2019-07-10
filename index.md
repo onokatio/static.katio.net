@@ -4,11 +4,28 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>luksを使っているときにgrub-btrfsがうまく動かない</h2>
-  <a class="card-link" href="#/page/luks-btrfs">Read more</a>
+  <h2>Archlinuxをインストールしたので手順の備忘録。</h2>
+  <a class="card-link" href="#/page/archlinuxinstall-log">Read more</a>
 </div>
 
+
 <div class="card-columns">
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">人生15回目ぐらいの#ArchlinuxInstallBattle設計
+</h5>
+    <a class="card-link" href="#/page/archlinuxinstall">Read more</a>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">luksを使っているときにgrub-btrfsがうまく動かない</h5>
+    <a class="card-link" href="#/page/luks-btrfs">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
