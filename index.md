@@ -9,7 +9,7 @@
 </div>
 
 
-<div class="card-deck">
+<div class="d-flex flex-wrap justify-content-around">
 
 <div class="card">
   <div class="card-body">
