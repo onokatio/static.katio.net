@@ -241,3 +241,18 @@ Exec = /bin/sh -c "reflector --country 'Japan' --sort rate --age 24 --save /etc/
 $ reflector --country 'Japan' --sort rate --age 24 --save /etc/pacman.d/mirrorlist
 ```
 
+# preload
+
+```
+$ yay -S preload
+$ sudo systemctl enable preload.service
+```
+# watchdog無効化
+
+カーネルパラメーターに`nowatchdog`を追加。
+
+また/etc/modprobe.d/watchnog.confを以下の内容で作成
+
+```
+blacklist iTCO_wdt
+```
