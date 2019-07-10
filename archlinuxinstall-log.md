@@ -316,3 +316,27 @@ net.ipv4.conf.all.accept_redirects=0
 net.ipv6.conf.default.accept_redirects=0
 net.ipv6.conf.all.accept_redirects=0
 ```
+
+
+# mlocate
+
+```
+$ sudo powerpill -S mlocate
+```
+
+```
+diff --git a/updatedb.conf b/updatedb.conf
+index 633c174..b258e84 100644
+--- a/updatedb.conf
++++ b/updatedb.conf
+@@ -1,4 +1,4 @@
+ PRUNE_BIND_MOUNTS = "yes"
+ PRUNEFS = "9p afs anon_inodefs auto autofs bdev binfmt_misc cgroup cifs coda configfs cpuset cramfs debugfs devpts devtmpfs ecryptfs exofs ftpfs fuse fuse.encfs fuse.sshfs fusectl gfs gfs2 hugetlbfs inotifyfs iso9660 jffs2 lustre mqueue ncpfs nfs nfs4 nfsd pipefs proc ramfs rootfs rpc_pipefs securityfs selinuxfs sfs shfs smbfs sockfs sshfs sysfs tmpfs ubifs udf usbfs vboxsf"
+-PRUNENAMES = ".git .hg .svn"
++PRUNENAMES = ".git .hg .svn .snapshots"
+ PRUNEPATHS = "/afs /media /mnt /net /sfs /tmp /udev /var/cache /var/lib/pacman/local /var/lock /var/run /var/spool /var/tmp"
+```
+
+```
+$ sudo updatedb
+```
