@@ -4,11 +4,18 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>さくらのクラウドでVyOSを使用する 2019年版</h2>
-  <a class="card-link" href="#/page/vyos">Read more</a>
+  <h2>luksを使っているときにgrub-btrfsがうまく動かない</h2>
+  <a class="card-link" href="#/page/luks-btrfs">Read more</a>
 </div>
 
 <div class="card-columns">
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">さくらのクラウドでVyOSを使用する 2019年版</h5>
+    <a class="card-link" href="#/page/vyos">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
