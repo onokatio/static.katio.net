@@ -1,5 +1,7 @@
-Archlinuxをインストールしたので手順の備忘録。
+人生15回目ぐらいの#ArchlinuxInstallBattle実践
 ===
+
+https://blog.katio.net/#/page/archlinuxinstall の実践編です。
 
 # ファイルシステムを作る
 
