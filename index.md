@@ -4,7 +4,7 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>Archlinuxをインストールしたので手順の備忘録。</h2>
+  <h2>人生15回目ぐらいの#ArchlinuxInstallBattle実践</h2>
   <a class="card-link" href="#/page/archlinuxinstall-log">Read more</a>
 </div>
 
