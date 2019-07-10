@@ -5,7 +5,7 @@ https://blog.katio.net/#/page/archlinuxinstall の実践編です。
 
 # ファイルシステムを作る
 
-これに関しては別途記述する。
+これに関しては別の記事に記述します。
 
 # 最低限でpacstrap
 
