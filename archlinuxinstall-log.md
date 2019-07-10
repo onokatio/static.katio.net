@@ -340,3 +340,24 @@ index 633c174..b258e84 100644
 ```
 $ sudo updatedb
 ```
+
+# sysctlやり忘れ
+
+```
+diff --git a/sysctl.d/99-sysctl.conf b/sysctl.d/99-sysctl.conf
+index c07a283..815641b 100644
+--- a/sysctl.d/99-sysctl.conf
++++ b/sysctl.d/99-sysctl.conf
+@@ -4,6 +4,11 @@ kernel.sysrq=1
+ net.ipv4.tcp_tw_reuse = 1
+ net.ipv4.tcp_tw_recycle = 1
+ 
++kernel.dmesg_restrict = 1
++kernel.kptr_restrict = 1
++net.core.bpf_jit_enable=0
++
++
+ #### ipv4 networking and equivalent ipv6 parameters ####
+ 
+ ## TCP SYN cookie protection (default)
+```
