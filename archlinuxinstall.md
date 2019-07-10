@@ -1,4 +1,4 @@
-人生15回目ぐらいの#ArchlinuxInstallBattle
+人生15回目ぐらいの#ArchlinuxInstallBattle設計
 ===
 
 /で`sudo rm -rf *`を実行してしまい、OSが吹き飛んだので再インストールします。
