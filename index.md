@@ -9,7 +9,7 @@
 </div>
 
 
-<div class="card-columns">
+<div class="card-deck">
 
 <div class="card">
   <div class="card-body">
