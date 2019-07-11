@@ -291,6 +291,18 @@ $ sudo snap-sync -c root -u cbb989c9-f01b-4f12-bfbf-fab53bf20546
 $ sudo snap-sync -c root -u cbb989c9-f01b-4f12-bfbf-fab53bf20546
 ```
 
+# 追記: 圧縮
+
+btrfsは透過圧縮をサポートしています。lzoを使うとCPUをあまり使わずにそこそこディスク読み書きが高速化するらしいです。
+※特段実験はしていない。
+
+```
+$ sudo btrfs filesystem defragment -r -v -clzo /
+$ sudo btrfs filesystem defragment -r -v -clzo /home
+```
+
+また、fstabにもcompress=lzoオプションを追記します。
+
 # おわり
 
-人によってはここからtrim/discardやcomplessの設定が入るかも。
+人によってはここからtrim/discardの設定が入るかも。
