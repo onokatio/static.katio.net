@@ -14,6 +14,34 @@ https://blog.katio.net/#/page/strong-filesystem
 # pacstrap /mnt base base-devel btrfs-progs
 ```
 
+# locale-gen
+
+etckeeperにログが残ってなかったので無理やりdiffとってきました。
+
+```
+$ diff <(tar xOf /var/cache/pacman/pkg/glibc-2.29-3-x86_64.pkg.tar.xz etc/locale.gen) /etc/locale.gen -up
+--- /proc/self/fd/15    2019-07-11 19:03:07.356811552 +0900
++++ /etc/locale.gen     2019-07-06 23:17:36.535637944 +0900
+@@ -173,7 +173,7 @@
+ #en_SC.UTF-8 UTF-8  
+ #en_SG.UTF-8 UTF-8  
+ #en_SG ISO-8859-1  
+-#en_US.UTF-8 UTF-8  
++en_US.UTF-8 UTF-8  
+ #en_US ISO-8859-1  
+ #en_ZA.UTF-8 UTF-8  
+ #en_ZA ISO-8859-1  
+@@ -298,7 +298,7 @@
+ #it_IT@euro ISO-8859-15  
+ #iu_CA UTF-8  
+ #ja_JP.EUC-JP EUC-JP  
+-#ja_JP.UTF-8 UTF-8  
++ja_JP.UTF-8 UTF-8  
+ #ka_GE.UTF-8 UTF-8  
+ #ka_GE GEORGIAN-PS  
+ #kab_DZ UTF-8  
+
+```
 # ブートローダー系
 
 grubやintel-ucodeをインストール。ファイルシステムのページに記述。
