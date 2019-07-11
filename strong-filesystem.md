@@ -190,6 +190,7 @@ $ sudo lvcreate -l 100%FREE kirino -n root
 
 ```
 
+## ルートファイルシステムを作る
 ```
 $ sudo mount /dev/mapper/lvolroot /mnt
 $ sudo btrfs subvolume create root
@@ -263,5 +264,33 @@ $ sudo mv /etc/.git_old/* /etc/.git/
 ```
 
 以上、fstabにも追加して終了。
+
+# 追記: バックアップ
+
+snapperはほ消しちゃったファイルの復元なんかにつかいます。
+そもそもファイルシステム全体をバックアップするためには別にディスクをつないでそこへコピーしてあげる必要があります。
+なので、今回は一番最新のスナップショットを外付けSSDへ保管するようにします。
+
+```
+$ sudo powerpill -S snap-sync
+$ sudo cryptsetup luksFormat /dev/sda1
+$ sudo cryptsetup luksOpen /dev/sda1 externalssd
+$ sudo mkfs.btrfs /dev/mapper/externalssd
+$ sudo snap-sync -c root -u cbb989c9-f01b-4f12-bfbf-fab53bf20546
+# このUUIDは/dev/mapper/externalssdのもの。
+# -cのあとはsnapperの設定ファイル名
+# 基本的にはエンター連打でOKです。勝手にバックアップ先のディレクトリを作ってくれます。
+```
+
+以上で、最新のスナップショットが取得され、あとは勝手に`/mnt/root/<数字>`というディレクトリが作成されます。
+ホストの/.snapshotsの中の数字と同じスナップショットが保管されます。
+
+以降は、以下のコマンドで自動でバックアップが行なえます。
+
+```
+$ sudo snap-sync -c root -u cbb989c9-f01b-4f12-bfbf-fab53bf20546
+```
+
+# おわり
 
 人によってはここからtrim/discardやcomplessの設定が入るかも。
