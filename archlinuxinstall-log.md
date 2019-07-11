@@ -394,3 +394,98 @@ index c07a283..815641b 100644
 # 指紋認証
 
 https://wiki.archlinux.jp/index.php/Fprint を参考に
+
+
+# proc、tty、sysctl
+
+```
+diff --git a/fstab b/fstab
+index daf2478..c49697d 100644
+--- a/fstab
++++ b/fstab
+@@ -23,5 +23,6 @@ UUID=e8125144-4a36-4f45-bed9-817503407235     /home/.snapshots        btrfs           rw,re
+ # /dev/mapper/kirino-root
+ UUID=e8125144-4a36-4f45-bed9-817503407235      /etc/.git       btrfs           rw,relatime,ssd,space_cache,subvolid=278,subvol=/etc_git,subvol=etc_git,compress=lzo    0 0
+ 
+-
+ UUID=435a3634-13f7-496b-9502-57b9e4146344 none swap defaults 0 0
++
++proc   /proc   proc    nosuid,nodev,noexec,hidepid=2,gid=proc  0       0
+diff --git a/securetty b/securetty
+index 67fb10c..56a1fee 100644
+--- a/securetty
++++ b/securetty
+@@ -1,12 +1,12 @@
+ # File which lists terminals from which root can log in.
+ # See securetty(5) for details.
+ 
+-console
+-tty1
+-tty2
+-tty3
+-tty4
+-tty5
+-tty6
+-ttyS0
+-hvc0
++#console
++#tty1
++#tty2
++#tty3
++#@tty4
++#tty5
++#tty6
++#ttyS0
++#hvc0
+diff --git a/sysctl.d/99-sysctl.conf b/sysctl.d/99-sysctl.conf
+index 815641b..a36e2ae 100644
+--- a/sysctl.d/99-sysctl.conf
++++ b/sysctl.d/99-sysctl.conf
+@@ -5,7 +5,7 @@ net.ipv4.tcp_tw_reuse = 1
+ net.ipv4.tcp_tw_recycle = 1
+ 
+ kernel.dmesg_restrict = 1
+-kernel.kptr_restrict = 1
++kernel.kptr_restrict = 2
+ net.core.bpf_jit_enable=0
+```
+
+
+# pacdiffを使うためpacman contribを導入
+
+```
+$ sudo powerpill -S pacman-contrib
+```
+
+# pacmanのパッケージキャッシュを自動削除
+
+```
+diff --git a/grub.d/41_snapshots-btrfs b/grub.d/41_snapshots-btrfs
+index 628ae54..597d159 100755
+--- a/grub.d/41_snapshots-btrfs
++++ b/grub.d/41_snapshots-btrfs
+@@ -424,9 +424,9 @@ boot_bounded()
+                detect_microcode
+                name_microcode=("${list_ucode[@]##*"/"}")
+                # show snapshot found during run "grub-mkconfig"
+-               if [[ "${show_snap_found}" = "true" ]]; then
++               #if [[ "${show_snap_found}" = "true" ]]; then
+                #printf $"# Found snapshot: %s\n" "$item" >&2 ;
+-               fi
++               #fi
+                # Show full path snapshot or only name
+                path_snapshot
+                # Title format in grub-menu
+@@ -475,9 +475,9 @@ boot_separate()
+                snap_date_time="$(echo "$item" | cut -d' ' -f1-2)"
+                snap_date_time="$(trim "$snap_date_time")"
+                # show snapshot found during run "grub-mkconfig"
+-               if [[ "${show_snap_found}" = "true" ]]; then
++               #if [[ "${show_snap_found}" = "true" ]]; then
+                #printf $"# Found snapshot: %s\n" "$item" >&3 ;
+-               fi
++               #fi
+                # Show full path snapshot or only name
+                path_snapshot
+                # Title format in grub-menu
+```
