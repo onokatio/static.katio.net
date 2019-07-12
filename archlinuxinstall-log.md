@@ -489,3 +489,14 @@ index 628ae54..597d159 100755
                 path_snapshot
                 # Title format in grub-menu
 ```
+
+# systemd resolvedでDNSキャッシュ
+
+```
+$ sudo systemctl enable systemd-resolved.service
+$ sudo systemctl start systemd-resolved.service
+$ sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+```
+
+こうすることで、/etc/resolved.confがsystemd-resolvedの管理下に置かれ、NetworkManagerは手を出さなくなります。
+またstub-resolveを使っているため、nss-witchに対応していないアプリケーションも強制的に127.0.0.1のDNSキャッシュサーバーを利用するようになります。
