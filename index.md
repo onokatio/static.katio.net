@@ -4,13 +4,19 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>ルート以下を吹き飛ばした男が作った、泣かない最強のファイルシステム構成</h2>
-  <a class="card-link" href="#/page/strong-filesystem">Read more</a>
+  <h2>パソコンのブートローダーを痛grubにする</h2>
+  <a class="card-link" href="#/page/moe-grub">Read more</a>
 </div>
 
 
 <div class="d-flex flex-wrap justify-content-around">
 
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">ルート以下を吹き飛ばした男が作った、泣かない最強のファイルシステム構成</h5>
+    <a class="card-link" href="#/page/strong-filesystem">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
