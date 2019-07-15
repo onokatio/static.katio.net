@@ -644,3 +644,28 @@ ExecStart=/usr/lib/bluetooth/bluetoothd -E
 ```
 load-module module-bluetooth-discover a2dp_config="ldac_eqmid=hq ldac_fmt=f32"
 ```
+
+
+# yubikeyを抜いたら自動ロック
+
+`/etc/udev/rules.d/85-yubikey.rules`を以下の内容で作成します。
+
+```
+# Yubikey Udev Rule: running a bash script in case your Yubikey is removed
+ACTION=="remove", ENV{ID_BUS}=="usb", ENV{ID_VENDOR_ID}=="1050", ENV{ID_MODEL_ID}=="0407", ENV{ID_SERIAL_SHORT}=="012345678", RUN+="/usr/local/bin/yubikey-lock"
+```
+
+このとき、012345678に当てはまる数字はYubikeyの表面に刻印されている数字です。udevadmでも確認できます。
+
+で、 /usr/local/bin/yubikey-lockを作ります。
+
+```
+#!/bin/bash
+
+if [ -z "$(lsusb | grep Yubico)" ]; then
+        export DISPLAY=:0
+        su katio -c "i3lock -fon"
+fi
+```
+
+あとは再起動するか`sudo udevadm control --reload-rules`を実行すれば有効になります。
