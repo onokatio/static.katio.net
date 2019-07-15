@@ -9,7 +9,7 @@
 </div>
 
 
-<div class="d-flex flex-wrap justify-content-around">
+<div class="d-flex flex-wrap">
 
 <div class="card">
   <div class="card-body">
