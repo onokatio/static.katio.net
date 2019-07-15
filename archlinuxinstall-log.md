@@ -589,16 +589,23 @@ When laptop lid is closed を、On battery, Plugged in両方共Locl screenに設
 ## Display power management
 
 トグルスイッチをoffにします。
+Blank Afterを両方共5 minutesに設定します。
+
+## Display Brightness reduction
+
+50%と120 secondsに設定します。
 
 ## System power saveing
 
-On batteryをHibernate、Plugged inをSuspendに設定します。またWhen inactive forを15minutesに設定します。
+On batteryとPlugged inを両方共Suspendに設定します。またWhen inactive forを15minutesに設定します。
 
-これで、画面を閉じた状態や開いた状態で15分間放置すると自動でハイバーネート、またはサスペンドします。
+これで、画面を閉じた状態や開いた状態で15分間放置すると自動でサスペンドします。
 
 ## 電源設定まとめ
 
-- 画面の輝度は変わりません。
-- 自動画面オフ設定はしていません。
-- 画面を閉じると。画面がオフになりロックが走ります
-- 画面を閉じる、または開いた状態で15分放置したらスリープかハイバーネートに入ります。
+- 2分以上放置すると、画面の輝度が半分になります。
+- 5分以上放置すると、画面が自動でオフ設定になります。
+- 15分放置したらスリープかハイバーネートに入ります。
+- 画面を閉じると。画面がオフになりロックが走ります。この状態で15分立つと、スリープに入ります。
+
+以上です。
