@@ -553,3 +553,51 @@ index 48068de..6f67b91 100755
 +       fwsetup
 +}
 ```
+
+# 画面ロック i3lockの導入
+
+```
+$ yay -S i3lock-blur
+```
+
+i3lockで画像を指定してロックする方法は以下です。
+
+```
+$ i3lock -fon
+```
+
+これをxfceの画面管理・スリープ管理に登録します。
+
+```
+$ xfconf-query -c xfce4-session -p /general/LockCommand -s "i3lock -fon"  --create -t string
+```
+
+次に、xfce PowerManagerの設定をします。
+
+## General Buttons
+
+When power button is pressed を Hibernateに設定
+
+これで電源ボタンを押すとハイバーネートに突入します。
+
+## General Lapyop Lid
+
+When laptop lid is closed を、On battery, Plugged in両方共Locl screenに設定
+
+これで、ノートパソコンの蓋を閉じると画面がロックされます。
+
+## Display power management
+
+トグルスイッチをoffにします。
+
+## System power saveing
+
+On batteryをHibernate、Plugged inをSuspendに設定します。またWhen inactive forを15minutesに設定します。
+
+これで、画面を閉じた状態や開いた状態で15分間放置すると自動でハイバーネート、またはサスペンドします。
+
+## 電源設定まとめ
+
+- 画面の輝度や画面オフ設定はまったくしていません。
+- 画面を閉じるとロックが走ります。本来はここで画面オフもしたかった。
+- 画面を閉じる、または開いた状態で15分放置したらスリープかハイバーネートに入ります。
