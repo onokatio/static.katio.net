@@ -635,7 +635,11 @@ ExecStart=/usr/lib/bluetooth/bluetoothd -E
 ```
 
 これで、AAC, APTX, APTX HD, LDACヘッドフォンが使えるようになる。
-また音質を最高にするために`/etc/pulse/default.pa`に以下を追記
+
+
+また音質はデフォルトで自動設定(Adaptive Bit rate)になる。
+これは電波状況を見てなるべく途切れずに良い音質を設定するモード。
+強制的に最高にするためには`/etc/pulse/default.pa`に以下を追記すればいい。
 
 ```
 load-module module-bluetooth-discover a2dp_config="ldac_eqmid=hq ldac_fmt=f32"
