@@ -613,3 +613,12 @@ On batteryとPlugged inを両方共Suspendに設定します。またWhen inacti
 - 画面を閉じると。画面の電源が切れロックが走ります。この状態で15分立つと、スリープに入ります。
 
 以上です。
+
+
+# bluetoothでLDAC/aptXを有効化
+
+```
+$ yay -S  pulseaudio-modules-bt-git bluez-git
+```
+
+これで、AAC, APTX, APTX HD, LDACヘッドフォンが使えるようになる。
