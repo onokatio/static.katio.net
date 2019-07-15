@@ -621,4 +621,17 @@ On batteryとPlugged inを両方共Suspendに設定します。またWhen inacti
 $ yay -S  pulseaudio-modules-bt-git bluez-git
 ```
 
+bluetooth.serviceを編集
+```
+$ sudo systemctl edit bluetooth.service
+```
+
+エディタが起動するので以下を入力
+
+```
+[Service]
+ExecStart=
+ExecStart=/usr/lib/bluetooth/bluetoothd -E
+```
+
 これで、AAC, APTX, APTX HD, LDACヘッドフォンが使えるようになる。
