@@ -584,7 +584,7 @@ When power button is pressed を Hibernateに設定
 
 When laptop lid is closed を、On battery, Plugged in両方共Locl screenに設定
 
-これで、ノートパソコンの蓋を閉じると画面がロックされます。
+これで、ノートパソコンの蓋を閉じると画面がロックされ画面オフになります。
 
 ## Display power management
 
@@ -598,6 +598,7 @@ On batteryをHibernate、Plugged inをSuspendに設定します。またWhen ina
 
 ## 電源設定まとめ
 
-- 画面の輝度や画面オフ設定はまったくしていません。
-- 画面を閉じるとロックが走ります。本来はここで画面オフもしたかった。
+- 画面の輝度は変わりません。
+- 自動画面オフ設定はしていません。
+- 画面を閉じると。画面がオフになりロックが走ります
 - 画面を閉じる、または開いた状態で15分放置したらスリープかハイバーネートに入ります。
