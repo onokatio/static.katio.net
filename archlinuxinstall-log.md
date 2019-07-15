@@ -588,8 +588,10 @@ When laptop lid is closed を、On battery, Plugged in両方共Locl screenに設
 
 ## Display power management
 
-トグルスイッチをoffにします。
-Blank Afterを両方共5 minutesに設定します。
+トグルスイッチをonにします。
+Blank Afterを両方共4 minutesに設定します。
+Put to sleep afterを両方共5 minutesに設定します。
+Switch off afterを両方共6 minutesに設定します。
 
 ## Display Brightness reduction
 
@@ -604,8 +606,10 @@ On batteryとPlugged inを両方共Suspendに設定します。またWhen inacti
 ## 電源設定まとめ
 
 - 2分以上放置すると、画面の輝度が半分になります。
-- 5分以上放置すると、画面が自動でオフ設定になります。
+- 4分以上放置すると、画面が黒一色になります。
+- 5分以上放置すると、画面が低電力状態になります。
+- 6分以上放置すると、画面の電源が切れます。
 - 15分放置したらサスペンドに入ります。
-- 画面を閉じると。画面がオフになりロックが走ります。この状態で15分立つと、スリープに入ります。
+- 画面を閉じると。画面の電源が切れロックが走ります。この状態で15分立つと、スリープに入ります。
 
 以上です。
