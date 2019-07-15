@@ -500,3 +500,56 @@ $ sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
 こうすることで、/etc/resolved.confがsystemd-resolvedの管理下に置かれ、NetworkManagerは手を出さなくなります。
 またstub-resolveを使っているため、nss-witchに対応していないアプリケーションも強制的に127.0.0.1のDNSキャッシュサーバーを利用するようになります。
+
+# grubのメニュー保存
+
+```
+diff --git a/default/grub b/default/grub
+index 79b1bb8..69fbb86 100644
+--- a/default/grub
++++ b/default/grub
+@@ -1,6 +1,6 @@
+ # GRUB boot loader configuration
+ 
+-GRUB_DEFAULT=0
++GRUB_DEFAULT=saved
+ GRUB_TIMEOUT=0
+ GRUB_DISTRIBUTOR="Arch"
+ GRUB_CMDLINE_LINUX="cryptdevice=PARTUUID=d8f58add-82a9-a34f-8d18-cb3877396a0e:cryptlvm:header"
+@@ -51,7 +51,7 @@ GRUB_BACKGROUND="/boot/grub.jpg"
+ 
+ # Uncomment to make GRUB remember the last selection. This requires to
+ # set 'GRUB_DEFAULT=saved' above.
+-#GRUB_SAVEDEFAULT="true"
++GRUB_SAVEDEFAULT="true"
+```
+
+# grub パスフレーズ
+
+```
+diff --git a/grub.d/40_custom b/grub.d/40_custom
+index 48068de..6f67b91 100755
+--- a/grub.d/40_custom
++++ b/grub.d/40_custom
+@@ -3,3 +3,20 @@ exec tail -n +3 $0
+ # This file provides an easy way to add custom menu entries.  Simply type the
+ # menu entries you want to add after this comment.  Be careful not to change
+ # the 'exec tail' line above.
++
++set superusers="hoge"
++password_pbkdf2 hoge hogehoge
++
++menuentry "System shutdown" {
++       echo "System shutting down..."
++       halt
++}
++
++menuentry "System restart" {
++       echo "System rebooting..."
++       reboot
++}
++
++menuentry "Firmware setup" {
++       fwsetup
++}
+```
