@@ -669,3 +669,32 @@ fi
 ```
 
 あとは再起動するか`sudo udevadm control --reload-rules`を実行すれば有効になります。
+
+
+# ハードウェアビデオアクセラレーション
+
+https://blog.katio.net/#/page/archlinux-video-acceleration
+
+と
+
+https://wiki.archlinux.jp/index.php/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%93%E3%83%87%E3%82%AA%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%A9%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3
+
+を参考に設定する。
+
+```
+$ sudo powerpill -S intel-media-driver nvidia-utils
+```
+
+/etc/environmentを編集する。
+
+```
+LIBVA_DRIVER_NAME=iHD
+VDPAU_DRIVER=nvidia
+```
+
+基本的に、VP9やVP8などのサポートをnvidia/vdpauはしていない。
+どうせなら外付けGPUの大きなMPEG計算量よりも、VP9のほうが使いたい。
+なので、なるべくアプリケーションがVDPAUを呼び出したときもVAAPIを呼び出したときも両方VAAPI/内蔵GPUを使わせたかった。
+ただ、VDPAUを呼び出すアプリケーションは、いくらAPIを呼び出してもVP9が使えないのはわかっている（そもそもその時代になかったか、あってもサポートがないのは知っているはず）なので、だったらVDPAUを呼び出したい、つまり高い計算量を必要としているアプリケーションには外付けGPUを使わせてやろうじゃないか、という魂胆。
+
+まあ最近のアプリケーションはそもそもVAAPIとVDPAUの切り替えできるから問題ないよね。それで実質内蔵と外付けの切り替えもできるし。
