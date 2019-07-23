@@ -704,3 +704,8 @@ VDPAU_DRIVER=nvidia
 ecryptfsを使ってホームディレクトリを暗号化する。
 
 特に変なことをせずにArchwikiを参照: https://wiki.archlinux.jp/index.php/ECryptfs
+
+# rng-tools
+
+rng-toolsを入れて乱数生成のソースを増やします。
+https://wiki.archlinux.jp/index.php/Rng-tools
