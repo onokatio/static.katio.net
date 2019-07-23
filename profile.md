@@ -130,7 +130,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 ## 講演・LT登壇経験
 
-- [ビットコインとか勉強会#6](https://cryptocurrency.connpass.com/event/54135/)  ビットコインのトランザクションとScriptについて (2017/04/11) 動画: https://youtu.be/2Hgogr6OALA
+- [ビットコインとか勉強会#6](https://cryptocurrency.connpass.com/event/54135/)  ビットコインのトランザクションとScriptについて (2017/04/11) 動画: [ビットコインとか勉強会#6 - Youtube](https://youtu.be/2Hgogr6OALA)
 - [ビットコインとか勉強会#15](https://cryptocurrency.connpass.com/event/79702/) Ethereum Smart Contract Security Best Practice (2018/02/27)
 - [基礎から学ぶ「ブロックチェーン」と「仮想通貨」 ビジネス](http://techfinancials.planet.bindcloud.jp/) 特別講演 (2017年7月15日)
 - [学生LT#1](https://student-lt.connpass.com/event/55850/) ブロックチェーンとは
