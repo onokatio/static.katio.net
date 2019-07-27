@@ -4,12 +4,19 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>パソコンのブートローダーを痛grubにする</h2>
-  <a class="card-link" href="#/page/moe-grub">Read more</a>
+  <h2>vimにlanguage serverを設定する</h2>
+  <a class="card-link" href="#/page/vim-coc">Read more</a>
 </div>
 
 
 <div class="d-flex flex-wrap">
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">パソコンのブートローダーを痛grubにする</h5>
+    <a class="card-link" href="#/page/moe-grub">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
