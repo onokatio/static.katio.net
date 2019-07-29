@@ -4,12 +4,19 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>vimにlanguage serverを設定する</h2>
-  <a class="card-link" href="#/page/vim-coc">Read more</a>
+  <h2>Linuxで高音質Bluetoothを使う（AAC,aptX,LDAC）</h2>
+  <a class="card-link" href="#/page/linux-bluetooth">Read more</a>
 </div>
 
 
 <div class="d-flex flex-wrap">
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">vimにlanguage serverを設定する</h5>
+    <a class="card-link" href="#/page/vim-coc">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
