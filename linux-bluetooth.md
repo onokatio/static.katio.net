@@ -20,6 +20,7 @@ Ubuntuの場合はppaが、Archlinuxの場合はAURが存在します。
 $ yay -S bluetooth-module-bt
 ```
 
+他のディストリビューションの方はおとなしくソースからビルドしましょう。
 
 また、コーデックのライブラリをインストールするため、ffmpegと[libldac](https://github.com/EHfive/ldacBT)をインストールしてください。
 後者はArchlinuxにAURが存在します。
