@@ -148,3 +148,15 @@ npm i intelephense -g
 
 - https://qiita.com/gw31415/items/5dfcf8d3676c2c5576ef
 - http://wakame.hatenablog.jp/entry/2019/03/31/124941
+
+## 補完ソース
+
+補完ポップアップが出ているときに、右にカッコでソースが出る。
+
+|ソース|説明|
+|:-:|:-:|
+|[A]|現在のバッファに含まれる単語|
+|[B]|現在のバッファに含まれるが画面外の単語|
+|[F]|ファイル名補完|
+|[LS]|各言語のLanguage Serverからの補完|
+|[TN]|tabnineからの補完|
