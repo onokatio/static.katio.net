@@ -216,7 +216,7 @@ grubもインストール。あとheader.imgを/boot以下に移しておく。
 
 # ブートローダー/initcpio
 
-https://wiki.archlinux.jp/index.php/Dm-crypt/%E7%89%B9%E8%A8%98%E4%BA%8B%E9%A0%85#.E3.83.AA.E3.83.A2.E3.83.BC.E3.83.88_LUKS_.E3.83.98.E3.83.83.E3.83.80.E3.83.BC.E3.82.92.E4.BD.BF.E3.81.A3.E3.81.A6.E3.82.B7.E3.82.B9.E3.83.86.E3.83.A0.E3.82.92.E6.9A.97.E5.8F.B7.E5.8C.96 に従ってencryptフックを修正、リモートヘッダーで起動できるようにする。
+[Dm-crypt/特記事項#リモート LUKS ヘッダーを使ってシステムを暗号化 - Archwiki](https://wiki.archlinux.jp/index.php/Dm-crypt/%E7%89%B9%E8%A8%98%E4%BA%8B%E9%A0%85#.E3.83.AA.E3.83.A2.E3.83.BC.E3.83.88_LUKS_.E3.83.98.E3.83.83.E3.83.80.E3.83.BC.E3.82.92.E4.BD.BF.E3.81.A3.E3.81.A6.E3.82.B7.E3.82.B9.E3.83.86.E3.83.A0.E3.82.92.E6.9A.97.E5.8F.B7.E5.8C.96) に従ってencryptフックを修正、リモートヘッダーで起動できるようにする。
 
 また、カーネルコマンドラインにcryptdeviecを追加
 
