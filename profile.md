@@ -41,7 +41,8 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - 2018年8月 セブンバニーズ株式会社 （shitcoinの開発）
 - 2018年9月 CryptoeconomicsLab （Plasma Chamber/TxVMの開発の参加）
 - 2018年9月 合同会社DMM.com （スマートコントラクト事業部/ブロックチェーン研究室）
-- 2018年11月 株式会社ラック デジタルフォレンジック
+- 2018年11月 株式会社ラック （デジタルフォレンジック）
+- 2019年8月~9月 LINE Fukuoka 株式会社 （インフラ）
 
 ## 成果物・今までに作ったもの
 
@@ -90,7 +91,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - Travis CI/CircleCIなど、CI使ったテストやビルドの自動化
 - WebコンソールやAzure cli、AnsibleなどでのAzure運用
 - terraformやブラウザコンソールからのAWS運用
-- Apache, Nginx, bind, unbound, squidなど、デーモンサービスの導入・運営
+- Apache, Nginxの構築・運営
 - Vagrant
 - TCP/IPの基本的な知識（応用情報技術者レベル）
 - Dockerfileの自作
@@ -99,6 +100,8 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - Linuxブートディスクのフル暗号化
 - Archlinux Install battle （10回以上）
 - スイッチ/ルーターの設定 （富士通製、Cisco製）
+- RKEを使ったKubernetesクラスタの構築
+- Kubernetesの基本的な利用（pod, deployment, service等）
 
 ### ブロックチェーン
 
@@ -110,14 +113,15 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 ### セキュリティ
 
 - XSS, CSRF, SQLiなど基本的なWeb攻撃の理解
-- スタックオーバーフロー攻撃の理解
+- スタックオーバーフロー攻撃の理解、実験
 - DoS, DDoS, SYN Flood攻撃
-- OWASP zapやmeta sploitフレームワークを使った簡単なペネトレーションテスト
+- OWASP zapや meta sploit フレームワークを使った簡単なペネトレーションテスト
 
 ### その他
 
 - Gitを使った複数人での開発
 - H8マイコンを使った自作OSの改造
+- カオスエンジニアリングの設計、実装
 
 ## イベント・大会での受賞、出場経験など
 
@@ -126,7 +130,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - [ICTトラブルシューティングコンテスト 第9回](https://icttoracon.net/archives/category/%e7%ac%ac9%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2018年3月3日、4日)
 - [第12回情報危機管理コンテスト](https://www.riis.or.jp/symposium21/crisismanagement/) チームYonelabo 経済産業大臣賞 兼 優勝 (2017年5月24〜日)
 - [SECCON 2017](https://2017.seccon.jp/news/summary/seccon-20171/seccon2017.html) 国内決勝 出場 (2017年2月17日)
-- 株式会社ミクシィ Git challenge 第11回 優勝
+- 株式会社ミクシィ [Git challenge 第11回](https://mixi-git-challenge.github.io/publications/events/11.html) 一位 優勝
 
 ## 講演・LT登壇経験
 
@@ -147,7 +151,6 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 ### 見学
 
-- 石川高専 情報セキュリティ高度人材育成 春休み合宿講座 2017年12月25-26日
 - さくらインターネット石狩DC見学 2017年と2018年で2回
 - 小山高専 ネットワーク演習講座 2017年3月
 - 高知高専 プロジェクト成果発表会 2017年5月
@@ -161,6 +164,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - 2017年 楽天IT学校
 - [Cyberbit社 サイバーレンジ演習](https://www.atmarkit.co.jp/ait/articles/1710/10/news016.html) 2017年9月
 - PwC株式会社 サイバー演習 2017年9月
+- 石川高専 情報セキュリティ高度人材育成 春休み合宿講座 2017年12月25-26日
 
 ### カンファレンス・学会
 
@@ -176,7 +180,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 ### 運営
 
-- 高知高専 情報セキュリティ教材に関するコンテンツ展示会 展示運営・演習運営 2017年5月
+- 高知高専 情報セキュリティ教材に関するコンテンツ展示会 CTFの展示・演習運営 2017年5月
 - 2017年 [高専セキュリテイコンテスト](https://sckosen2017.kisarazu.ac.jp/) 運営
 - [ICTトラブルシューティングコンテスト 2018](https://icttoracon.net/archives/category/%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b32018) 運営
   - 予選問題作成 [問題解説: Docker 筆記 一問目](https://blog.icttoracon.net/2018/08/27/ictsc2018-prep01-docker-w/)
