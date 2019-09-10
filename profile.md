@@ -13,9 +13,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 最近はCPUとかLinuxカーネル、アセンブリ等低レイヤーの勉強や、ブロックチェーンの開発をするようになってました。
 
-自分が一番興味がある領域は、フルスタックと、ネットワークインフラ、ブロックチェーン、セキュリティです。
-
-まためんどくさがり屋なので、自動化とかは大好きです。
+自分が一番興味がある領域は、フルスタックと、ネットワークインフラ、ブロックチェーン、セキュリティです。めんどくさがり屋なので、自動化が大好物です。
 
 ## 名前
 
@@ -83,25 +81,38 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 ### インフラ
 
+#### サーバー
+
 - LAMP環境の構築
+- Nginxサーバーの構築・運営
 - Ansibleを使ったプロビジョニングなど
 - Let's encryptを使ったSSL証明証の発行や導入
-- Nginxサーバー運用
 - Homebrewパッケージの自作
 - Travis CI/CircleCIなど、CI使ったテストやビルドの自動化
-- WebコンソールやAzure cli、AnsibleなどでのAzure運用
-- terraformやブラウザコンソールからのAWS運用
-- Apache, Nginxの構築・運営
-- Vagrant
-- TCP/IPの基本的な知識（応用情報技術者レベル）
-- Dockerfileの自作
-- Docker compose
-- Docker Swarm
+- WebコンソールやAzure cli、Ansibleなどでの
+- Azure運用経験(Web、Azure cli、Ansibleそれぞれから)
+- AWS運用経験(ブラウザコンソールからのみ)
+- Vagrantの利用経験
 - Linuxブートディスクのフル暗号化
 - Archlinux Install battle （10回以上）
+
+#### ネットワーク
+
+- TCP/IPの基本的な知識（応用情報技術者レベル）
 - スイッチ/ルーターの設定 （富士通製、Cisco製）
+
+#### コンテナ
+
+- Dockerfileの自作
+- Dockerhubへ自作イメージの公開経験
+- Docker compose
+- Docker Swarm
 - RKEを使ったKubernetesクラスタの構築
 - Kubernetesの基本的な利用（pod, deployment, service等）
+
+#### 可視化、データ収集
+
+- Promtail/Loki/Grafanaのデプロイ、利用経験
 
 ### ブロックチェーン
 
@@ -122,6 +133,8 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - Gitを使った複数人での開発
 - H8マイコンを使った自作OSの改造
 - カオスエンジニアリングの設計、実装
+- kube monkeyの設定、デプロイ、利用
+- pumbaの設定、デプロイ、利用
 
 ## イベント・大会での受賞、出場経験など
 
