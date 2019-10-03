@@ -4,12 +4,19 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>Linuxで高音質Bluetoothを使う（AAC,aptX,LDAC）</h2>
-  <a class="card-link" href="#/page/linux-bluetooth">Read more</a>
+  <h2>dmesg, syslog, journalについて調べてみた</h2>
+  <a class="card-link" href="#/page/linux-dmesg">Read more</a>
 </div>
 
 
 <div class="d-flex flex-wrap">
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Linuxで高音質Bluetoothを使う（AAC,aptX,LDAC）</h5>
+    <a class="card-link" href="#/page/linux-bluetooth">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
