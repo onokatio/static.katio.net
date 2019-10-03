@@ -36,7 +36,7 @@ journaldは、以下のログを収集します。
 
 - カーネルメッセージ `/dev/kmsg`
 - systemdのUnitファイルにより起動されたプロセスの、標準出力、標準エラー出力
-- ``/dev/log`に送られてきたログ
+- `/dev/log`に送られてきたログ
 - その他、journaldに直接送られてきたログ
 
 そうです。journaldはsyslogの代わりに/dev/logを提供するようになりました。
