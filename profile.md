@@ -37,7 +37,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - 2017年〜 fressets 株式会社 （インフラ）
 - 2017年8月〜9月 freee 株式会社 （SREチーム）
 - 2018年8月 セブンバニーズ株式会社 （shitcoinの開発）
-- 2018年9月 CryptoeconomicsLab （Plasma Chamber/TxVMの開発の参加）
+- 2018年9月 CryptoeconomicsLab （PlasmaVM/TxVMの開発の参加）
 - 2018年9月 合同会社DMM.com （スマートコントラクト事業部/ブロックチェーン研究室）
 - 2019年8月~9月 LINE Fukuoka 株式会社 （インフラ）
 - 2019年9月 GMOインターネット株式会社 (次世代システム研究室 ブロックチェーンチーム)
