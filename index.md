@@ -4,12 +4,19 @@
 
 <div class="jumbotron">
   <small class="text-muted">Latest article</small>
-  <h2>dmesg, syslog, journalについて調べてみた</h2>
-  <a class="card-link" href="#/page/linux-dmesg">Read more</a>
+  <h2>LinuxのNSSwitchについて</h2>
+  <a class="card-link" href="#/page/nsswitch">Read more</a>
 </div>
 
 
 <div class="d-flex flex-wrap">
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">dmesg, syslog, journalについて調べてみた</h5>
+    <a class="card-link" href="#/page/linux-dmesg">Read more</a>
+  </div>
+</div>
 
 <div class="card">
   <div class="card-body">
