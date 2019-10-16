@@ -5,7 +5,7 @@
 
 # 結果
 
-![k.png](https://qiita-image-store.s3.amazonaws.com/0/154157/1f4d9b9a-81f9-4f68-78b4-0a646fba53ef.png)
+![k.png](https://static.katio.net/image/1f4d9b9a-81f9-4f68-78b4-0a646fba53ef.png)
 
 罵ってくれました。
 
@@ -86,7 +86,7 @@ $ jp2a hoge.jpg -i # 白黒反転で表示
 
 これで一通りの手順は完了です。
 
-![k.png](https://qiita-image-store.s3.amazonaws.com/0/154157/1f4d9b9a-81f9-4f68-78b4-0a646fba53ef.png)
+![k.png](https://static.katio.net/image/1f4d9b9a-81f9-4f68-78b4-0a646fba53ef.png)
 
 # もっと高解像度で罵られたい。というかもう動画がいい。
 
@@ -97,7 +97,7 @@ $ jp2a hoge.jpg -i # 白黒反転で表示
 
 > コメント欄にて、@kuzukuzu1gou さんがiTerm2でimgcatを使う方法を教えてくれました。
 
-![k.png](https://camo.qiitausercontent.com/6a2c90c8dbe2c8dd79267206fbfb5a0d84de3761/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34313430382f30393561643030332d396633612d386533312d356337632d6535343433666332633536632e706e67)
+![k.png](https://static.katio.net/image/2e706e67.png)
 
 jp2aの部分を、そのまま`imgcat`というコマンドに置き換えれば表示できます。
 
@@ -117,9 +117,9 @@ $ img2sixel hoge.gif -l disable # -l disableを付けないとアニメがルー
 また、任意のyoutubeや動画ファイルをgitアニメにするには以下を参考にしてください。
 [Linuxで、コマンドだけでyoutubeから動画をダウンロードして任意の時間を切り出してgitアニ化する](https://qiita.com/onokatio/items/40b12a2c50b4f9cc3e75)
 
-![k.png](https://qiita-image-store.s3.amazonaws.com/0/154157/7fbe3061-c702-8347-ccc5-eba72f469119.png)
+![k.png](https://static.katio.net/image/7fbe3061-c702-8347-ccc5-eba72f469119.png)
 
-![demo.gif](https://qiita-image-store.s3.amazonaws.com/0/154157/e95b7085-6ebd-9a22-214b-d69ab05c5663.gif)
+![demo.gif](https://static.katio.net/image/e95b7085-6ebd-9a22-214b-d69ab05c5663.gif)
 
 
 ゾクゾクしちゃいますね。
