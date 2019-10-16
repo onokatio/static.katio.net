@@ -3,3 +3,4 @@
 - /markdown/ : markdown files
 - /image/ : image files
 - /dynamic/ : dynamic static files. generate by dynamic.js
+- /dynamic.js : generate dynamic content. (markdownlist)
