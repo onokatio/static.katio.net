@@ -1,12 +1,12 @@
 const fetch = require("node-fetch")
 const fs = require('fs').promises
 
-fs.readdir('../markdown')
+fs.readdir('./markdown')
 	.then( (files) => {
 		files = files.filter( (filename) => filename.endsWith('.md') )
 		files = files.filter( (filename) => filename !== ('index.md') )
 		readPromises = files.map( (filename) => {
-			return fs.readFile('../markdown/' + filename, "utf-8")
+			return fs.readFile('./markdown/' + filename, "utf-8")
 				.then( (content) => Promise.resolve([content, filename]) )
 		})
 		Promise.all(readPromises).then( (contents) => {
@@ -22,6 +22,6 @@ fs.readdir('../markdown')
 				return {  filename: filename, summary: content.slice(0,50)}
 			})
 			json = JSON.stringify(summaries)
-			fs.writeFile('list', json)
+			fs.writeFile('dynamic/markdownlist', json)
 		})
 	} )
