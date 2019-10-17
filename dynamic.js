@@ -27,7 +27,7 @@ fs.readdir('./markdown')
 					.replace(/^ +- /g,'')           // remove markdown hyphen
 					.replace(/\n/g,'')              // remove newline
 
-				return {  filename: filename, title: title, summary: content.slice(0,50)}
+				return {  filename: filename, title: title, summary: content.slice(0,200)}
 			})
 			json = JSON.stringify(summaries)
 			fs.writeFile('dynamic/markdownlist', json)
