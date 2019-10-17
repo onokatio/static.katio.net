@@ -11,12 +11,9 @@ fs.readdir('./markdown')
 				.then( (content) => Promise.resolve([content, filename]) )
 		})
 		Promise.all(readPromises).then( (contents) => {
-			const summaries = contents.map( (contentAndFilename) => {
-				let content = contentAndFilename[0]
-				const filename = contentAndFilename[1]
+			const summaries = contents.map( ([content, filename]) => {
 				let title
 				if( ( result = content.match(/^.+\n=+/) ) !== null){
-					//title = result[0].replace(/\n=+/,'') // remove (===)
 					title = result[0].split('\n')[0]
 				}else if( ( result = content.match(/^# .+\n/,'')) !== null){
 					title = result[0].split('\n')[0].replace(/^# +/,'')
