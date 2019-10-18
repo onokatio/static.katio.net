@@ -25,6 +25,7 @@ fs.readdir('./markdown')
 					.replace(/\n#+ /g,'\n')         // remove markdown sharp
 					.replace(/`/g,'')               // remove markdown back quote
 					.replace(/^ +- /g,'')           // remove markdown hyphen
+					.replace(/\!?\[.*\]\(.*\)/g,'') // remove markdown link
 					.replace(/\n/g,' ')             // replace newline to space
 
 				return {  filename: filename, title: title, summary: content.slice(0,200)}
