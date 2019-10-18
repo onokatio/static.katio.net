@@ -21,11 +21,11 @@ fs.readdir('./markdown')
 					title = 'Failed to get title'
 				}
 				content = content.replace(/^.+\n=+/,'') // remove (title \n ===)
-					.replace(/^# .+\n/,'')          // remove (# title)
+					.replace(/^# .+\n/,'')          // remove (# title\n)
 					.replace(/\n#+ /g,'\n')         // remove markdown sharp
 					.replace(/`/g,'')               // remove markdown back quote
 					.replace(/^ +- /g,'')           // remove markdown hyphen
-					.replace(/\n/g,'')              // remove newline
+					.replace(/\n/g,' ')             // replace newline to space
 
 				return {  filename: filename, title: title, summary: content.slice(0,200)}
 			})
