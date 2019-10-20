@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "xml2js": "^0.4.22"
   },
   "devDependencies": {},
   "scripts": {

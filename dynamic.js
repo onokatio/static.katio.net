@@ -1,5 +1,6 @@
 const fetch = require("node-fetch")
 const fs = require('fs').promises
+const xml = require('xml-js')
 
 fs.readdir('./markdown')
 	.then( (files) => {
@@ -33,5 +34,13 @@ fs.readdir('./markdown')
 			})
 			json = JSON.stringify(summaries)
 			fs.writeFile('dynamic/markdownlist', json)
+
+			const summarySitemap = (summaries.map( (item) => ['https://blog.katio.net/page/' + item.filename.replace(/\.md$/,'') ]))
+			const generalSitemap = [
+				'https://blog.katio.net/',
+			]
+			const sitemap = summarySitemap.concat(generalSitemap)
+			console.log(sitemap)
 		})
+
 	} )
