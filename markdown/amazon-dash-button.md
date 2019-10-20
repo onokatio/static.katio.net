@@ -53,7 +53,7 @@ devices:
 
 `/etc/systemd/system/amazon-dash.service`というファイルを以下のように作成します。
 
-```
+```ini
 [Unit]
 Description=Amazon Dash service
 After=network-online.target
