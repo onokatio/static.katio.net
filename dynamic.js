@@ -14,8 +14,9 @@ fs.readdir('./markdown')
 		})
 		Promise.all(readPromises).then( (contents) => {
 			const summaries = contents.map( ([content, filename]) => {
-				metadata = yamlFront.loadFront(content)
+				metadata = yamlFront.safeLoadFront(content)
 				content = metadata.__content
+				delete metadata.__content
 
 				let title
 				if( ( result = content.match(/^.+\n=+/) ) !== null){
