@@ -5,7 +5,8 @@
   "main": "main.js",
   "dependencies": {
     "node-fetch": "^2.6.0",
-    "xml2js": "^0.4.22"
+    "xml2js": "^0.4.22",
+    "yaml-front-matter": "^4.0.0"
   },
   "devDependencies": {},
   "scripts": {
