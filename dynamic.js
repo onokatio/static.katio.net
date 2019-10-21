@@ -2,6 +2,7 @@ const fetch = require("node-fetch")
 const fs = require('fs').promises
 const xml2js = require('xml2js')
 const yamlFront = require('yaml-front-matter')
+const moment = require('moment')
 
 fs.readdir('./markdown')
 	.then( (files) => {
@@ -38,6 +39,23 @@ fs.readdir('./markdown')
 					.replace(/\n/g,' ')             // replace newline to space
 
 				return {  filename: filename, title: title, summary: content.slice(0,200), metadata: metadata }
+			})
+			summaries.sort( (item1,item2) => {
+				/*
+				 * a < b : 1
+				 * a = b : 0
+				 * a > b : -1
+				 */
+				if (item1.metadata.date == undefined) return 1
+				if (item2.metadata.date == undefined) return -1
+
+				data1 = moment(item1.metadata.date, "YYYY-MM-DD HH:mm:ss z")
+				data2 = moment(item2.metadata.date, "YYYY-MM-DD HH:mm:ss z")
+
+				if(data1.isBefore(data2)) return 1
+				else if(data1.isAfter(data2)) return -1
+				else if(data1.isSame(data2)) return 0
+				else throw new Error("date compare error.")
 			})
 			json = JSON.stringify(summaries)
 			fs.writeFile('dynamic/markdownlist', json)
