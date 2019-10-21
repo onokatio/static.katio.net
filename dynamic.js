@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
 const fs = require('fs').promises
-const xml = require('xml-js')
+const xml = require('xml2js')
 
 fs.readdir('./markdown')
 	.then( (files) => {
