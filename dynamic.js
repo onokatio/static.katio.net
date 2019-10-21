@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
 const fs = require('fs').promises
-const xml = require('xml2js')
+const xml2js = require('xml2js')
 
 fs.readdir('./markdown')
 	.then( (files) => {
@@ -35,12 +35,31 @@ fs.readdir('./markdown')
 			json = JSON.stringify(summaries)
 			fs.writeFile('dynamic/markdownlist', json)
 
-			const summarySitemap = (summaries.map( (item) => ['https://blog.katio.net/page/' + item.filename.replace(/\.md$/,'') ]))
-			const generalSitemap = [
-				'https://blog.katio.net/',
-			]
-			const sitemap = summarySitemap.concat(generalSitemap)
-			console.log(sitemap)
+			const summarySitemap = (summaries.map( (item) => {
+				return { url: {
+						loc: 'https://blog.katio.net/page/' + item.filename.replace(/\.md$/,''), lastmod: '2005-01-01',
+						changefreq: 'monthly',
+						priority: 1.0
+					}
+				}
+			}))
+			const generalSitemap = {
+				url: {
+					loc: 'https://blog.katio.net/',
+					changefreq: 'monthly',
+					priority: 1.0
+				}
+			}
+			const sitemap = {
+				urlset: summarySitemap.concat(generalSitemap)
+			}
+			const xmlns = {
+				'xmlns': "http://www.sitemaps.org/schemas/sitemap/0.9"
+			}
+			sitemap.urlset.$ = xmlns
+			builder = new xml2js.Builder()
+			xml = builder.buildObject(sitemap)
+			fs.writeFile('dynamic/sitemap.xml', xml)
 		})
 
 	} )
