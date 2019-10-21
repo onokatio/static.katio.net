@@ -61,8 +61,10 @@ fs.readdir('./markdown')
 			fs.writeFile('dynamic/markdownlist', json)
 
 			const summarySitemap = (summaries.map( (item) => {
+				const lastmod = item.metadata.date == undefined ? '2019-01-01' : moment(item.metadata.date, "YYYY-MM-DD HH:mm:ss z").format('YYYY-MM-DD')
 				return { url: {
-						loc: 'https://blog.katio.net/page/' + item.filename.replace(/\.md$/,''), lastmod: '2005-01-01',
+						loc: 'https://blog.katio.net/page/' + item.filename.replace(/\.md$/,''),
+						lastmod: lastmod,
 						changefreq: 'monthly',
 						priority: 1.0
 					}
