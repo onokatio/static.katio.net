@@ -19,10 +19,10 @@ fs.readdir('./markdown')
 				delete metadata.__content
 
 				let title
-				if( ( result = content.match(/^.+\n=+/) ) !== null){
-					title = result[0].split('\n')[0]
-				}else if( ( result = content.match(/^# .+\n/,'')) !== null){
-					title = result[0].split('\n')[0].replace(/^# +/,'')
+				if( ( result = content.match(/^\n*.+\n=+/) ) !== null){
+					title = result[0].replace(/^\n*(.+)\n=+/,'$1')
+				}else if( ( result = content.match(/^\n*# .+\n/)) !== null){
+					title = result[0].replace(/^\n*# (.+)\n/,'$1')
 				}else{
 					title = 'Failed to get title'
 				}
