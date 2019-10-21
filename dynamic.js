@@ -19,7 +19,9 @@ fs.readdir('./markdown')
 				delete metadata.__content
 
 				let title
-				if( ( result = content.match(/^\n*.+\n=+/) ) !== null){
+				if( metadata.title != undefined ){
+					title = metadata.title
+				}else if( ( result = content.match(/^\n*.+\n=+/) ) !== null){
 					title = result[0].replace(/^\n*(.+)\n=+/,'$1')
 				}else if( ( result = content.match(/^\n*# .+\n/)) !== null){
 					title = result[0].replace(/^\n*# (.+)\n/,'$1')
@@ -35,7 +37,7 @@ fs.readdir('./markdown')
 					.replace(/:[a-zA-Z]+:/g,'')     // remove emoji
 					.replace(/\n/g,' ')             // replace newline to space
 
-				return {  filename: filename, title: title, summary: content.slice(0,200)}
+				return {  filename: filename, title: title, summary: content.slice(0,200), metadata: metadata }
 			})
 			json = JSON.stringify(summaries)
 			fs.writeFile('dynamic/markdownlist', json)
