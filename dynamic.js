@@ -1,6 +1,7 @@
 const fetch = require("node-fetch")
 const fs = require('fs').promises
 const xml2js = require('xml2js')
+const yamlFront = require('yaml-front-matter')
 
 fs.readdir('./markdown')
 	.then( (files) => {
@@ -13,6 +14,9 @@ fs.readdir('./markdown')
 		})
 		Promise.all(readPromises).then( (contents) => {
 			const summaries = contents.map( ([content, filename]) => {
+				metadata = yamlFront.loadFront(content)
+				content = metadata.__content
+
 				let title
 				if( ( result = content.match(/^.+\n=+/) ) !== null){
 					title = result[0].split('\n')[0]
