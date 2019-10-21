@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "moment": "^2.24.0",
     "node-fetch": "^2.6.0",
     "xml2js": "^0.4.22",
     "yaml-front-matter": "^4.0.0"
