@@ -1,3 +1,7 @@
+---
+title: LinuxのNSSwitchについて
+date: 2019-10-06 22:29:10 +0900
+---
 LinuxのNSSwitchについて
 ===
 
