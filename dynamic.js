@@ -83,7 +83,7 @@ fs.readdir('./markdown')
 			const xmlns = {
 				'xmlns': "http://www.sitemaps.org/schemas/sitemap/0.9"
 			}
-			sitemap.urlset.$ = xmlns
+			//sitemap.urlset.$ = xmlns
 			builder = new xml2js.Builder()
 			xml = builder.buildObject(sitemap)
 			fs.writeFile('dynamic/sitemap.xml', xml)
