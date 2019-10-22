@@ -1,3 +1,8 @@
+---
+title: Linuxで高音質Bluetoothを使う（AAC,aptX,LDAC）
+date: 2019-07-29 21:29:50 +0900
+---
+
 Linuxで高音質Bluetoothを使う（AAC,aptX,LDAC）
 ===
 
