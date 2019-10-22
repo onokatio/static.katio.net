@@ -1,3 +1,8 @@
+---
+title: dmesg, syslog, journalについて調べてみた
+date: 2019-10-03 20:20:45 +0900
+---
+
 dmesg, syslog, journalについて調べてみた
 ===
 
