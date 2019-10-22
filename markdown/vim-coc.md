@@ -1,3 +1,7 @@
+---
+title: vimにlanguage serverを設定する
+date: 2019-07-27 23:23:24 +0900
+---
 vimにlanguage serverを設定する
 ===
 
