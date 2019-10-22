@@ -1,3 +1,8 @@
+---
+title: 人生15回目ぐらいの#ArchlinuxInstallBattle設計
+date: 2019-07-03 11:51:02 +0900
+---
+
 人生15回目ぐらいの#ArchlinuxInstallBattle設計
 ===
 
