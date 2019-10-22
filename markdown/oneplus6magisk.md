@@ -1,3 +1,7 @@
+---
+title: Oneplus 6 & Android 9 (OxygenOS 9)をTWRPとMagisk導入でroot化する
+date: 2019-01-26 10:55:10 +0000
+---
 Oneplus 6 & Android 9 (OxygenOS 9)をTWRPとMagisk導入でroot化する
 ===
 
