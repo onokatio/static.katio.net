@@ -1,3 +1,8 @@
+---
+title: Cloudflareが1.1.1.1で超高性能DNS始めたし、いっちょ俺のパソコンもDNS over HTTPSしてみる
+date: 2018-04-02 11:44:00 +0900
+---
+
 # Cloudflareが1.1.1.1で超高性能DNS始めたし、いっちょ俺のパソコンもDNS over HTTPSしてみる
 
 はいど〜も！バーチャルYoutuberのおのかちおです！
