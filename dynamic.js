@@ -19,24 +19,28 @@ fs.readdir('./markdown')
 				content = metadata.__content
 				delete metadata.__content
 
+				const hackmd_title_regex = /^\n*(.+)\n=+/
+				const markdown_title_regex = /^\n*# (.+)\n/
+
 				let title
 				if( metadata.title != undefined ){
 					title = metadata.title
-				}else if( ( result = content.match(/^\n*.+\n=+/) ) !== null){
-					title = result[0].replace(/^\n*(.+)\n=+/,'$1')
-				}else if( ( result = content.match(/^\n*# .+\n/)) !== null){
-					title = result[0].replace(/^\n*# (.+)\n/,'$1')
+				}else if( ( result = content.match(hackmd_title_regex) ) !== null){
+					title = result[0].replace(hackmd_title_regex,'$1')
+				}else if( ( result = content.match(markdown_title_regex)) !== null){
+					title = result[0].replace(markdown_title_regex,'$1')
 				}else{
 					title = 'Failed to get title'
 				}
-				content = content.replace(/^.+\n=+/,'') // remove (title \n ===)
-					.replace(/^# .+\n/,'')          // remove (# title\n)
+				content = content.replace(hackmd_title_regex,'') // remove (title \n ===)
+					.replace(markdown_title_regex,'')          // remove (# title\n)
 					.replace(/\n#+ /g,'\n')         // remove markdown sharp
 					.replace(/`/g,'')               // remove markdown back quote
 					.replace(/^ +- /g,'')           // remove markdown hyphen
 					.replace(/\!?\[.*\]\((.+)\)/g,'$1') // remove markdown link
 					.replace(/:[a-zA-Z]+:/g,'')     // remove emoji
 					.replace(/\n/g,' ')             // replace newline to space
+					.replace(/^ +/,'')              // delete prefix space
 
 				return {  filename: filename, title: title, summary: content.slice(0,200), metadata: metadata }
 			})
