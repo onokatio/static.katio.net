@@ -75,7 +75,7 @@ WantedBy=multi-user.target
 
 で、起動&自動起動
 
-```
+```bash
 $ sudo systemctl daemon-reload
 $ sudo systemctl start amazon-das
 $ sudo systemctl enable amazon-das
