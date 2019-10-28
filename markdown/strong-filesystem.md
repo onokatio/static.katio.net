@@ -52,7 +52,7 @@ grubのモジュールや設定ファイル、vmlinuzやinitramfsを置くパー
 
 grubを入れるパーティションです。ここだけは暗号化しません。
 暗号化しないかわりに、セキュアブートを使用します。 
-https://blog.katio.net/#/page/secureboot
+https://blog.katio.net/page/secureboot
 
 # スナップショット
 
