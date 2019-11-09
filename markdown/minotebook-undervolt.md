@@ -285,7 +285,16 @@ Value:
 
 ```
 
-23行目の000000e0がおそらくビンゴです。次の`$offset = $text.IndexOf($offset_text) + 0x37`がよくわかりません、が、ここで`Patches/Voltage Patch/bin`以下にcpusetup_my.txtとcpusetup_patched.txtを見つけました。おそらく製作者の方のものでしょう。diffを取ります。
+23行目の000000e0がおそらくビンゴです。次の`$offset = $text.IndexOf($offset_text) + 0x37`が~~よくわかりません~~、が、ここで`Patches/Voltage Patch/bin`以下にcpusetup_my.txtとcpusetup_patched.txtを見つけました。おそらく製作者の方のものでしょう。diffを取ります。
+
+> 追記: 0x37わかりました。10進数で57ですが、これはcpusetup_my.txtファイル内での当該ビットですね、おそらく。
+>
+>```
+>$ cat cpusetup_my.txt | grep 00E0 | cut -c-57
+>            000000E0: 01 14 28 28 25 25 28 28 25 25 00 01
+>$ cat cpusetup_my.txt | grep 00E0 | cut -c57-57
+>1
+>```
 
 ```
 diff cpusetup_my.txt cpusetup_patched.txt         47c47
