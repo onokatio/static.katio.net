@@ -370,6 +370,12 @@ Long term package power: 50 W, 28.000 s, enabled
 
 無事、低電圧化の設定に完了しました。これで少しでもバッテリーが長持ちすれば嬉しいですね。
 
+# 自動起動
+
+```
+$ sudo systemctl enable intel-undervolt
+```
+
 以上、休日の作業履歴でしたー。
 
 参考: https://wiki.archlinux.jp/index.php/CPU_%E3%81%AE%E4%BD%8E%E9%9B%BB%E5%9C%A7%E5%8C%96#intel-undervolt
