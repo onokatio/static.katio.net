@@ -753,6 +753,6 @@ Section "Screen"
 EndSectionx
 ```
 
-で、`nvidia-xsettings`のPowerMizerからクロックとメモリをそれぞれ+1000Mhz +60Mhz。
+で、`nvidia-xsettings`のPowerMizerからクロックとメモリをそれぞれ+60Mhz +1000Mhz。
 
 参考: https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods#overclock-mx150-gpu
