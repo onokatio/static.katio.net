@@ -714,3 +714,45 @@ ecryptfsを使ってホームディレクトリを暗号化する。
 
 rng-toolsを入れて乱数生成のソースを増やします。
 https://wiki.archlinux.jp/index.php/Rng-tools
+
+# GPUのオーバークロックを有効にする
+
+```
+$ sudo nvidia-xconfig --cool-bits=28
+```
+
+これでcool-bitsを有効にしたnvidiaお手製xorg.confが生成される。ちなみにnvidia-xconfigに頼らず動いてるxorg.confを一応載せておく。
+
+```
+Section "ServerLayout"
+    Identifier "layout"
+    Screen 0 "nvidia"
+    Inactive "intel"
+EndSection
+
+Section "Device"
+    Identifier "nvidia"
+    Driver "nvidia"
+    BusID "PCI:01:00:0"
+EndSection
+
+Section "Screen"
+    Identifier "nvidia"
+    Device "nvidia"
+    Option "AllowEmptyInitialConfiguration"
+EndSection
+
+Section "Device"
+    Identifier "intel"
+    Driver "modesetting"
+EndSection
+
+Section "Screen"
+    Identifier "intel"
+    Device "intel"
+EndSectionx
+```
+
+で、`nvidia-xsettings`のPowerMizerからクロックとメモリをそれぞれ+1000Mhz +60Mhz。
+
+参考: https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods#overclock-mx150-gpu
