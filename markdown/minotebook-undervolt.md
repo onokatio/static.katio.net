@@ -93,7 +93,7 @@ Long term package power: 50 W, 28.000 s, enabled
 
 ひとまず、項目がdeprecatedと表記されているので、githubのドキュメントを読みつつ最新の設定項目名に変更しました。
 
-```
+```diff
 $ diff <(curl -SsL https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods/raw/master/Linux%20Scripts/intel-undervolt.conf) /etc/intel-undervolt.conf
 5c5
 < apply 0 'CPU' -105
