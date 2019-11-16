@@ -762,4 +762,5 @@ EndSectionx
 ```
 $ yay -S pakbak-git
 $ sudo systemctl enable pakbak.path
+$ sudo btrfs subvolume create pakbak
 ```
