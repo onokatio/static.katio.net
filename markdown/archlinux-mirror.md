@@ -6,7 +6,7 @@ date: 2019-11-16 22:14:00 +0900
 Archlinuxのミラーサーバーを構築する
 ===
 
-参考: https://wiki.archlinux.jp/index.php/%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%9F%E3%83%A9%E3%83%BC
+参考: [https://wiki.archlinux.jp/index.php/ローカルミラー](https://wiki.archlinux.jp/index.php/%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%9F%E3%83%A9%E3%83%BC)
 
 Archlinuxのミラーサーバーを立ましょう。
 
