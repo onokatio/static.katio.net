@@ -756,3 +756,10 @@ EndSectionx
 で、`nvidia-xsettings`のPowerMizerからクロックとメモリをそれぞれ+60Mhz +1000Mhz。
 
 参考: https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods#overclock-mx150-gpu
+
+# pacmanデータベースの自動バックアップ
+
+```
+$ yay -S pakbak-git
+$ sudo systemctl enable pakbak.path
+```
