@@ -6,12 +6,12 @@ date: 2019-07-10 15:05:17 +0900
 人生15回目ぐらいの#ArchlinuxInstallBattle実践
 ===
 
-https://blog.katio.net/#/page/archlinuxinstall の実践編です。
+https://blog.katio.net/page/archlinuxinstall の実践編です。
 
 # ファイルシステムを作る
 
 これに関しては別の記事に記述します。
-https://blog.katio.net/#/page/strong-filesystem
+https://blog.katio.net/page/strong-filesystem
 
 # 最低限でpacstrap
 
