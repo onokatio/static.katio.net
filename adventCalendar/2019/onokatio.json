@@ -1,7 +1,7 @@
 {
 	"name": "onokatio Advent Calendar 2019",
 	"posts": {
-		1: {"day": 1, "title": "自己紹介 & このアドベントカレンダーについて", "url": "https://example.com"},
-		2: {"day": 2, "title": "マークダウンを描画するブログを自作した話", "url": "https://example.com"}
+		"1": {"day": 1, "title": "自己紹介 & このアドベントカレンダーについて", "url": "https://example.com"},
+		"2": {"day": 2, "title": "マークダウンを描画するブログを自作した話", "url": "https://example.com"}
 	}
 }
