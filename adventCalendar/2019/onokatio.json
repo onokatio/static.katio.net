@@ -1,6 +1,6 @@
 {
 	"name": "onokatio Advent Calendar 2019",
 	"posts": [
-		{"day": 1, "url": "https://example.com"}
+		{"day": 1, "title": "テスト1", "url": "https://example.com"}
 	]
 }
