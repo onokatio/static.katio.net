@@ -37,7 +37,7 @@ fs.readdir('./post')
 					.replace(/\n#+ /g,'\n')         // remove markdown sharp
 					.replace(/`/g,'')               // remove markdown back quote
 					.replace(/^ +- /g,'')           // remove markdown hyphen
-					.replace(/\!?\[.*\]\((.+)\)/g,'$1') // remove markdown link
+					.replace(/\!?\[(.*)\]\((.+)\)/g,'$1') // remove markdown link
 					.replace(/:[a-zA-Z]+:/g,'')     // remove emoji
 					.replace(/\n/g,' ')             // replace newline to space
 					.replace(/^ +/,'')              // delete prefix space
