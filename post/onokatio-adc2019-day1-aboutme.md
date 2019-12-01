@@ -6,7 +6,7 @@ date: 2019-12-01 23:56:00 +0900
 自己紹介 & このアドベントカレンダーについて
 ===
 
-この記事は、onokatio Advent Calendar 1日目の記事です。  
+この記事は、[onokatio Advent Calendar](https://blog.katio.net/adventcalendar/2019/onokatio) 1日目の記事です。  
 こんにちは。自分は「おのかちお」と言います。
 インフラやネットワーク、バックエンド、フロントエンドをこよなく愛する高専生です。  
 
