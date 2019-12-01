@@ -4,13 +4,13 @@ const xml2js = require('xml2js')
 const yamlFront = require('yaml-front-matter')
 const moment = require('moment')
 
-fs.readdir('./markdown')
+fs.readdir('./post')
 	.then( (files) => {
 		files = files.filter( (filename) => filename.endsWith('.md'))
 			.filter( (filename) => filename !== ('index.md') )
 			.filter( (filename) => filename !== ('404.md') )
 		readPromises = files.map( (filename) => {
-			return fs.readFile('./markdown/' + filename, "utf-8")
+			return fs.readFile('./post/' + filename, "utf-8")
 				.then( (content) => Promise.resolve([content, filename]) )
 		})
 		Promise.all(readPromises).then( (contents) => {
