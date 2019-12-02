@@ -142,7 +142,7 @@ github pagesではなく、netlifyを導入しました。これが大きな転�
 
 netlifyでは、redirectとrewriteが可能です。例えばドキュメントルートに以下のように`_redirects`という名前のファイルを作成します。
 
-```
+```toml
 /* / 200
 ```
 
@@ -152,7 +152,7 @@ netlifyでは、redirectとrewriteが可能です。例えばドキュメント�
 
 そのため、コードには以下のような変更が発生しました。
 
-```
+```js
 			pathname = location.pathname
 			if ( pathname.startsWith('/page/') ) {
 				filename = 'markdown/' + location.pathname.slice(6) + '.md'
@@ -172,7 +172,7 @@ Googleはbotがjsを一定時間実行し、DOMから検索キーワードを抽
 
 netlifyには、一部のbotアクセス時にjsを事前レンダリングしたhtmlを返してくれる機能があります。これを使い、jsではあとからogp metaタグを追加するだけでよくなりました。
 
-```
+```js
 document.querySelector("meta[name='description']").setAttribute('content', summary)
 document.querySelector("meta[property='og:description']").setAttribute('content', summary)
 document.querySelector("meta[property='og:title']").setAttribute('content', title + " - おのかちお's blog")
@@ -188,7 +188,7 @@ https://github.com/onokatio/static.katio.net/tree/master/post
 
 このリポジトリにCIを追加し、以下のようなnode.jsファイルが動作するようにしました。
 
-```
+```js
 fs.readdir('./post')
 	.then( (files) => {
 		files = files.filter( (filename) => filename.endsWith('.md'))
