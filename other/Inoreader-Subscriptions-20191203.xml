@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head>
+    <title>Subscriptions of from Inoreader [https://www.inoreader.com]</title>
+  </head>
+  <body>
+    <outline text="ARuFaの日記" title="ARuFaの日記" type="rss" xmlUrl="http://arufa.hatenablog.jp/feed" htmlUrl="http://arufa.hatenablog.jp/"/>
+    <outline text="技術ブログ" title="技術ブログ">
+      <outline text="blog.jxck.io" title="blog.jxck.io" type="rss" xmlUrl="https://blog.jxck.io/feeds/atom.xml" htmlUrl="https://blog.jxck.io/"/>
+    </outline>
+    <outline text="Gadgets" title="Gadgets">
+      <outline text="gori.me（ゴリミー）" title="gori.me（ゴリミー）" type="rss" xmlUrl="http://gori.me/feed" htmlUrl="http://gori.me/"/>
+      <outline text="BUZZAP！（バザップ！）BUZZAP！（バザップ！）" title="BUZZAP！（バザップ！）BUZZAP！（バザップ！）" type="rss" xmlUrl="https://buzzap.jp/feed/" htmlUrl="https://buzzap.jp/"/>
+      <outline text="Gadgets (latest) :: Kicktraq" title="Gadgets (latest) :: Kicktraq" type="rss" xmlUrl="https://www.kicktraq.com/categories/technology/gadgets/latest.rss" htmlUrl="http://www.kicktraq.com/technology/gadgets/"/>
+      <outline text="ROOMIE（ルーミー）" title="ROOMIE（ルーミー）" type="rss" xmlUrl="https://www.roomie.jp/feed" htmlUrl="https://www.roomie.jp/"/>
+      <outline text="＆GP" title="＆GP" type="rss" xmlUrl="https://www.goodspress.jp/feed/" htmlUrl="https://www.goodspress.jp/"/>
+      <outline text="DIY Electronics (latest) :: Kicktraq" title="DIY Electronics (latest) :: Kicktraq" type="rss" xmlUrl="https://www.kicktraq.com/categories/technology/diy%20electronics/latest.rss" htmlUrl="http://www.kicktraq.com/technology/DIY%20electronics/"/>
+      <outline text="AV Watch" title="AV Watch" type="rss" xmlUrl="http://ftr.fivefilters.org/makefulltextfeed.php?url=http%3A%2F%2Frss.rssad.jp%2Frss%2Favwatch%2Fav.rdf&amp;max=10" htmlUrl="http://rss.rssad.jp/rss/avwatch/av.rdf"/>
+      <outline text="Techable（テッカブル） -海外・国内のネットベンチャー系ニュースサイト" title="Techable（テッカブル） -海外・国内のネットベンチャー系ニュースサイト" type="rss" xmlUrl="https://techable.jp/feed" htmlUrl="https://techable.jp/"/>
+      <outline text="Hardware (latest) :: Kicktraq" title="Hardware (latest) :: Kicktraq" type="rss" xmlUrl="https://www.kicktraq.com/categories/technology/hardware/latest.rss" htmlUrl="http://www.kicktraq.com/technology/hardware/"/>
+      <outline text="ITmedia ガジェット 最新記事一覧" title="ITmedia ガジェット 最新記事一覧" type="rss" xmlUrl="http://rss.itmedia.co.jp/rss/2.0/gadget.xml" htmlUrl="http://gadget.itmedia.co.jp/"/>
+      <outline text="geared" title="geared" type="rss" xmlUrl="http://geared.jp/feed" htmlUrl="http://geared.jp/"/>
+      <outline text="ITmedia PC USER 最新記事一覧" title="ITmedia PC USER 最新記事一覧" type="rss" xmlUrl="https://rss.itmedia.co.jp/rss/2.0/pcuser.xml" htmlUrl="http://www.itmedia.co.jp/pcuser/"/>
+      <outline text="juggly.cn" title="juggly.cn" type="rss" xmlUrl="http://feeds.feedburner.com/Jugglycn" htmlUrl="http://juggly.cn/"/>
+      <outline text="makuake" title="makuake" type="rss" xmlUrl="https://www.makuake.com/rss/" htmlUrl="https://www.makuake.com/"/>
+      <outline text="ガジェット通信 デジタル・IT" title="ガジェット通信 デジタル・IT" type="rss" xmlUrl="https://getnews.jp/cat/digital/feed" htmlUrl="https://getnews.jp/"/>
+      <outline text="ギズモード・ジャパン" title="ギズモード・ジャパン" type="rss" xmlUrl="https://www.gizmodo.jp/index.xml" htmlUrl="https://www.gizmodo.jp/"/>
+      <outline text="pasoju(パソ充)" title="pasoju(パソ充)" type="rss" xmlUrl="https://pasoju.com/feed/" htmlUrl="https://pasoju.com/"/>
+      <outline text="WIRED.jp最新情報 Feed – WIRED.jp" title="WIRED.jp最新情報 Feed – WIRED.jp" type="rss" xmlUrl="https://wired.jp/rssfeeder/" htmlUrl="https://wired.jp/"/>
+      <outline text="Engadget Japanese RSS Feed" title="Engadget Japanese RSS Feed" type="rss" xmlUrl="http://japanese.engadget.com/rss.xml" htmlUrl="http://japanese.engadget.com/"/>
+      <outline text="物欲ガジェット.com" title="物欲ガジェット.com" type="rss" xmlUrl="https://butsuyoku-gadget.com/feed/" htmlUrl="https://butsuyoku-gadget.com/"/>
+      <outline text="9to5Google" title="9to5Google" type="rss" xmlUrl="https://9to5google.com/feed/" htmlUrl="https://9to5google.com/"/>
+    </outline>
+    <outline text="IT" title="IT">
+      <outline text="TechCrunch Japan » TechCrunch" title="TechCrunch Japan » TechCrunch" type="rss" xmlUrl="http://jp.techcrunch.com/feed/" htmlUrl="http://jp.techcrunch.com/"/>
+      <outline text="窓の杜" title="窓の杜" type="rss" xmlUrl="https://forest.watch.impress.co.jp/data/rss/1.0/wf/feed.rdf" htmlUrl="https://forest.watch.impress.co.jp/"/>
+      <outline text="ライフハッカー［日本版］" title="ライフハッカー［日本版］" type="rss" xmlUrl="http://feeds.lifehacker.jp/rss/lifehacker/index.xml" htmlUrl="http://www.lifehacker.jp/"/>
+      <outline text="CNET Japan 最新情報　総合" title="CNET Japan 最新情報　総合" type="rss" xmlUrl="http://feed.japan.cnet.com/rss/index.rdf" htmlUrl="http://japan.cnet.com/"/>
+      <outline text="男子ハック" title="男子ハック" type="rss" xmlUrl="https://www.danshihack.com/feed" htmlUrl="https://www.danshihack.com/feed"/>
+      <outline text="白ペンギン" title="白ペンギン" type="rss" xmlUrl="http://shiropen.com/feed" htmlUrl="http://shiropen.com/"/>
+      <outline text="Publickey" title="Publickey" type="rss" xmlUrl="http://www.publickey1.jp/atom.xml" htmlUrl="http://www.publickey1.jp/"/>
+      <outline text="OSDN Magazine" title="OSDN Magazine" type="rss" xmlUrl="https://mag.osdn.jp/rss" htmlUrl="https://mag.osdn.jp/"/>
+      <outline text="ZDNet Japan 最新情報　総合" title="ZDNet Japan 最新情報　総合" type="rss" xmlUrl="http://ftr.fivefilters.org/makefulltextfeed.php?url=http%3A%2F%2Ffeeds.japan.zdnet.com%2Frss%2Fzdnet%2Fall.rdf&amp;max=3" htmlUrl="http://feeds.japan.zdnet.com/rss/zdnet/all.rdf"/>
+      <outline text="GIGAZINE" title="GIGAZINE" type="rss" xmlUrl="http://gigazine.net/news/rss_2.0/" htmlUrl="http://gigazine.net/"/>
+      <outline text="Mogura VR" title="Mogura VR" type="rss" xmlUrl="https://www.moguravr.com/feed" htmlUrl="https://www.moguravr.com/"/>
+    </outline>
+    <outline text="Blockchain" title="Blockchain">
+      <outline text="Develop with pleasure!" title="Develop with pleasure!" type="rss" xmlUrl="http://techmedia-think.hatenablog.com/rss" htmlUrl="http://techmedia-think.hatenablog.com/"/>
+      <outline text="The Coffee Times" title="The Coffee Times" type="rss" xmlUrl="http://coffeetimes.hatenadiary.jp/feed" htmlUrl="http://coffeetimes.hatenadiary.jp/"/>
+      <outline text="イーサリアム・ジャパン" title="イーサリアム・ジャパン" type="rss" xmlUrl="https://ethereum-japan.net/feed/" htmlUrl="https://ethereum-japan.net/"/>
+      <outline text="Ethereumタグが付けられた新着投稿 - Qiita" title="Ethereumタグが付けられた新着投稿 - Qiita" type="rss" xmlUrl="https://qiita.com/tags/Ethereum/feed.atom" htmlUrl="https://qiita.com/"/>
+      <outline text="ZOOM | ブロックチェーンと仮想通貨の情報サイト" title="ZOOM | ブロックチェーンと仮想通貨の情報サイト" type="rss" xmlUrl="https://zoom-blc.com/feed" htmlUrl="https://zoom-blc.com/"/>
+    </outline>
+  </body>
+</opml>
