@@ -33,7 +33,7 @@ Google Play Storeから入手するか、もしくはGithubのリポジトリの
 
 Archlinux環境を前提に話を進めます。
 
-```
+```shell
 $ yay -S an2linuxserver-git
 $ sudo powerpill -S libnotify python-pybluez
 ```
@@ -62,13 +62,13 @@ system serviceとしてもuser serviceとしても提供されていますが、
 
 まず、AN2Linuxは`/var/run/sdp`を使用しbluetoothdを会話します。その機能を有効にします。
 
-```
+```shell
 $ systemctl edit bluetooth.service
 ```
 
 以下のように追記します。
 
-```
+```ini
 [Service]
 ExecStart=
 ExecStart=/usr/lib/bluetooth/bluetoothd -C
@@ -80,7 +80,7 @@ ExecStartPost=/bin/chmod 662 /var/run/sdp
 
 次に、ペアリングをします。ペアリングをする場合は標準入力で操作が必要なので、systemdサービスではなく直接pythonファイルを起動します。
 
-```
+```shell
 $ /usr/bin/an2linuxserver.py
 ```
 
@@ -89,7 +89,7 @@ $ /usr/bin/an2linuxserver.py
 
 INITIATEPARING WITH SERVERを選択し、SAVEを惜します。そうすると、pythonではこのような表示が出ているはずです:
 
-```
+```shell
 2019-12-04 23:07:28.361 root         INFO     Server certificate fingerprint:   (an2linuxserver.py:809)
 2019-12-04 23:07:28.364 root         INFO     (Bluetooth) Waiting for connections on RFCOMM channel 1 (an2linuxserver.py:858)
 2019-12-04 23:07:34.215 root         INFO     (Bluetooth) Pair request from: 
@@ -109,7 +109,7 @@ Enter "yes" to accept pairing or "no" to deny (Client accepted pairing):
 
 次に、サービスを起動します。
 
-```
+```shell
 $ systemctl start an2linuxserver.service
 $ systemctl enable an2linuxserver.service
 ```
