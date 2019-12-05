@@ -107,7 +107,7 @@ $ ykman piv unblock-pin
 ## PUKコードの変更
 
 ```console
-$ ykman piv unblock-pin
+$ ykman piv change-puk
 ```
 
 ## PIVリセット
