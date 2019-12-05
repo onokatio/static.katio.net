@@ -4,6 +4,7 @@
 		"1": {"title": "自己紹介 & このアドベントカレンダーについて", "url": "https://blog.katio.net/page/onokatio-adc2019-day1-aboutme"},
 		"2": {"title": "ぼくのかんがえたさいきょうのぶろぐふれーむわーくをつくってみた", "url": "https://blog.katio.net/page/onokatio-adc2019-day2-about-blog"},
 		"3": {"title": "普段の情報収集に使っているツールについて", "url": "https://blog.katio.net/page/onokatio-adc2019-day3-about-news-gathering"},
-		"4": {"title": "AN2Linux でAndroidスマートフォンの通知をLinuxデスクトップから受け取る", "url": "https://blog.katio.net/page/onokatio-adc2019-day4-an2linux"}
+		"4": {"title": "AN2Linux でAndroidスマートフォンの通知をLinuxデスクトップから受け取る", "url": "https://blog.katio.net/page/onokatio-adc2019-day4-an2linux"},
+		"5": {"title": "GPGを本格的に運用する", "url": "https://blog.katio.net/page/onokatio-adc2019-day5-gpg-setup"}
 	}
 }
