@@ -6,6 +6,7 @@
 		"3": {"title": "普段の情報収集に使っているツールについて", "url": "https://blog.katio.net/page/onokatio-adc2019-day3-about-news-gathering"},
 		"4": {"title": "AN2Linux でAndroidスマートフォンの通知をLinuxデスクトップから受け取る", "url": "https://blog.katio.net/page/onokatio-adc2019-day4-an2linux"},
 		"5": {"title": "GPGを本格的に運用する", "url": "https://blog.katio.net/page/onokatio-adc2019-day5-gpg-setup"},
-		"6": {"title": "自作ブログにアドベントカレンダーを追加した話", "url": "https://blog.katio.net/page/onokatio-adc2019-day6-adc-implemantation"}
+		"6": {"title": "自作ブログにアドベントカレンダーを追加した話", "url": "https://blog.katio.net/page/onokatio-adc2019-day6-adc-implemantation"},
+		"7": {"title": "Source Han Monoフォントをnerd font化して使ってみる", "url": "https://blog.katio.net/page/onokatio-adc2019-day7-sourcehan-nerdfont"}
 	}
 }
