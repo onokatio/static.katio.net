@@ -6,7 +6,7 @@ date: 2019-12-08 20:17:00 +0900
 書式指定文字列攻撃について
 ===
 
-この記事は、[onokatio Advent Calendar 2019](https://blog.katio.net/adventcalendar/2019/onokatio) 8日目の記事です。  
+この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 8日目の記事です。  
 
 # printfと書式について
 
