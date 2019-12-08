@@ -192,8 +192,6 @@ taskctf{XXXXXXXX}
 
 ということで、フラグが出てくるはずです（なぜはず、かというと、自分の環境で再現性がなかったため）
 
-https://hackmd.io/@GwKgGVbfQqOF-8-BNndFfQ/Hylm_zq6S
-
 # 書き込み %n
 
 
