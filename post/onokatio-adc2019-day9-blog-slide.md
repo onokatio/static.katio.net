@@ -6,7 +6,7 @@ date: 2019-12-09 23:53:00 +0900
 自作ブログにスライド表示機能をつけた
 ===
 
-この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 8日目の記事です。  
+この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 9日目の記事です。  
 
 以前、このブログは自力でスクラッチから作成していると話しました。今回、ブログにマークダウンで書いた文章をスライドとして表示させる機能を追加したので、ゆるく解説します。
 
