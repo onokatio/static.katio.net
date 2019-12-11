@@ -9,6 +9,8 @@
 		"6": {"title": "自作ブログにアドベントカレンダーを追加した話", "url": "https://blog.katio.net/page/onokatio-adc2019-day6-adc-implemantation"},
 		"7": {"title": "Source Han Monoフォントをnerd font化して使ってみる", "url": "https://blog.katio.net/page/onokatio-adc2019-day7-sourcehan-nerdfont"},
 		"8": {"title": "書式指定文字列攻撃について", "url": "https://blog.katio.net/page/onokatio-adc2019-day8-format-string-attack"},
-		"9": {"title": "自作ブログにスライド表示機能をつけた", "url": "https://blog.katio.net/page/onokatio-adc2019-day9-blog-slide"}
+		"9": {"title": "自作ブログにスライド表示機能をつけた", "url": "https://blog.katio.net/page/onokatio-adc2019-day9-blog-slide"},
+		"10": {"title": "フロントエンドの環境を勉強しつつブログをナウいコードにする", "url": "https://blog.katio.net/page/onokatio-adc2019-day10-blog-webpack-installation"},
+		"11": {"title": "ansible/helmでのk8s アプリケーション管理", "url": "https://blog.katio.net/page/onokatio-adc2019-day11-helm-ansible"}
 	}
 }
