@@ -13,6 +13,7 @@
 		"10": {"title": "フロントエンドの環境を勉強しつつブログをナウいコードにする", "url": "https://blog.katio.net/page/onokatio-adc2019-day10-blog-webpack-installation"},
 		"11": {"title": "ansible/helmでのk8s アプリケーション管理", "url": "https://blog.katio.net/page/onokatio-adc2019-day11-helm-ansible"},
 		"12": {"title": "webpackをsass対応 & CSSインポートしてみる", "url": "https://blog.katio.net/page/onokatio-adc2019-day12-webpack-css-loader"},
-		"13": {"title": "pLaTeXの環境構築をする", "url": "https://blog.katio.net/page/onokatio-adc2019-day13-platex-install"}
+		"13": {"title": "pLaTeXの環境構築をする", "url": "https://blog.katio.net/page/onokatio-adc2019-day13-platex-install"},
+		"14": {"title": "FlatpakをArchlinuxで運用する", "url": "https://blog.katio.net/page/onokatio-adc2019-day14-flatpak"}
 	}
 }
