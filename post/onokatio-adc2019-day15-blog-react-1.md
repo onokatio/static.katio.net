@@ -36,7 +36,7 @@ webpackでは、.jsファイルを読み込む際にbabelを使用してJSXをJa
 
 ## babelのインストール
 
-```
+```shell
 $ npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
 ```
 
@@ -64,7 +64,7 @@ webpackのインストール自体は既にできているため、割愛しま�
 
 webpackからbabelを使えるようになりましょう。babelローダーを追加します。
 
-```
+```shell
 $ npm install --save-dev babel-loader
 ```
 
