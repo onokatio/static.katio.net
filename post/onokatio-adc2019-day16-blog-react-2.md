@@ -6,7 +6,7 @@ date: 2019-12-17 00:13:00 +0900
 Reactを勉強してブログに導入した その2
 ===
 
-この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 15日目の記事です。  
+この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 16日目の記事です。  
 
 昨日に引き続き、ブログのReact移行を行います。
 
