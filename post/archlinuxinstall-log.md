@@ -768,11 +768,12 @@ $ sudo btrfs subvolume create pakbak
 # manコマンドの自動化
 
 ```
-$ man-pages-ja-git
+$ yay -S man-pages-ja-git
+$ yay -S man-pages-openssh-ja
 ```
 
 zshrcに以下を追記
 
 ```
-man-pages-ja-git
+alias man='LANG=ja_JP.UTF-8 man'
 ```
