@@ -764,3 +764,15 @@ $ yay -S pakbak-git
 $ sudo systemctl enable pakbak.path
 $ sudo btrfs subvolume create pakbak
 ```
+
+# manコマンドの自動化
+
+```
+$ man-pages-ja-git
+```
+
+zshrcに以下を追記
+
+```
+man-pages-ja-git
+```
