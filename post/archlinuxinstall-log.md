@@ -764,3 +764,16 @@ $ yay -S pakbak-git
 $ sudo systemctl enable pakbak.path
 $ sudo btrfs subvolume create pakbak
 ```
+
+# manコマンドの自動化
+
+```
+$ yay -S man-pages-ja-git
+$ yay -S man-pages-openssh-ja
+```
+
+zshrcに以下を追記
+
+```
+alias man='LANG=ja_JP.UTF-8 man'
+```
