@@ -64,6 +64,10 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - [短歌Bot](https://github.com/onokatio/tanka)
 - [Java勉強の成果みたいなの](https://github.com/onokatio/2world)
 
+## 今までに作ったPull RequsetとIssue
+
+https://github.com/pulls?page=1&q=author%3Aonokatio+sort%3Aupdated-desc+is%3Aclosed+is%3Apublic
+
 ## スキルセット
 
 ### コーディング
