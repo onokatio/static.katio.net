@@ -777,3 +777,9 @@ zshrcに以下を追記
 ```
 alias man='LANG=ja_JP.UTF-8 man'
 ```
+
+# homectlでユーザー作成
+
+```
+homectl create onokatio --shell=/usr/bin/zsh -G tor,lock,vboxusers,wireshark,audit,freenet,zeronet,adbusers,docker,video,uucp,render,lp,input,wheel,onokatio --language=en_US.UTF-8 --memory-high=14G --memory-max=15G --storage=luks --fs-type=btrfs
+```
