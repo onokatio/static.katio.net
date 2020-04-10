@@ -783,3 +783,48 @@ alias man='LANG=ja_JP.UTF-8 man'
 ```
 homectl create onokatio --shell=/usr/bin/zsh -G tor,lock,vboxusers,wireshark,audit,freenet,zeronet,adbusers,docker,video,uucp,render,lp,input,wheel,onokatio --language=en_US.UTF-8 --memory-high=14G --memory-max=15G --storage=luks --fs-type=btrfs
 ```
+
+# EFISTUB
+
+カーネルをEFISTUBで起動する。`/boot/efi/`以下にESPがマウントされている前提。
+
+`/etc/systemd/system/efistub-update.path`を以下のように作成。
+
+```
+[Unit]
+Description=Copy EFISTUB Kernel to UEFISYS Partition
+
+[Path]
+PathChanged=/boot/
+
+[Install]
+WantedBy=multi-user.target
+WantedBy=system-update.target
+```
+
+`efistub-update.service`も作る。
+
+```
+[Unit]
+Description=Copy EFISTUB Kernel to UEFISYS Partition
+
+[Service]
+Type=oneshot
+
+ExecStartPre=/usr/bin/sh -c '/usr/bin/cat /boot/intel-ucode.img /boot/initramfs-linux.img > /boot/initramfs-linux+ucode.img'
+ExecStart=/usr/bin/objcopy --add-section .osrel="/usr/lib/os-release" --change-section-vma .osrel=0x20000 --add-section .cmdline="/boot/efi/EFI/kernel-command-line.txt" --change-section-vma .cmdline=0x30000 --add-section .linux=/boot/vmlinuz-linux --change-section-vma .linux=0x40000 --add-section .initrd=/boot/initramfs-linux+ucode.img --change-section-vma .initrd=0x3000000 "/usr/lib/systemd/boot/efi/linuxx64.efi.stub" "/boot/efi/EFI/Linux.efi"
+```
+
+で、カーネルコマンドラインを`/boot/efi/EFI/kernel-command-line.txt`に書き込む。
+
+```
+root=/dev/mapper/kirino-root rw rootflags=subvol=root initrd=/intel-ucode.img initrd=/initramfs-linux.img cryptdevice=PARTUUID=d8f58add-82a9-a34f-8d18-cb3877396a0e:cryptlvm:header resume=/dev/mapper/kirino-swap
+```
+
+最後にefibootmgrでブートエントリ作成。
+
+```
+$ efibootmgr -d /dev/nvme1n1p1 -p 1 -c -L "Arch Linux EFISTUB" -l /EFI/Linux.efi
+```
+
+これで、`/boot` 更新時に、vmlinuzとinitramfsとマイクロコードがまとめられたefiバイナリがロードされる。
