@@ -3,11 +3,11 @@ title: ルート以下を吹き飛ばした男が作った、泣かない最強�
 date: 2019-07-10 23:58:24 +0900
 ---
 
-ルート以下を吹き飛ばした男が作った、泣かない最強のファイルシステム構成
+ルート以下を吹き飛ばした男が作った、泣かない使うべきではない言葉なので修正してくださいのファイルシステム構成
 ===
 
 先日、`cd /`した状態で`sudo rm -rf *`を実行してしばらく放心状態になっていました。
-と、いうことで、OSを再インストールしつつ最強のファイルシステム構成を作っていきます。
+と、いうことで、OSを再インストールしつつ使うべきではない言葉なので修正してくださいのファイルシステム構成を作っていきます。
 
 # 実現したいこと
 
@@ -109,7 +109,7 @@ UUID=e8125144-4a36-4f45-bed9-817503407235       /etc/.git       btrfs           
 
 ## パーティション切り
 
-fdiskで、nvme ssdに３つのパーティションを作成します。
+fdiskで、nvme ssdに3つのパーティションを作成します。
 1つはEFI、もう1つはext4、最後がLVMです。
 
 ```
@@ -146,7 +146,7 @@ $ sudo cryptsetup luksOpen --header header.img /dev/nvme0n1p3 cryptbootcryptlvm
 
 次はlvmの設定します。
 
-参考: https://qiita.com/onokatio/items/6af256524397ae8ddc79
+参考： https://qiita.com/onokatio/items/6af256524397ae8ddc79
 
 ```
 $ sudo pvcreate /dev/mapper/cryptlvm
@@ -270,7 +270,7 @@ $ sudo mv /etc/.git_old/* /etc/.git/
 
 以上、fstabにも追加して終了。
 
-# 追記: バックアップ
+# 追記： バックアップ
 
 snapperはほ消しちゃったファイルの復元なんかにつかいます。
 そもそもファイルシステム全体をバックアップするためには別にディスクをつないでそこへコピーしてあげる必要があります。
@@ -296,7 +296,7 @@ $ sudo snap-sync -c root -u cbb989c9-f01b-4f12-bfbf-fab53bf20546
 $ sudo snap-sync -c root -u cbb989c9-f01b-4f12-bfbf-fab53bf20546
 ```
 
-# 追記: 圧縮
+# 追記： 圧縮
 
 btrfsは透過圧縮をサポートしています。lzoを使うとCPUをあまり使わずにそこそこディスク読み書きが高速化するらしいです。
 ※特段実験はしていない。

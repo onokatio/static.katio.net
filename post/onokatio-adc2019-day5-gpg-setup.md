@@ -12,17 +12,17 @@ GPGを本格的に運用する
 
 GPG(GNU Prvacy Guard)は、PGP(Pretty Good Privacy)のGNU実装です。主に、公開鍵暗号を使った暗号化、復号化、電子署名の作成、検証が行なえます。
 
-GPG/PGP互換の暗号/署名プロトコルは、電子メールやgit、keybase等で使用されています。
+GPG/PGP互換の暗号/署名プロトコルは、電子メールやGit、keybase等で使用されています。
 
 今回は、今までないがしろにしていたLinux内部のGPGをきちんと設定し、身の回りで使っていくことを目標とします。
 
 # 鍵の概念
 
-公開鍵暗号にあまり詳しくない方向けに書きました。ご存知の方はさくっと読み飛ばしてください。
+公開鍵暗号にあまり詳しくないほう向けに書きました。ご存知の方はさくっと読み飛ばしてください。
 
 軽くまとめてみます。
 GPGは、master keyと、subkeyの2種類の鍵ペアが存在します。  
-master keyは主にsubkeyへ署名するためにだけ使用し、普段の操作にはmaster keyの虎の威を借りた（これを証明証チェーンだとか、トラストチェーンと呼びます）subkeyを使用します。
+master keyは主にsubkeyへ署名するためにだけ使用し、普段の操作にはmaster keyの虎の威を借りた（これを証明証チェインだとか、トラストチェインと呼びます）subkeyを使用します。
 
 つまり、master keyの秘密鍵でsubkeyの公開鍵を署名し、subkeyはもらった署名を大事に保管し各地で見せびらかします。これにより、subkeyはmaster keyの持ち主が発行した有効な鍵であることの証明ができます。
 
@@ -33,7 +33,7 @@ master keyは主にsubkeyへ署名するためにだけ使用し、普段の操�
 参考。
 
 自分が書いた過去のブログ : https://blog.katio.net/page/Yubikey  
-Archwiki : https://wiki.archlinux.jp/index.php/GnuPG  
+ArchWiki : https://wiki.archlinux.jp/index.php/GnuPG  
 https://text.baldanders.info/openpgp/gnupg-cheat-sheet/
 
 では、鍵を生成します。
@@ -66,7 +66,7 @@ https://developers.yubico.com/PGP/Importing_keys.html
 
 - YubikeyのPIVには、9a 9c 9d 9eの計4つの「スロット」があります。 つまり、4つの秘密鍵を保管できます
 - YubikeyのPIV鍵は、PINコードで保護されており、PINコードを入力しないとYubikeyに物理的にアクセスできても使うことはできません
-- 9a 9c 9d 9eの各スロットは、もともとは利用目的があるため、微妙にPINコードの管理が異なります。 9aと9dは、認証に使うため（パソコンにセットするとか）に作られたため、一度PINコードを入力するとUSB接続が切れるまで使えます。 9cはファイルのデジタル署名に使うため、署名するたびにPINコードが必要になります。 9eは、建物の入館時のドアロックの解除などに使うため、PINコードが必要ありません。 まーーー我々は連邦職員じゃないので、好きなスロット使えば良いですね
+- 9a 9c 9d 9eの各スロットは、もともとは利用目的があるため、微妙にPINコードの管理が異なります。 9aと9dは、認証に使うため（PCにセットするとか）に作られたため、一度PINコードを入力するとUSB接続が切れるまで使えます。 9cはファイルのデジタル署名に使うため、署名するたびにPINコードが必要になります。 9eは、建物の入館時のドアロックの解除などに使うため、PINコードが必要ありません。 まーーー我々は連邦職員じゃないので、好きなスロット使えば良いですね
 
 抜粋ここまで。ということで、一番セキュリティレベルが高い9cを利用します。
 
@@ -98,7 +98,7 @@ $ gpg --send-keys
 
 gpg鍵を、SSHの鍵として使用できます。そのためには、ssh-agentをgpg-agentにすり替える必要があります。
 
-Archwikiを元に、`bashrc`を以下のように編集します。
+ArchWikiを元に、`bashrc`を以下のように編集します。
 
 
 ```
@@ -110,15 +110,15 @@ fi
 
 すると、`ssh-add -L`でgpg鍵が見れるようですが‥何故か見れない。
 
-# gitで使う
+# Gitで使う
 
-gitで、configに鍵の設定を追加します。
+Gitで、configに鍵の設定を追加します。
 
 ```
 $ git config user.signingkey KEY
 ```
 
-するとgit commit実行時に署名付きコミットが‥できませんね。うーん、なんでだろう。
+するとGit commit実行時に署名付きコミットが‥できませんね。うーん、なんでだろう。
 
 # まとめ
 

@@ -24,7 +24,7 @@ zshrcの中から読み込みます。
 source /path/to/zplugin/zplugin.zsh
 ```
 
-主なコマンドは`zplugin`です。また`zplug`でも`zplugin`が実行されます。(エイリアスです)
+主なコマンドは`zplugin`です。また`zplug`でも`zplugin`が実行されます。(エイリアスです）
 
 # 使い方
 
@@ -39,7 +39,7 @@ zplugin light zsh-users/zsh-autosuggestions
 
 ## snippet
 
-スニペットでは、githubリポジトリではなく特定のURLのファイルのみをダウンロードして読み込むことができます。
+スニペットでは、GitHubリポジトリではなく特定のURLのファイルのみをダウンロードして読み込むことができます。
 
 ```
 zplugin snippet https://hoge.fuga/hoge.zsh
@@ -73,7 +73,7 @@ zplugin snippet 'https://github.com/sorin-ionescu/prezto/blob/master/modules/hel
 
 ### wait
 waitは、直後に数値をつけて使います。
-これは、非同期でコマンドを読み込むオプションです。（遅延実行とも言う）
+これは、非同期でコマンドを読み込むオプションです（遅延実行とも言う）
 
 lightコマンドが実行された時点ではプラグインを読み込まずに、ユーザーがプロンプトに入力できる状態（.zshrcがすべて読み込まれたあと）になってからバッググラウンドでプラグインを読み込みます。
 
@@ -129,38 +129,38 @@ zplugin light zsh-users/zsh-autosuggestions
 |  Modifier | Description |
 |-----------|-------------|
 | `proto`   |  cloneしてくるプロトコルを指定します。`git`,`ftp`,`ftps`,`ssh`, `rsync`などを指定できます。 デフォルトは`https`です。プラグインにのみ有効でスニペットにはできようされません。  |
-| `from`    | どこからプラグインをcloneしてくるのかを指定します。 指定できるのは `from"github"` (デフォルト), `..."github-rel"`, `..."gitlab"`, `..."bitbucket"`, `..."notabug"` (略称: `gh`, `gh-r`, `gl`, `bb`, `nb`). また、Github Enterpriseを使っている場合など、フルURLで指定することもできます。 |
-| `as`      | `as"program"` (もしくはエイリアスである `as"command"`), を指定すると、プラグインを`source`するのではなく `$PATH` に追加します。 (`pick`を参照). また`as"completion"`も指定できます。 |
+| `from`    | どこからプラグインをcloneしてくるのかを指定します。 指定できるのは `from"github"` (デフォルト）, `..."github-rel"`, `..."gitlab"`, `..."bitbucket"`, `..."notabug"` (略称： `gh`, `gh-r`, `gl`, `bb`, `nb`). また、Github Enterpriseを使っている場合など、フルURLで指定することもできます。 |
+| `as`      | `as"program"` (もしくはエイリアスである `as"command"`), を指定すると、プラグインを`source`するのではなく `$PATH` に追加します。 (`pick`を参照）. また`as"completion"`も指定できます。 |
 | `id-as`   | プラグインやスニペットにニックネームを追加できます。長いURLを短く管理したいときに使えます。 See [blog post](http://zdharma.org/2018-10-12/Nickname-a-plugin-or-snippet). |
-| `ver`     | `from"gh-r"`と一緒に使います。 (`as"program"`を使ってバイナリをダウンロードするときなどです。) – ダウンロードするバージョンを選べます。デフォルトは最新(`ver"latest"`)です。 Works also with regular plugins, checkouts e.g. `ver"abranch"`, i.e. a specific version. |
+| `ver`     | `from"gh-r"`と一緒に使います。 (`as"program"`を使ってバイナリをダウンロードするときなどです）– ダウンロードするバージョンを選べます。デフォルトは最新（`ver"latest"`)です。 Works also with regular plugins, checkouts e.g. `ver"abranch"`, i.e. a specific version. |
 | `pick`    | `snippet --command` や`as"program"`を使うときに、どのファイルを$PATHに追加するか指定します。たとえば`zplugin ice pick"*.plugin.zsh"`と指定することができます。 プラグインとスニペット両方で有効です。 |
 | `bpick`   | Github Releaseからダウンロードする際のファイル名を指定できます。たとえば`zplugin ice from"gh-r" as"program" bpick"*Darwin*"; zplugin load docker/compose`のように指定すると、Darwinが含まれる最新のReleaseのバイナリをダウンロードします。 |
-| `depth`   | gitコマンドに--depthとして渡されます。プラグインでのみ有効です。 |
+| `depth`   | Gitコマンドに--depthとして渡されます。プラグインでのみ有効です。 |
 | `cloneopts`   | `git clone`コマンドに渡される `cloneopts`です。デフォルトは `--recursive`になっています。プラグインとスニペット両方で有効です。 |
 | `bindmap` | To hold `;`-separated strings like `Key(s)A -> Key(s)B`, e.g. `^R -> ^T; ^A -> ^B`. In general, `bindmap''`changes bindings (done with the `bindkey` builtin) the plugin does. The example would cause the plugin to map Ctrl-T instead of Ctrl-R, and Ctrl-B instead of Ctrl-A. |
 | `trackbinds` | Shadow but only `bindkey` calls even with `zplugin light ...`, i.e. even with tracking disabled (fast loading), to allow `bindmap` to remap the key-binds. The same effect has `zplugin light -b ...`, i.e. additional `-b` option to the `light`-subcommand. |
-| `if`      | 渡されたシェル文の実行結果がtrueだった場合のみ読み込みを実行します。例: `zplugin ice if'[[ -n "$commands[otool]" ]]'; zplugin load ...`. |
+| `if`      | 渡されたシェル文の実行結果がtrueだった場合のみ読み込みを実行します。例： `zplugin ice if'[[ -n "$commands[otool]" ]]'; zplugin load ...`. |
 | `blockf`  | プラグインの`fpath`への変更を禁止します。下で説明しています。  |
 | `silent`  | プラグインやスニペットの `stderr` & `stdout`への出力を抑制します。また、`wait''`(turbo mode)時に表示される`Loaded ...`なども表示しません。 |
 | `lucid`   | `wait''`(turbo mode)時に表示される`Loaded ...`を表示しません。 |
 | `mv`      | `clone`や`update`したときに、ファイルをmvします。 たとえば`mv "fzf-* -> fzf"`。 `->`を古いファイル名と新しいファイル名の区切りに使います。 プラグインとスニペット両方で有効です。 |
-| `cp`      | `mv`と同じく、ファイルをコピーします。 例: `cp "docker-c* -> dcompose"` ちなみにcpとmvを両方指定した場合、mvが実行されてからcpが実行されます。|
+| `cp`      | `mv`と同じく、ファイルをコピーします。 例： `cp "docker-c* -> dcompose"` ちなみにcpとmvを両方指定した場合、mvが実行されてからcpが実行されます。|
 | `atinit`  | プラグインをcloneする前に実行します。 |
 | `atclone` | プラグインをcloneしたあとに実行します。 カレントディレクトリはプラグインのディレクトリになります。|
 | `atload`  | プラグインがロードされたあとにコマンドを実行します。 カレントディレクトリはプラグインのディレクトリになります。先頭に`'!'`を渡した場合、かつ読み込まれるモードがlightではなくloadの場合、トラッキングが有効になります。|
-| `atpull`  | プラグインをupdate(git pull)した場合、その __後__ にコマンドを実行します。 しかし、先頭に`'!'`が渡された場合は、 後ではなく`mv` & `cp`や`git pull`や`svn update`の __前__ に実行されます。また、`atpull'%atclone'`と指定した場合、atcloneの内容を実行します。プラグインとスニペット両方で有効です。|
+| `atpull`  | プラグインをupdate(Git pull)した場合、その __後__ にコマンドを実行します。 しかし、先頭に`'!'`が渡された場合は、 後ではなく`mv` & `cp`や`git pull`や`svn update`の __前__ に実行されます。また、`atpull'%atclone'`と指定した場合、atcloneの内容を実行します。プラグインとスニペット両方で有効です。|
 | `nocd`    | `atinit''`や`atload''`する際に、カレントディレクトリをプラグインの中に移動しません。 |
-| `svn`     | スニペットをSVNでダウンロードします。GithubはSVNをサポートしているため、特定のディレクトリのみダウンロードしたい場合に有用です。 例: `zplugin ice svn; zplugin snippet OMZ::plugins/git`|
-| `make`    | cloneやupdate、`mv`, `cp`, `atpull`, `atclone` オプションを実行した後に`make`を実行します。たとえば引数を取ることも可能です。例: `make"install PREFIX=/opt"` もし先頭に`!`が渡された場合、`atclone`や`atpull`の前に実行します。|
+| `svn`     | スニペットをSVNでダウンロードします。GithubはSVNをサポートしているため、特定のディレクトリのみダウンロードしたい場合に有用です。 例： `zplugin ice svn; zplugin snippet OMZ::plugins/git`|
+| `make`    | cloneやupdate、`mv`, `cp`, `atpull`, `atclone` オプションを実行した後に`make`を実行します。たとえば引数を取ることも可能です。例： `make"install PREFIX=/opt"` もし先頭に`!`が渡された場合、`atclone`や`atpull`の前に実行します。|
 | `src`     | `as"program"`を使った場合や、普通にロードした場合に、追加でsourcesしたいファイルがある場合はここで指定できます。|
-| `wait`    | プラグインや1スニペットをあとで読み込みます。たとえば`wait'1'`を指定した場合、プロンプトが表示されて`1`秒後に読み込みます。`wait'[[ ... ]]'`や`wait'(( ... ))'`と指定した場合、指定したシェル文`...`の実行が完了してから読み込みます。 先頭に`!`を渡した場合ロード後にプロンプトがresetされます。 11個のプラグイン環境で試した場合、zshの起動が39%高速化します。|
-| `load`    | 式の返り値がtrueだったときのみプラグインをロードします。 例: `load'[[ $PWD = */github* ]]'`. |
+| `wait`    | プラグインや1スニペットをあとで読み込みます。たとえば`wait'1'`を指定した場合、プロンプトが表示されて`1`秒後に読み込みます。`wait'[[ ... ]]'`や`wait'(( ... ))'`と指定した場合、指定したシェル文`...`の実行が完了してから読み込みます。 先頭に`!`を渡した場合ロード後にプロンプトがresetされます。 11個のプラグイン環境で試した場合、zshの起動が39％高速化します。|
+| `load`    | 式の返り値がtrueだったときのみプラグインをロードします。 例： `load'[[ $PWD = */github* ]]'`. |
 | `unload`  | loadの逆で、式がtrueだとすでに読み込まれているプラグインをアンロードします。 |
 | `service` | プラグインやスニペットを、独立したZshellインスタンスでバックグラウンドで動作するサービスとして読み込みます。 See [zservices org](https://github.com/zservices). |
-| `compile` | zcompileをします。 例: `compile"(pure\|async).zsh"`|
+| `compile` | zcompileをします。 例： `compile"(pure\|async).zsh"`|
 | `nocompletions` | プラグインの提供する保管をインストール/認識しません。 あとで`zplugin creinstall {plugin-spec}`を実行することで読み込めます。|
 | `nocompile` | `pick`されたファイルをコンパイル/makeしようとしません。先頭に`!`が渡された場合、`make''`や`atclone''`したあとにコンパイルします。 Makefileがファイルを生成する場合に有用です。 |
-| `multisrc` | 複数のファイルをsourceします。 例: `multisrc'misc.zsh grep.zsh'` またブランケット記法が有効です。 例: `multisrc'{misc,grep}.zsh'` |
+| `multisrc` | 複数のファイルをsourceします。 例： `multisrc'misc.zsh grep.zsh'` またブランケット記法が有効です。 例： `multisrc'{misc,grep}.zsh'` |
 
 ## 補完機能とblockfについて
 

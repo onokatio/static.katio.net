@@ -63,7 +63,7 @@ chmod 700 ./vpncmd
 chmod 700 ./vpnserver
 ```
 
-そのあと起動スクリプトを作らねばならないようですが、さっぱりわからないのでコピペ。
+そのあと起動スクリプトを作らねばならないようですが、さっぱりわからないのでコピー&ペースト。
 
 ```
 # vi /etc/init.d/vpnserver
@@ -129,7 +129,7 @@ chmod +x /etc/init.d/vpnserver
 ```
 
 できました！
-ということでここからはほかのパソコンからguiで遠隔設定できるのでそれに頼ります。
+ということでここからはほかのPCからguiで遠隔設定できるのでそれに頼ります。
 
 http://jp.softether-download.com/files/softether/v4.20-9608-rtm-2016.04.17-tree/Windows/Admin_Tools/VPN_Server_Manager_and_Command-line_Utility_Package/softether-vpn_admin_tools-v4.20-9608-rtm-2016.04.17-win32.zip
 
@@ -141,7 +141,7 @@ http://jp.softether-download.com/files/softether/v4.20-9608-rtm-2016.04.17-tree/
 リモートアクセスvpnサーバーを選択、次へ。
 初期化するけどいいか聞いてくるのではいを選択。
 任意の名前を入れろと出てきたのでVPNと入れてOK。
-ダイナミックDNS名を適当に決めて(後で使うらしい)、というかそのままで閉じるをクリック。
+ダイナミックDNS名を適当に決めて（後で使うらしい）、というかそのままで閉じるをクリック。
 L2TPサーバー機能を有効にするにチェックを入れて、右真ん中らへんのやつはVPNに、下の事前共有鍵とやらはパスワードらしいので入力、OKをクリック。
 VPN Azureは使わないので、無効をクリックしてOK。
 ユーザーを作成する、をクリック。
@@ -155,7 +155,7 @@ VPNを選択し、ローカルブリッジの削除、をクリック。
 以後、管理はここからできるらしいです。
 閉じる、をクリックで戻り、暗号化と通信関係の設定をクリック。暗号化アルゴリズム名をDHE-RSA-AES256-SHAに変更、OKをクリックして戻ってきます。
 OpenVPN/MS-SSTP設定をクリック、OpenVPNサーバー機能を有効にする、MS-SSTP VPNサーバー機能を有効にするのチェックをともに外し、OKをクリック。
-以上で、windowsでの操作は終了です。
+以上で、Windowsでの操作は終了です。
 ラズパイに戻ります。
 
 ```

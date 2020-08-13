@@ -6,7 +6,7 @@ date: 2019-07-29 21:29:50 +0900
 Linuxで高音質Bluetoothを使う（AAC,aptX,LDAC）
 ===
 
-Linuxマシンをメイン機にされている方は、Bluetoothヘッドホンやイヤホンを接続する機会があると思います。
+Linuxマシンをメイン機にされているほうは、Bluetoothヘッドホンやイヤホンを接続する機会があると思います。
 通常、Linuxでpulseaudio+bluez構成では、どんなに高機能なイヤホンを接続したどころでSBCと呼ばれる一番音質の低いモードでしか接続されません。
 
 そのため今回は、スマートフォン等と接続するときに使用される、AACやaptX、aptX HD、LDACと呼ばれるコーデックをLinuxで使えるようにします。
@@ -31,7 +31,7 @@ $ yay -S bluetooth-module-bt
 後者はArchlinuxにAURが存在します。
 
 インストールが完了したら再起動してください。
-（めんどくさい人はpulseaudio -kしたあとsudo systemctl restart bluetoothでも良いです。）
+（めんどくさい人はpulseaudio -kしたあとsudo systemctl restart bluetoothでも良いです）。
 
 # 使い方
 
@@ -50,4 +50,4 @@ Configurationのタブに、プロファイルを選択する欄が出てきま�
 
 ![](https://i.imgur.com/oPodrob.png)
 
-もし強制的に高ビットレートや低ビットレートで接続したい場合、default.paを弄れば可能とのことです。興味のある方はgithubのwikiを参照してください。
+もし強制的に高ビットレートや低ビットレートで接続したい場合、default.paを弄れば可能とのことです。興味のあるほうはGitHubのWikiを参照してください。

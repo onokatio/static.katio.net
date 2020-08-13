@@ -6,10 +6,10 @@ date: 2020-01-02 00:53:00 +0900
 flatpakパッケージを自作したかった
 ===
 
-参考: https://docs.flatpak.org/en/latest/first-build.html
+参考： https://docs.flatpak.org/en/latest/first-build.html
 
 
-flatpakについて知りたい方は、この記事をどうぞ。 [FlatpakをArchlinuxで運用する](https://blog.katio.net/page/onokatio-adc2019-day14-flatpak)
+flatpakについて知りたいほうは、この記事をどうぞ。 [FlatpakをArchlinuxで運用する](https://blog.katio.net/page/onokatio-adc2019-day14-flatpak)
 
 # 今回作るもの
 
@@ -71,7 +71,7 @@ https://www.mankier.com/5/flatpak-manifest
     モジュールのソースコード取得方法を書きます
     - `type`: ソースコードの取得方法を指定します。`file`の場合はローカルのファイルを使用しますが、それ以外にもURLからファイルを取得するなどの方法があります。使える方法は以下です
       - archive(tar/zip)
-      - git
+      - Git
       - bzr
       - file
       - dir
@@ -90,7 +90,7 @@ https://www.mankier.com/5/flatpak-manifest
 先程軽く流しましたが、各flatpakパッケージにはruntimeとsdkを指定する必要があります。runtimeやsdkも、flatpak内ではパッケージとして扱われており、内容はルートからのディレクトリ構造です。
 
 runtimeは、アプリケーションが実行される際に一番ベースとなるファイルシステムを指定します。つまり、本来OSやディストリビューションが提供しているOSのイメージのような概念です。
-(Dockerでいう、FROMに指定するイメージ)
+(Dockerでいう、FROMに指定するイメージ）
 
 自分で作成したアプリケーションを展開するだけでは、もちろんflatpakのコンテナは動作しないため、/bin/shやglibcを含んだruntimeを指定する必要があるわけです。
 
@@ -103,7 +103,7 @@ sdkは、コンパイル時に使用するファイルシステムです。い�
 
 # 依存関係について
 
-単刀直入に言うと、flatpakではライブラリの依存関係は自力で解決する必要があります。つまり、ライブラリごとにパッケージを作らず、1つのパッケージに必要なライブラリを全部含めた上で配布する必要があります。  
+単刀直入に言うと、flatpakではライブラリの依存関係は自力で解決する必要があります。つまり、ライブラリごとにパッケージを作らず、1つのパッケージに必要なライブラリを全部含めたうえで配布する必要があります。  
 Linuxでよくあるパッケージマネージャーとは、ここが大きな違いです。  
 ただ、ランタイムが提供されている場合に限り、自身でライブラリをインストールせずランタイム内部のファイルを使用できます。ただ、ランタイムは1つまでしか指定できないことに注意してください。
 

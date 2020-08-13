@@ -19,7 +19,7 @@ https://blog.katio.net/page/onokatio-adc2019-day15-blog-react-1
 https://ja.reactjs.org/tutorial/tutorial.html
 
 まず、今までcreateElementで作成していた、トップページの記事リストを移行しましょう。対応するhtmlをjsxとして書いたファイルを作成します。  
-自分の場合は、`./src/component/`というディレクトリ(reactの世界に置いて要素はコンポーネントと呼ばれるらしいので)を掘り、その中に`ArticleItem.jsx`という名前をつけたファイルを作成しました。
+自分の場合は、`./src/component/`というディレクトリ（reactの世界に置いて要素はコンポーネントと呼ばれるらしいので）を掘り、その中に`ArticleItem.jsx`という名前をつけたファイルを作成しました。
 
 ```jsx=
 diff --git a/src/components/ArticleItem.jsx b/src/components/ArticleItem.jsx
@@ -51,7 +51,7 @@ index 0000000..e81e478
 Reactの作法としては、React.Componentクラスを継承したクラスを作成し、render()メソッドでjsxを返せば、それがコンポーネントになるとのことです。  
 クラスではなく関数としても書けるみたいなので今度試してみますが今回はクラスで。
 
-コンポーネントでは、props(初期化時に決定し、不変のオブジェクト)とstate(変更できる内部状態)の2つを参照できます。どう考えても記事一覧の文字は不変なので、propsとして渡すようにしました。
+コンポーネントでは、props(初期化時に決定し、不変のオブジェクト）とstate(変更できる内部状態）の2つを参照できます。どう考えても記事一覧の文字は不変なので、propsとして渡すようにしました。
 
 次に、記事一覧を描画する自作コントローラー関数を編集します。
 

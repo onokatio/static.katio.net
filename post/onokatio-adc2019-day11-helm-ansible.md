@@ -3,7 +3,7 @@ title: "ansible/helmでのk8s アプリケーション管理"
 date: 2019-12-12 00:12:00 +0900
 ---
 
-ansible/helmでのk8s アプリケーション管理
+ansible/helmでのk8sアプリケーション管理
 ===
 
 この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 11日目の記事です。
@@ -52,9 +52,9 @@ $ helm init
 $ helm repo add stable https://kubernetes-charts.storage.googleapis.com/
 ```
 
-あ、helmコマンドを使うにはkubectlが使える環境でないといけません (= ~/.kube/configが存在する)
+あ、helmコマンドを使うにはkubectlが使える環境でないといけません (= ~/.kube/configが存在する）
 
-(ここらへんは思い出しながら書いてるので間違ってるかも)
+(ここらへんは思い出しながら書いてるので間違ってるかも）
 
 ## ansibleのplaybookを書く
 

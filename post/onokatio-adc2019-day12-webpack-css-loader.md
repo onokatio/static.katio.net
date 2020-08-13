@@ -12,7 +12,7 @@ webpackをsass対応 & CSSインポートしてみる
 
 # webpackのローダーとは
 
-webpackのローダーとは、名前の通り、何らかのファイルをwebpackが最終的に生成するmain.jsへ含める機能を持つnode.jsプラグインです。
+webpackのローダーとは、名前の通り、何らかのファイルをwebpackが最終的に生成するmain.jsへ含める機能を持つNode.jsプラグインです。
 
 以下に軽くローダーを挙げてみます。
 
@@ -27,8 +27,8 @@ https://webpack.js.org/loaders/css-loader/
 
 https://webpack.js.org/loaders/style-loader/
 
-css-loaderは、あくまでcssをjs形式のオブジェクトに変換し、jsの中で`.style`メンバに特定クラスのスタイルの代入ができるようにする役割しか持ちませんでした。そうではなく、importしたcssファイルを`<style></style>`としてhtmlへ出力する役割があるのがこのローダーです。  
-正確には、htmlではなくmain.jsへ、`style`エレメントをcreateElementしてそのinnerTextにcssを突っ込むコードを書き込んでいるようです。
+css-loaderは、あくまでcssをjs形式のオブジェクトに変換し、jsの中で`.style`メンバーに特定クラスのスタイルの代入ができるようにする役割しか持ちませんでした。そうではなく、importしたcssファイルを`<style></style>`としてhtmlへ出力する役割があるのがこのローダーです。  
+正確には、htmlではなくmain.jsへ、`style`要素をcreateElementしてそのinnerTextにcssを突っ込むコードを書き込んでいるようです。
 
 ## sass-loader
 
@@ -84,7 +84,7 @@ module.exports = {
 };
 ```
 
-ちゃんと説明を見ずにコピペしましたが、やってることはmodule.exportsなのでこれもどこかからか読み込まれる設定DSL用のjsファイルで、rules:の中に配列としてルールを入れていけば良いんだと思います。
+ちゃんと説明を見ずにコピー&ペーストしましたが、やってることはmodule.exportsなのでこれもどこかからか読み込まれる設定DSL用のjsファイルで、rules:の中に配列としてルールを入れていけば良いんだと思います。
 
 testは正規表現で、useは使用するローダーの順番らしいです。右から順に適用されるとのこと。
 

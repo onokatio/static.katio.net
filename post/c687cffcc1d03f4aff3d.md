@@ -34,7 +34,7 @@ $ az ad sp create-for-rbac --query [appId,password,tenant]
 ]
 ```
 
-実行すると、キーが３つ入ったjsonが帰ってきます。
+実行すると、キーが3つ入ったjsonが帰ってきます。
 上から順に、アプリケーションID、アプリケーションパスワード、テナント、らしいです。
 
 TwittterのOAuthでいうアプリケーションキーとアプリケーションシークレットみたいな感じですかね。
@@ -62,13 +62,13 @@ tenant=ccccc-ccccc-cccccc
 
 # cli（コマンドライン）から試す
 
-## 場所を選ぶ。
+## 場所を選ぶ
 
 ```bash
 $ az account list-locations | grep -B1 -A6 Japan
 ```
 
-をすると、データセンターの場所が選べる。日本は西日本か東日本の２つしか無い。
+をすると、データセンターの場所が選べる。日本は西日本か東日本の2つしか無い。
 今回は`japaneast`を選ぶ。
 
 ## リソースグループを選ぶ

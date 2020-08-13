@@ -11,7 +11,7 @@ pLaTeXの環境構築をする
 
 # 各用語について
 
-参考: https://qiita.com/zr_tex8r/items/a924be192ecea7e6bbe4
+参考： https://qiita.com/zr_tex8r/items/a924be192ecea7e6bbe4
 
 ## TeX
 
@@ -27,11 +27,11 @@ LaTeXは、TeX記法を使って組版ドキュメント、つまり段落や表
 
 # 今回やること
 
-LaTeXの環境構築(依存関係)がクソ面倒くさかったので、今後のために手順を残しておく。
+LaTeXの環境構築（依存関係）がクソ面倒くさかったので、今後のために手順を残しておく。
 
 ## Archlinuxにインストール
 
-とりあえずArchwikiを参考にしながら進めましょう。
+とりあえずArchWikiを参考にしながら進めましょう。
 
 https://wiki.archlinux.jp/index.php/TeX_Live
 

@@ -4,7 +4,7 @@ tags: Linux Ubuntu
 author: onokatio
 slide: false
 ---
-tlpの--auto-tuneをしようと思った時、いつもどおりrc.localに書こうとしたら、まさかの存在しないではないですか！？
+tlpの--auto-tuneをしようと思ったとき、いつもどおりrc.localに書こうとしたら、まさかの存在しないではないですか！　？
 
 ```
  ~ $ ls /etc/rc.local 

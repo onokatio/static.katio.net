@@ -9,13 +9,13 @@ dmesg, syslog, journalについて調べてみた
 Linuxマシンをラップトップに入れて使っていると、様々な場面でログを見る機会が訪れると思います。
 ふとログを見ているときに、dmesgとjournalって何が違うんだろうなー、と疑問に思い調べたので、備忘録として残しておこうと思います。
 
-# dmesg について
+# dmesgについて
 
 https://ja.wikipedia.org/wiki/Dmesg
 
 dmesgは、カーネルが持っているメッセージバッファです。カーネル内で起こるドライバやカーネルモジュールなどが`printk()`を使用した際にここに出力されます。
 
-# syslog について
+# syslogについて
 
 https://ja.wikipedia.org/wiki/Syslog
 
@@ -25,9 +25,9 @@ Linuxの場合`rsyslog`という実装が有名です。
 
 sendmailやcronなど、システムで動く様々なプロセス（主にinit.dで起動されるような）は、標準出力を使うためのttyが割り当てられないため、syslogを利用しています。
 
-(内部的な話) プロセスから、`/dev/log`へファイル書き込みをすることで、syslogにログを送信できます。syslogは`/dev/log`を作成し、様々なプロセスからのログを収集します。 `/dev/log`は標準的なログ管理用の特殊ファイルとのことです。
+(内部的な話）プロセスから、`/dev/log`へファイル書き込みをすることで、syslogにログを送信できます。syslogは`/dev/log`を作成し、様々なプロセスからのログを収集します。 `/dev/log`は標準的なログ管理用の特殊ファイルとのことです。
 
-# journal について
+# journalについて
 
 syslogとinitの時代は今まで説明した構成で何も問題はありませんでした。initは各サービスを起動し、サービスや揮発性のあるカーネルのログはsyslogが受信しファイルに保管してくれていました。
 
@@ -52,13 +52,13 @@ $ ls /dev/log -l
 lrwxrwxrwx 1 root root 28 Oct  3 18:52 /dev/log -> /run/systemd/journal/dev-log
 ```
 
-journaldを導入した環境では、こんな感じに`/run/systemd/journal`以下のUnixドメインソケットファイルにリンクされてますね。
+journaldを導入した環境では、こんな感じに`/run/systemd/journal`以下のUNIXドメインソケットファイルにリンクされてますね。
 
 ## syslogとの連携
 
 journaldに移行したあとも、様々な理由でsyslogが作るログファイルを使いたい場合があります。
 その場合は共存が可能です。
-journaldに`/dev/log`を奪われたsyslogは、しぶしぶ`/var/log/journal/syslog`ファイルを作成、listenし、journaldにそこへログを書き込むように頼みます。(具体的には.so形式でjournaldに介入しているようですが。)
+journaldに`/dev/log`を奪われたsyslogは、しぶしぶ`/var/log/journal/syslog`ファイルを作成、listenし、journaldにそこへログを書き込むように頼みます。(具体的には。so形式でjournaldに介入しているようですが）
 
 そのため、journaldが収集するログのすべての複製をsyslogが従来どおり受け取り、syslogは`/var/log/message`など従来のパスへログを保管するようになります。
 
@@ -70,5 +70,5 @@ journalctlはjournaldが`/var/log/journal`や`/var/run/log/journal`に保管し�
 
 - `-e` ログの最後を表示する
 - `-f` ログをリアルタイムで更新する
-- `-k` カーネルのメッセージバッファ(dmesgで出てくるもの)だけ表示する
+- `-k` カーネルのメッセージバッファ（dmesgで出てくるもの）だけ表示する
 - `-u hoge.service` 特定のUnitのログだけ表示する

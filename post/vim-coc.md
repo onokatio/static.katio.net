@@ -143,8 +143,8 @@ npm i intelephense -g
 - dockerfile
 - bash
 - vim/erb/markdown
-- python
-- ruby
+- Python
+- Ruby
 
 ## 使い方
 

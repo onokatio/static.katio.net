@@ -3,7 +3,7 @@ title: "高専セキュコン 2019 write-up"
 date: 2019-10-30 13:45:00 +0900
 ---
 
-高専セキュコン 2019 write-up
+高専セキュコン2019 write-up
 ===
 
 sckosen参加したのでゆるくwrite up書いていきます。  

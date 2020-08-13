@@ -38,7 +38,7 @@ Nerd Fontに含まれているフォントには、以下があります。
 
 vimのPowerlineプラグインに使われているPowerline Fontや、awesome Fontは有名だと思います。
 
-ということで、改めて説明すると、今回の目的は **Source Han Monoフォント環境でも、vimやtmuxのアイコンがちゃんと動くようにしたい！！！** です。
+ということで、改めて説明すると、今回の目的は **Source Han Monoフォント環境でも、vimやtmuxのアイコンがちゃんと動くようにしたい！　！　！** です。
 
 # やっていき
 
@@ -52,12 +52,12 @@ vimのPowerlineプラグインに使われているPowerline Fontや、awesome F
 
 ## Source Han Monoをダウンロードする
 
-Source Han Monoはgithub releaseからダウンロードできます。
+Source Han MonoはGitHub releaseからダウンロードできます。
 
 https://github.com/adobe-fonts/source-han-mono/releases
 
-最新版の.ttc形式のファイルを任意のディレクトリにダウンロードしてきてください。
-ちなみに、.ttcというのは複数の.ttfファイルを連結した形式です。Source Han Monoでは、薄さが違う複数のフォントが提供されています。
+最新版の。ttc形式のファイルを任意のディレクトリにダウンロードしてきてください。
+ちなみに、.ttcというのは複数の。ttfファイルを連結した形式です。Source Han Monoでは、薄さが違う複数のフォントが提供されています。
 
 まず、ttcをttfへ分解します。ty-edelweissさんという方が、便利なツールを作ってくださっているのでそれを使いましょう。
 
@@ -90,6 +90,6 @@ git clone https://github.com/ryanoasis/nerd-fonts --depth 1
 ```
 
 ここでSegmentation Faultが発生しました…。悲しい。
-ということでこの記事は一旦ここまでです。ついでに発生したバグをIssueにまとめました。もし解決できる方がいればぜひともプルリクエストお願い致します。
+ということでこの記事は一旦ここまでです。ついでに発生したバグをIssueにまとめました。もし解決できるほうがいればぜひともプルリクエストお願い致します。
 
 https://github.com/fontforge/fontforge/issues/4047

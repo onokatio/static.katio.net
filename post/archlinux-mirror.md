@@ -6,11 +6,11 @@ date: 2019-11-16 22:14:00 +0900
 Archlinuxのミラーサーバーを構築する
 ===
 
-参考: [https://wiki.archlinux.jp/index.php/ローカルミラー](https://wiki.archlinux.jp/index.php/%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%9F%E3%83%A9%E3%83%BC)
+参考： [https://wiki.archlinux.jp/index.php/ローカルミラー](https://wiki.archlinux.jp/index.php/%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%9F%E3%83%A9%E3%83%BC)
 
 Archlinuxのミラーサーバーを立ましょう。
 
-Archwikiにかかれている注意事項をここに引用しておきます。
+ArchWikiにかかれている注意事項をここに引用しておきます。
 
 >注意事項
 >
@@ -29,7 +29,7 @@ https://www.archlinux.org/mirrors/tier/1/
 
 ここから、地理的、ネットワーク的に近そうなノードを選びます。
 
-# systemd unitファイルを書きます。
+# systemd unitファイルを書きます
 
 /etc/systemd/system/archlinux-mirror-rsync.service
 
@@ -48,7 +48,7 @@ ExecStart=/usr/bin/rsync -rtlvH --delete-after --delay-updates --safe-links --ex
 WantedBy=multi-user.target
 ```
 
-# systemd timerを書きます。
+# systemd timerを書きます
 
 /etc/systemd/system/archlinux-mirror-rsync.timer
 
@@ -64,7 +64,7 @@ OnUnitActiveSec=1d
 WantedBy=timers.target
 ```
 
-# start & enableする。
+# start & enableする
 
 ```
 $ sudo systemctl enable archlinux-mirror-rsync.timer

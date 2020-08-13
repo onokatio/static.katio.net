@@ -529,7 +529,7 @@ index 79b1bb8..69fbb86 100644
 +GRUB_SAVEDEFAULT="true"
 ```
 
-# grub パスフレーズ
+# grubパスフレーズ
 
 ```
 diff --git a/grub.d/40_custom b/grub.d/40_custom
@@ -559,7 +559,7 @@ index 48068de..6f67b91 100755
 +}
 ```
 
-# 画面ロック i3lockの導入
+# 画面ロックi3lockの導入
 
 ```
 $ yay -S i3lock-blur
@@ -589,7 +589,7 @@ When power button is pressedをHibernateに設定。
 
 When laptop lid is closedを、On battery, Plugged in両方共Locl screenに設定。
 
-これで、ノートパソコンの蓋を閉じると画面がロックされ画面オフになります。
+これで、ノートPCの蓋を閉じると画面がロックされ画面オフになります。
 
 ## Display power management
 
@@ -600,7 +600,7 @@ Switch off afterを両方共6 minutesに設定します。
 
 ## Display Brightness reduction
 
-50%と120 secondsに設定します。
+50％と120 secondsに設定します。
 
 ## System power saveing
 
@@ -642,7 +642,7 @@ ExecStart=/usr/lib/bluetooth/bluetoothd -E
 これで、AAC, APTX, APTX HD, LDACヘッドフォンが使えるようになる。
 
 
-また音質はデフォルトで自動設定(Adaptive Bit rate)になる。
+また音質はデフォルトで自動設定（Adaptive Bit rate)になる。
 これは電波状況を見てなるべく途切れずに良い音質を設定するモード。
 強制的に最高にするためには`/etc/pulse/default.pa`に以下を追記すればいい。
 
@@ -708,7 +708,7 @@ VDPAU_DRIVER=nvidia
 
 ecryptfsを使ってホームディレクトリを暗号化する。
 
-特に変なことをせずにArchwikiを参照: https://wiki.archlinux.jp/index.php/ECryptfs
+特に変なことをせずにArchWikiを参照： https://wiki.archlinux.jp/index.php/ECryptfs
 
 # rng-tools
 
@@ -755,7 +755,7 @@ EndSectionx
 
 で、`nvidia-xsettings`のPowerMizerからクロックとメモリをそれぞれ+60Mhz +1000Mhz。
 
-参考: https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods#overclock-mx150-gpu
+参考： https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods#overclock-mx150-gpu
 
 # pacmanデータベースの自動バックアップ
 

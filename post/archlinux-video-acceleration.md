@@ -68,4 +68,4 @@ libvaが利用するドライバは、`/usr/lib/dri/${LIBVA_DRIVER_NAME}_drv_vid
 `$VDPAU_DRIVER`に`nvidia`を設定します。
 # 参考
 
-ハードウェアビデオアクセラレーション - Archwiki。
+ハードウェアビデオアクセラレーション - ArchWiki。

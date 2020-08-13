@@ -3,7 +3,7 @@ title: さくらのクラウドでVyOSを使用する 2019年版
 date: 2019-06-30 23:14:10 +0900
 ---
 
-さくらのクラウドでVyOSを使用する 2019年版
+さくらのクラウドでVyOSを使用する2019年版
 ===
 
 さくらのクラウドでは、VyOSが公式イメージから取り除かれてしまいました。
@@ -28,7 +28,7 @@ $ ovftool vyos-1.1.8-amd64.ova vyos-1.1.8-amd64.vmx
 $ qemu-img convert vyos-1.1.8-amd64-disk1.vmdk vyos-1.1.8-amd64-disk1.raw
 ```
 
-参考: https://cloud-news.sakura.ad.jp/2014/05/02/vmware-to-sacloud/
+参考： https://cloud-news.sakura.ad.jp/2014/05/02/vmware-to-sacloud/
 
 # 3. アップロード
 

@@ -21,9 +21,9 @@ sudoするたびに可愛い女の子に罵ってもらう
 
 ![](https://blog.katio.net/resource/image/sudo-prompt-1.png)
 
-寂しい…！！
+寂しい…！　！
 
-**そうだ、可愛い女の子に罵ってもらおう！！！！！！！！！！！**
+**そうだ、可愛い女の子に罵ってもらおう！　！　！　！！！！！！！！**
 
 # sudoのmanページを読む
 
@@ -35,7 +35,7 @@ sudoするたびに可愛い女の子に罵ってもらう
 
 ![](https://blog.katio.net/resource/image/sudo-prompt-man-1.png)
 
-あった！！！！！！
+あった！　！　！　！！！
 
 # 環境変数を指定する
 
@@ -47,6 +47,6 @@ export SUDO_PROMPT="[sudo] さっさとパスワード入れなさいよ、こ�
 
 # sudoする
 
-あとは打つだけ！！！！
+あとは打つだけ！　！　！　！
 
 ![](https://blog.katio.net/resource/image/sudo-prompt-echo-sd.png)

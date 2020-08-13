@@ -15,7 +15,7 @@ date: 2019-12-11 01:07:00 +0900
 # 過去のフロントエンド界の歴史について
 
 
-参考:
+参考：
 - https://havelog.ayumusato.com/develop/others/e630-npm_meets_frontend.html
 - https://qiita.com/jonghyo/items/e931f7b6357995314599
 
@@ -25,11 +25,11 @@ date: 2019-12-11 01:07:00 +0900
 
 # 大体理解してみる
 
-参考:
+参考：
 - https://goworkship.com/magazine/how-to-webpack/
 - https://www.slideshare.net/ssuser46977e/webpack-why-cant-you-understand-the-webpack
 
-npmでwebpack.jsを導入し、node.js環境で実行します。webpackは、複数のjsファイルをnode.js風にモジュールとして読み込む形式(import/export)を、ブラウザで読めるように結合してくれる役割があります。またgulpのように、sassやts、hamlのトランスパイル、lintなど動的にプラグインを読み込み、バンドル中のファイルへ手を加えることができるようです。
+npmでwebpack.jsを導入し、Node.js環境で実行します。webpackは、複数のjsファイルをnode.js風にモジュールとして読み込む形式（import/export)を、ブラウザで読めるように結合してくれる役割があります。またgulpのように、sassやts、hamlのトランスパイル、lintなど動的にプラグインを読み込み、バンドル中のファイルへ手を加えることができるようです。
 
 ということで、以下導入していきます。
 
@@ -44,7 +44,7 @@ $ npm init
 $ npm install webpack webpack-cli --save-dev
 ```
 
-で、どうやら`~/src`以下にjavascriptをすべて入れるのがお作法のようです。ということで、ディレクトリを作ってそこへjsを放り込みます。
+で、どうやら`~/src`以下にJavaScriptをすべて入れるのがお作法のようです。ということで、ディレクトリを作ってそこへjsを放り込みます。
 
 
 ```shell
@@ -135,4 +135,4 @@ webpackを導入しましたが、案外簡単に入門できました。しっ�
 ひとまず、これで依存関係はキレイに解決できるようになったので、今後はトランスパイルや圧縮を試していこうと思います。
 
 
-あ、あとnetlifyでnpm run buildを忘れずにね…。（今気づいた）
+あ、あとnetlifyでnpm run buildを忘れずにね…（今気づいた）

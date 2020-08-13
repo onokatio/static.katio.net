@@ -58,7 +58,7 @@ CONFIG_SCSI_ARCMSR=m
 お、mってことはカーネルじゃなくてやっぱりカーネルモジュールが足りないだけみたいですね。  
 ~~ただ、`modprobe msr`しても同じく無くて怒られるのでどこからか見つけてきます。~~
 
-カーネルをアップデートしたあと再起動していなかったので、/lib/modulesのパスが見に行けなかっただけでした…。ということでパソコンを再起動してmodprobeします。
+カーネルをアップデートしたあと再起動していなかったので、/lib/modulesのパスが見に行けなかっただけでした…。ということでPCを再起動してmodprobeします。
 
 ```shell
 $ sudo modprobe msr
@@ -70,7 +70,7 @@ System Agent (3): -0.00 mV
 Analog I/O (4): -0.00 mV
 ```
 
-はい。今の所何も変更されていないようです。
+はい。今のところ何も変更されていないようです。
 
 設定ファイルを流し込みます。
 
@@ -91,7 +91,7 @@ Long term package power: 50 W, 28.000 s, enabled
 
 一部有効になっているみたいですが、エラーが出ているみたいなので手直しします。
 
-ひとまず、項目がdeprecatedと表記されているので、githubのドキュメントを読みつつ最新の設定項目名に変更しました。
+ひとまず、項目がdeprecatedと表記されているので、GitHubのドキュメントを読みつつ最新の設定項目名に変更しました。
 
 ```diff
 $ diff <(curl -SsL https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods/raw/master/Linux%20Scripts/intel-undervolt.conf) /etc/intel-undervolt.conf
@@ -130,7 +130,7 @@ https://github.com/kitsunyan/intel-undervolt/blob/ea0e74c583fb0ba4bccd896d3e9c7e
 https://github.com/kitsunyan/intel-undervolt/issues/25
 
 どうやら「そもそも設定ができないCPU/BIOSである」か「設定は完了したがそもそもCPUの電圧のReadが許可されてないCPU/BIOSである」みたいです。  
-うーん、と悩んだところでintel-undervoltの設定ファイルがおいてあったgithubリポジトリに興味深い項目が見つかりました。
+うーん、と悩んだところでintel-undervoltの設定ファイルがおいてあったGitHubリポジトリに興味深い項目が見つかりました。
 
 https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods#enable-cpu-undervolting-feature
 
@@ -218,7 +218,7 @@ https://www.insyde.com/press_news/press-releases/insyde%C2%AE-software-revamps-u
 
 ここで、`efivar -l`コマンドを実行します。いっぱい出てきたので`B08F97FF-E6E8-4193-A997-5E9E9B0ADB32`でgrepをかけます。
 
-…？何も出てきません。よく見るとefivarは小文字で16進数を表記するみたいです。大文字を小文字に変換しつつgrepしましょう。
+…？　何も出てきません。よく見るとefivarは小文字で16進数を表記するみたいです。大文字を小文字に変換しつつgrepしましょう。
 
 ```shell
 $ efivar -l | grep $(echo B08F97FF-E6E8-4193-A997-5E9E9B0ADB32 | tr [A-Z] [a-z])
@@ -304,7 +304,7 @@ diff cpusetup_my.txt cpusetup_patched.txt         47c47
 ```
 
 ビンゴですね。`01`が`00`になっています。  
-`$bytes[$offset] = 0x30`の0x30はasciiコードで`0`なので、たぶんあってますね。
+`$bytes[$offset] = 0x30`の0×30はasciiコードで`0`なので、たぶんあってますね。
 
 ということで、1を0に変更します。
 
@@ -387,4 +387,4 @@ $ sudo systemctl enable intel-undervolt
 
 以上、休日の作業履歴でしたー。
 
-参考: https://wiki.archlinux.jp/index.php/CPU_%E3%81%AE%E4%BD%8E%E9%9B%BB%E5%9C%A7%E5%8C%96#intel-undervolt
+参考： https://wiki.archlinux.jp/index.php/CPU_%E3%81%AE%E4%BD%8E%E9%9B%BB%E5%9C%A7%E5%8C%96#intel-undervolt

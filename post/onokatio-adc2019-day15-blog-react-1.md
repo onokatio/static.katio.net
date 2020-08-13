@@ -28,7 +28,7 @@ https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658
 
 先日、webpackをブログへ導入しました。React.jsは、webpackとbabelへ依存します。
 
-babelは、JSX記法を通常のjsコードに変換する役割を持ちます。他にも、TypescriptからJavascriptへのトランスパイルや、古いECMAScriptバージョンへの下位互換性のために使用できるそうです。
+babelは、JSX記法を通常のjsコードに変換する役割を持ちます。他にも、TypescriptからJavaScriptへのトランスパイルや、古いECMAScriptバージョンへの下位互換性のために使用できるそうです。
 
 webpackでは、.jsファイルを読み込む際にbabelを使用してJSXをJavasciptにトランスパイルします。
 

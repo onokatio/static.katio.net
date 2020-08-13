@@ -3,22 +3,22 @@ title: "AN2Linux でAndroidスマートフォンの通知をLinuxデスクトッ
 date: 2019-12-04 23:18:00 +0900
 ---
 
-AN2Linux でAndroidスマートフォンの通知をLinuxデスクトップから受け取る
+AN2LinuxでAndroidスマートフォンの通知をLinuxデスクトップから受け取る
 ===
 
 この記事は [onokatio Advent Calendar 2019](https://blog.katio.net/adventcalendar/2019/onokatio) 4日目の記事です。
 
-今回は、題名とおりスマホの通知をパソコンで受け取れるように設定します。
+今回は、題名とおりスマホの通知をPCで受け取れるように設定します。
 
 # AN2Linuxとは
 
-AN2Linuxは、スマートフォンの通知を、WiFi、モバイル回線、もしくはBluetooth経由でLinuxデスクトップで起動するデーモンに送信できるツールです。
+AN2Linuxは、スマートフォンの通知を、Wi-Fi、モバイル回線、もしくはBluetooth経由でLinuxデスクトップで起動するデーモンに送信できるツールです。
 
-クライアント、デスクトップ共にgithubでソースコードが公開されています。
+クライアント、デスクトップ共にGitHubでソースコードが公開されています。
 
-Bluetoothの場合はペアリングできる範囲にパソコンがあれば通知を送ることができ、おそらく一番使いやすい通信方式です。
+Bluetoothの場合はペアリングできる範囲にPCがあれば通知を送ることができ、おそらく一番使いやすい通信方式です。
 
-WiFiの場合は、LAN内に存在するIPアドレス/ポートを、モバイル回線の場合はグローバルIPアドレス/ポートを指定することで通知を飛ばせますが、ファイアウォールの設定等が面倒くさいので今回は利用しません。
+Wi-Fiの場合は、LAN内に存在するIPアドレス/ポートを、モバイル回線の場合はグローバルIPアドレス/ポートを指定することで通知を飛ばせますが、ファイアウォールの設定等が面倒くさいので今回は利用しません。
 
 # インストール
 
@@ -76,9 +76,9 @@ ExecStartPost=/bin/chmod 662 /var/run/sdp
 ```
 
 これはドキュメントに書かれていた行為で、旧bluetoothのapiであるsdpを有効にしているようです。
-ただ、こいつを誰でも書き込み可にするとbluetoothの操作を一般ユーザーでも行えちゃうのでは…？いや、どのみちDBUSでどのユーザーも弄れるから問題ないか‥みたいな思考に落ち着きました。多分大丈夫です。
+ただ、こいつを誰でも書き込み可にするとbluetoothの操作を一般ユーザーでも行えちゃうのでは…？　いや、どのみちDBUSでどのユーザーも弄れるから問題ないか‥みたいな思考に落ち着きました。多分大丈夫です。
 
-次に、ペアリングをします。ペアリングをする場合は標準入力で操作が必要なので、systemdサービスではなく直接pythonファイルを起動します。
+次に、ペアリングをします。ペアリングをする場合は標準入力で操作が必要なので、systemdサービスではなく直接Pythonファイルを起動します。
 
 ```shell
 $ /usr/bin/an2linuxserver.py
@@ -87,7 +87,7 @@ $ /usr/bin/an2linuxserver.py
 
 その状態でまずはPCと普通にBluetoothペアリングを行います。完了したら、スマホアプリ側からServer configuration -> + -> Bluetoothを選択し、ペアリングしたPC -> EDIT選択します。
 
-INITIATEPARING WITH SERVERを選択し、SAVEを惜します。そうすると、pythonではこのような表示が出ているはずです:
+INITIATEPARING WITH SERVERを選択し、SAVEを惜します。そうすると、Pythonではこのような表示が出ているはずです：
 
 ```shell
 2019-12-04 23:07:28.361 root         INFO     Server certificate fingerprint:   (an2linuxserver.py:809)
@@ -105,7 +105,7 @@ Enter "yes" to accept pairing or "no" to deny (Client accepted pairing):
 ```
 
 ここですかさずyes <enter>を打ち込みます。これでペアリングは完了です。
-このpythonプロセスは殺しましょう。
+このPythonプロセスは殺しましょう。
 
 次に、サービスを起動します。
 

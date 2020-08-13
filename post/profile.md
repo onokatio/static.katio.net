@@ -6,14 +6,14 @@
 
 小学生の時、Webページ作りたいなーと思ってHTMLとCSSをさわり、
 今度はWebサービスも作りたいなーと思ってPHPをさわり、
-Webサーバー自力で作りたいなーと思ってNginxをさわり、
+Webサーバー自力で作りたいなーと思ってnginxをさわり、
 サーバー構築したいなーと思ってラズパイとLinuxをさわり、
 自動化とかしたいなーと思ってDockerとGithubをさわり、
 どんどんとレイヤーが低くなっていき、結果紆余曲折し今に至ってる感じです。
 
-最近はCPUとかLinuxカーネル、アセンブリ等低レイヤーの勉強や、ブロックチェーンの開発をしています。
+最近はCPUとかLinuxカーネル、アセンブリ等低レイヤーの勉強や、ブロックチェインの開発をしています。
 
-自分が一番興味がある領域は、Webフルスタックと、ネットワークインフラ、ブロックチェーン、セキュリティです。めんどくさがり屋なので、自動化が大好物です。
+自分が一番興味がある領域は、Webフルスタックと、ネットワークインフラ、ブロックチェイン、セキュリティです。めんどくさがり屋なので、自動化が大好物です。
 
 ## 名前
 
@@ -21,7 +21,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 ## 年齢
 
-2000年生まれ19歳 (0x13)
+2000年生まれ19歳 (0×13)
 
 ## 学歴・所属
 
@@ -29,8 +29,8 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 ## 資格
 
-- 基本情報技術者 (2016年)
-- 応用情報技術者 (2018年)
+- 基本情報技術者 (2016年）
+- 応用情報技術者 (2018年）
 
 ## 職歴・インターンシップ・アルバイト等
 
@@ -38,9 +38,9 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - 2017年8月〜9月freee株式会社（SREチームAnsibleでの環境構築の自動化）
 - 2018年8月セブンバニーズ株式会社（shitcoinの開発）
 - 2018年9月CryptoeconomicsLab（PlasmaVM/TxVMの開発の参加）
-- 2018年9月合同会社DMM.com（スマートコントラクト事業部/ブロックチェーン研究室Zilliqa/Scillaでスマートコントラクトの移植、実装）
+- 2018年9月合同会社DMM.com（スマートコントラクト事業部/ブロックチェイン研究室Zilliqa/Scillaでスマートコントラクトの移植、実装）
 - 2019年8月~9月LINE Fukuoka株式会社（インフラ ロードバランサのカオスエンジニアリング）
-- 2019年9月GMOインターネット株式会社 (次世代システム研究室ブロックチェーンチームPlasma MVP on Plasma MVPの実装)
+- 2019年9月GMOインターネット株式会社 (次世代システム研究室ブロックチェインチームPlasma MVP on Plasma MVPの実装）
 
 ## 成果物・今までに作ったもの
 
@@ -73,30 +73,30 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 ### コーディング
 
-- フレームワークを使わない、簡単なPHPアプリケーション（Mysql操作も含む）
+- フレームワークを使わない、簡単なPHPアプリケーション（MySQL操作も含む）
 - Laravelを使ったPHPアプリケーション
 - 簡単なSQL
-- シェルスクリプト, シェル芸
+- シェルスクリプト、 シェル芸
 - HTML, CSS, JS（ES2015）を使った簡単なサイトやSingle Page Applicationの制作
 - C言語を使って簡単な実装（バブルソート等）
 - フレームワークを使わない、Go言語を使ったcliアプリケーション実装
 - Ginフレームワークを使った、Go言語でのWebサービス開発
 - Rust（スタックマシンを実装する程度）
 - Python（ちょっとだけ‥いやちょっとだけって表現曖昧すぎるか、うーん…）
-- Javescript/es6 (フレームワークを使わないSPAを作る程度。)
+- Javescript/es6 (フレームワークを使わないSPAを作る程度）
 
 ### インフラ
 
 #### サーバー
 
 - LAMP環境の構築
-- Nginxサーバーの構築・運営
+- nginxサーバーの構築・運営
 - Ansibleを使ったプロビジョニングなど
 - Let's encryptを使ったSSL証明証の発行や導入
 - Homebrewパッケージの自作
 - Travis CI/CircleCIなど、CI使ったテストやビルドの自動化
-- Azure運用経験(Web、Azure cli、Ansibleそれぞれから)
-- AWS運用経験(ブラウザコンソールからのみ)
+- Azure運用経験（Web、Azure cli、Ansibleそれぞれから）
+- AWS運用経験（ブラウザコンソールからのみ）
 - Vagrantの利用経験
 - Linuxブートディスクのフル暗号化
 - Archlinux Install battle（10回以上）
@@ -120,7 +120,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 - Promtail/Loki/Grafanaのデプロイ、利用経験
 
-### ブロックチェーン
+### ブロックチェイン
 
 - Solidityを使ったスマートコントラクトの実装
 - Scillaを使ったスマートコントラクトの実装
@@ -146,19 +146,19 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 
 ## イベント・大会での受賞、出場経験など
 
-- [ICTトラブルシューティングコンテスト 第7回](https://icttoracon.net/archives/category/%e7%ac%ac7%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2017年3月4日、5日)
-- [ICTトラブルシューティングコンテスト 第8回](https://icttoracon.net/archives/category/%e7%ac%ac8%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2017年8月26日、27日)
-- [ICTトラブルシューティングコンテスト 第9回](https://icttoracon.net/archives/category/%e7%ac%ac9%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2018年3月3日、4日)
-- [第12回情報危機管理コンテスト](https://www.riis.or.jp/symposium21/crisismanagement/) チームYonelabo経済産業大臣賞兼優勝 (2017年5月24〜日)
-- [SECCON 2017](https://2017.seccon.jp/news/summary/seccon-20171/seccon2017.html) 国内決勝出場 (2017年2月17日)
+- [ICTトラブルシューティングコンテスト 第7回](https://icttoracon.net/archives/category/%e7%ac%ac7%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2017年3月4日、5日）
+- [ICTトラブルシューティングコンテスト 第8回](https://icttoracon.net/archives/category/%e7%ac%ac8%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2017年8月26日、27日）
+- [ICTトラブルシューティングコンテスト 第9回](https://icttoracon.net/archives/category/%e7%ac%ac9%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2018年3月3日、4日）
+- [第12回情報危機管理コンテスト](https://www.riis.or.jp/symposium21/crisismanagement/) チームYonelabo経済産業大臣賞兼優勝 (2017年5月24〜日）
+- [SECCON 2017](https://2017.seccon.jp/news/summary/seccon-20171/seccon2017.html) 国内決勝出場 (2017年2月17日）
 - 株式会社ミクシィ [Git challenge 第11回](https://mixi-git-challenge.github.io/publications/events/11.html) 一位 ~~優勝~~
 
 ## 講演・LT登壇経験
 
-- [ビットコインとか勉強会#6](https://cryptocurrency.connpass.com/event/54135/)  ビットコインのトランザクションとScriptについて (2017/04/11) 動画: [ビットコインとか勉強会#6 - Youtube](https://youtu.be/2Hgogr6OALA)
+- [ビットコインとか勉強会#6](https://cryptocurrency.connpass.com/event/54135/)  ビットコインのトランザクションとScriptについて (2017/04/11) 動画： [ビットコインとか勉強会#6 - Youtube](https://youtu.be/2Hgogr6OALA)
 - [ビットコインとか勉強会#15](https://cryptocurrency.connpass.com/event/79702/) Ethereum Smart Contract Security Best Practice (2018/02/27)
-- [基礎から学ぶ「ブロックチェーン」と「仮想通貨」 ビジネス](http://techfinancials.planet.bindcloud.jp/) 特別講演 (2017年7月15日)
-- [学生LT#1](https://student-lt.connpass.com/event/55850/) ブロックチェーンとは
+- [基礎から学ぶ「ブロックチェーン」と「仮想通貨」 ビジネス](http://techfinancials.planet.bindcloud.jp/) 特別講演 (2017年7月15日）
+- [学生LT#1](https://student-lt.connpass.com/event/55850/) ブロックチェインとは
 - [学生LT#3](https://student-lt.connpass.com/event/64271/) 目指せ変態エンジニア ショートコーディングのコツとワザ 
 - [学生LT#4](https://student-lt.connpass.com/event/67419/) 目指せ変態エンジニア シェル芸のコツとワザ~ 
 - [学生LT#5](https://student-lt.connpass.com/event/71838/) 
@@ -166,7 +166,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - [学生LT#8](https://student-lt.connpass.com/event/74758/) OSが起動する前から嫁に会いたい
 - [学生LT#11](https://student-lt.connpass.com/event/82379/) デスクトップ環境に頼らないLinux環境構築
 - [学生LT#14](https://student-lt.connpass.com/event/89978/) マイクロサービスアーキテクチャの話
-- [CombNaf 2](http://nafmo.hatenablog.jp/entry/2017/08/16/164020)ブロックチェーンがすごい話
+- [CombNaf 2](http://nafmo.hatenablog.jp/entry/2017/08/16/164020)ブロックチェインがすごい話
 
 ## その他活動履歴
 
@@ -196,7 +196,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 ### 大会・ハッカソン
 
 - セキュリティ・キャンプ全国大会2017（受講者）
-- セキュリティ．キャンプ全国大会2018（チューター）
+- セキュリティ。キャンプ全国大会2018（チューター）
 - SecHack365第一期生2017年
 
 ### 運営
@@ -225,24 +225,24 @@ https://www.wantedly.com/users/83202215
 
 ## 好きなエディタ
 
-vim。長年育ててきた.vimrcにもはや子供同然の愛情が芽生えた。
+vim。長年育ててきた。vimrcにもはや子供同然の愛情が芽生えた。
 
 ## 好きなOS
 
 Archlinux。  
 もともとUbuntu Desktopを使っていたが、Unityデスクトップが動作がもっさりシているので、いろいろとパッケージを消しながら利用。ただ、依存関係をぶっ壊してXorgが起動しなくなったりよくわからんデーモンが動かなくなることなどがあった。  
-「引き算でOSをカスタマイズして壊れるなら、足し算でカスタマイズすればいいのでは？」の発想から、Ubuntu Server Minimalをノートパソコンにインストールして使用。  
+「引き算でOSをカスタマイズして壊れるなら、足し算でカスタマイズすればいいのでは？」の発想から、Ubuntu Server MinimalをノートPCにインストールして使用。  
 その後Archlinuxに出会い、素のGNU/Linuxにパッケージマネージャーを付け足しただけのカスタマイズ性の高さに一目惚れ。今に至るまで愛用している。
 
 ## キーボード
 
 開発端末が大体ノートPCだったため、キーボードは気にしたことがなく、たまに接続するのはハードオフの300円キーボードだった。  
 ただショートカットキーの使い過ぎで小指が痛くなり、軽くて使いやすいUSキーボード（で、caps lockがctrlだと尚よし）を探したところ、HHKBを進められたので購入。
-手になれて一番使いやすいが、果たしてこの価格は高すぎではないのか…？という疑念は今でも持ってる。
+手になれて一番使いやすいが、果たしてこの価格は高すぎではないのか…？　という疑念は今でも持ってる。
 
 ## 開発マシンについて
 
-XiaomiのMi Notebook Pro 2017を利用。Mac Bookぽい見た目にi7 8世代目CPUとメモリ16GBが乗ってるので最高。文句をつけるとしたら充電と映像出力に対応したUSB typeCポートが1つしか無いところ。あとtypeC PDが15V 3A入力でないと充電されないところ。
+XiaomiのMi Notebook Pro 2017を利用。MacBookぽい見た目にi7 8世代目CPUとメモリ16GBが乗ってるので最高。文句をつけるとしたら充電と映像出力に対応したUSB typeCポートが1つしか無いところ。あとtypeC PDが15V 3A入力でないと充電されないところ。
 
 SSDはもともと256GB nvmeが入っていたが、容量と速度の改善を目的に、分解してSamusungの970 evo plusを2スロット目に挿入した。
 
@@ -255,14 +255,14 @@ VSCodeとかIDEを見るたびに、俺もああいうの1回使ってみよう�
 
 これは1つに絞るのが難しいので、各ジャンルごとに一番好きな作品をまとめてみた。
 
-- SF系: STEINS;GATE
-- 日常系: 日常
-- 異能系: Charlotte
-- 戦闘系: ダーリン・イン・ザ・フランキス
-- かわいい系: エロマンガ先生、俺の妹がこんなにかわいいわけがない（この２つは甲乙つけがたい‥すまん…）
-- 恋愛系: やがて君になる
-- 女子高生が南極行く系: 宇宙よりも遠い場所
-- あんまり有名じゃない系: イブの時間
+- SF系： STEINS;GATE
+- 日常系： 日常
+- 異能系： Charlotte
+- 戦闘系： ダーリン・イン・ザ・フランキス
+- かわいい系： エロマンガ先生、俺の妹がこんなにかわいいわけがない（この2つは甲乙つけがたい‥すまん…）
+- 恋愛系： やがて君になる
+- 女子高生が南極行く系： 宇宙よりも遠い場所
+- あんまり有名じゃない系： イブの時間
 
 
 その他、書ききれないのでここを見てくれ  
@@ -293,7 +293,7 @@ J-POP、Vocaloid全般、アニソン全般、Future Bassあたりを好む。
 - [https://github.com/onokatio/publisher](https://github.com/onokatio/publisher)  
 某DeNA社のサマーインターンに応募したとき、一時面接で「Goを触るインターンなので少し勉強シておいたほうが良いかも」と言われ、調子に乗って二次面接までの期間、GoでWebアプリケーションを作ったときの成果物。いやこれ見せたのに二次面接で落ちたんだけどね…。  
 内容は結構遊びに近くて、「一定期間ごとにパスワードを使って公開期限を伸ばさないと、自分が入力した文章がインターネットに公開される」というアプリケーション。なんかスパイみたいでかっこよくない？  
-ちなみに肝心のパスワードで期限を更新する機能は未実装（おい)
+ちなみに肝心のパスワードで期限を更新する機能は未実装（おい）
 
 - [onokatio/nitkc-calc_i](https://github.com/onokatio/nitkc-calc_i)  
 言語解析の授業で、四則演算式のインタプリタを作って見ましょう、という課題が出されたときの成果物。  
@@ -307,7 +307,7 @@ J-POP、Vocaloid全般、アニソン全般、Future Bassあたりを好む。
 
 - [onokatio/Solidity-Simpleboard-Webpack](https://github.com/onokatio/Solidity-Simpleboard-Webpack)  
 SecHack365というハッカソンで作ったアプリケーション。  
-ブロックチェーンを使って、掲示板にPOSTされたデータをブロックチェーンで管理し、フロントエンドのjsやhtmlはswarmという分散ファイルシステムを使って提供する、という細部まで分散化にこだわった作品。今のブロックチェーンの知識はほとんどこれを作ったときに手に入れた
+ブロックチェインを使って、掲示板にPOSTされたデータをブロックチェインで管理し、フロントエンドのjsやhtmlはswarmという分散ファイルシステムを使って提供する、という細部まで分散化にこだわった作品。今のブロックチェインの知識はほとんどこれを作ったときに手に入れた
 
 - [onokatio/bitcoin-script-vm](https://github.com/onokatio/bitcoin-script-vm)  
 Rust言語製の、Bitcoin Scriptスタックマシン。Rustが話題になってた頃に勉強目的で作り始めた。一応ちゃんと動く。四則演算と条件分岐を実装したものの、その後だんだんと触らなくなってしまった作品。こういう半永久的にWIPな作品は大量にある

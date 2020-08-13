@@ -15,8 +15,8 @@ date: 2019-12-03 22:59:00 +0900
 自分は、技術分野やニュース、話題などを追いかけるために、複数のツールを利用しています。
 以下にツールと対象を示します。
 
-- RSSリーダー (IT系ニュース、ガジェット系ニュース、技術ブログ)
-- Twitter (新聞・テレビ報道各社リスト)
+- RSSリーダー (IT系ニュース、ガジェット系ニュース、技術ブログ）
+- Twitter (新聞・テレビ報道各社リスト）
 - その他個別に見ているサイト
   - https://www.xda-developers.com/
   - https://qiita.com
@@ -72,7 +72,7 @@ $ cat Inoreader\ Subscriptions\ 20191203.xml | xq '.opml.body.outline[3].outline
 "Mogura VR"
 ```
 
-### ブロックチェーン関係
+### ブロックチェイン関係
 
 ```shell
 $ cat Inoreader\ Subscriptions\ 20191203.xml | xq '.opml.body.outline[4].outline[]["@text"] '

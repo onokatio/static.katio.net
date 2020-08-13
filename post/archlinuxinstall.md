@@ -55,11 +55,11 @@ etcにはetckeeperを入れ、定期的にリモートにpushします。
 サブボリュームである/や/homeは、snapperで差分inode管理し、定期的なバックアップを取得します。
 また、ここで取得したバックアップは外部HDDやDVDに保管するものとします。
 
-# OSを利用する上で選んだ各パッケージ
+# OSを利用するうえで選んだ各パッケージ
 
-ネットワーク: NetworkManager
+ネットワーク： NetworkManager
 GUI: X11
-音: pulseaudio。
+音： pulseaudio。
 
 # ウィンドウマネージャ
 

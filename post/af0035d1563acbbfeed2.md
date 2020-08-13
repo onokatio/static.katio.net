@@ -4,7 +4,7 @@ tags: Linux dns dnsmasq networkmanager
 author: onokatio
 slide: false
 ---
-どうも。かちおです。自分はArchlinuxにNetworkManager(以下NM)を入れてWiFiに接続をしていますが、今回DNSサーバーを指定するに当たって、一体/etc/resolv.confを誰がどう書き換えているのか複雑すぎたため、備忘録がてら書いていこうと思います。
+どうも。かちおです。自分はArchlinuxにNetworkManager(以下NM)を入れてWi-Fiに接続をしていますが、今回DNSサーバーを指定するに当たって、一体/etc/resolv.confを誰がどう書き換えているのか複雑すぎたため、備忘録がてら書いていこうと思います。
 
 今回の目的は「DHCPで降ってくるDNSサーバーを上流とするDNSキャッシュサーバーを、自分のマシンで動かして、名前解決はpdnsdでようにする」です。
 
@@ -18,21 +18,21 @@ Linuxでは様々なアプリケーションが名前解決をするためにDNS
 >/etc/host.confや/etc/nsswitch.confについては、名前解決をする順番を書くファイルとなっています。大体の場合「/etc/hostを見ろ。それでなかったら自分のホスト名と一致してるか見ろ。それでもだめだったら/etc/resolv.confを見に言ってDNSに問い合わせろ」みたいなことが書いてあります。
 >/etc/hosts.confと/etc/nsswitch.confはそれぞれ同じ役割ですが、現在はhostsを使わずに/etc/nsswitch.confを使うことが推奨されています。
 
-# resolver(リゾルバ)について
+# resolver(リゾルバ）について
 
 resolverは、自分の持っているDNSの情報を/etc/resolv.confに書き込むアプリケーションのことです。
 NMやresolvconf、netctl、systemd-resolvedなどがこれに当たります。
 
 # DNSサーバーについて
 
-DNSサーバーは、DNS情報(主な場合ドメインとipアドレスの紐付け)に使われます。
+DNSサーバーは、DNS情報（主な場合ドメインとipアドレスの紐付け）に使われます。
 DNSキャッシュサーバーというものもあり、これはDNS情報をキャッシュするものです。上流のサーバー(本来メインで使用するDNSサーバー)を指定し、自分がDNS情報を持っていればそれを返し、なければ指定した上流サーバーに問い合わせてそれを返すことができて、DNSサーバーのように振る舞うことができます。
 dnsmasqやUnbound、systemd-resolvedがキャッシュサーバーに当たります。
 
 # DNSサーバーの取得の流れ
 
-NetworkManagerがWiFiや有線LANと接続し、DHCP情報を取得して、そこから配布されたDNSサーバーの値を取得します。これはNetworkManagerがwpa_supplicantやdhclientに頼んで代わりにやってもらっています。そして、NetworkManagerのもとにDNSサーバーのipアドレスが届けられます。
-また、ネットワークの設定で特定のWiFiだけDNSを変更していた場合は、NetworkManagerはその値を使用します。
+NetworkManagerがWi-Fiや有線LANと接続し、DHCP情報を取得して、そこから配布されたDNSサーバーの値を取得します。これはNetworkManagerがwpa_supplicantやdhclientに頼んで代わりにやってもらっています。そして、NetworkManagerのもとにDNSサーバーのipアドレスが届けられます。
+また、ネットワークの設定で特定のWi-FiだけDNSを変更していた場合は、NetworkManagerはその値を使用します。
 
 # NetworkManagerの仕事
 
@@ -156,5 +156,5 @@ $ sudo systemctl start pdnsd
 $ sudo systemctl enable pdnsd #自動起動
 ```
 
-これで完了です！キャッシュすると早くていいですね！
+これで完了です！　キャッシュすると早くていいですね！
 
