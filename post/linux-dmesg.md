@@ -66,7 +66,7 @@ journaldに`/dev/log`を奪われたsyslogは、しぶしぶ`/var/log/journal/sy
 
 journalctlはjournaldが`/var/log/journal`や`/var/run/log/journal`に保管したログをコマンドラインから確認するツールです。
 
-よく使いそうなオプション
+よく使いそうなオプション。
 
 - `-e` ログの最後を表示する
 - `-f` ログをリアルタイムで更新する

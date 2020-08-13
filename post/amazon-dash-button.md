@@ -9,12 +9,12 @@ Amazon Dash Buttonでインターホンを作る
 
 # 今回作るもの
 
-Amazon Dash Buttonが押されたら、Archlinuxパソコンに通知が飛ぶようにするやつ
+Amazon Dash Buttonが押されたら、Archlinuxパソコンに通知が飛ぶようにするやつ。
 
 # 作り方
 事前に、Dash Buttonはwifiネットワークの設定を済ませた前提とします。
 
-これを使います
+これを使います。
 
 https://github.com/Nekmo/amazon-dash
 
@@ -73,7 +73,7 @@ RestartSec=3
 WantedBy=multi-user.target
 ```
 
-で、起動&自動起動
+で、起動&自動起動。
 
 ```bash
 $ sudo systemctl daemon-reload

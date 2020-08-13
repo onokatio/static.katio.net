@@ -25,9 +25,9 @@ bridge_ports eth0
 bridge_maxwait 10
 ```
 
-そして再起動
+そして再起動。
 
-起動した後に確認
+起動した後に確認。
 
 ```
 ifconfig

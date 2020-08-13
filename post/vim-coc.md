@@ -94,7 +94,7 @@ $ sudo powerpill -S ccls
 $ yay -S gopls
 ```
 
-jsonに以下を追加
+jsonに以下を追加。
 
 ```json=
     "golang": {
@@ -122,7 +122,7 @@ rustは設定ファイルに書かずともプラグインが提供されてい�
 npm i intelephense -g
 ```
 
-なんかOS付属のパッケージマネージャじゃなくてnpmから入れるのが少しめんどくさい
+なんかOS付属のパッケージマネージャじゃなくてnpmから入れるのが少しめんどくさい。
 
 ```
         "intelephense": {
@@ -138,7 +138,7 @@ npm i intelephense -g
 
 ### その他
 
-そろそろ飽きてきたので、箇条書きしていく
+そろそろ飽きてきたので、箇条書きしていく。
 
 - dockerfile
 - bash
@@ -148,7 +148,7 @@ npm i intelephense -g
 
 ## 使い方
 
-ここらへんを見た
+ここらへんを見た。
 
 - https://qiita.com/gw31415/items/5dfcf8d3676c2c5576ef
 - http://wakame.hatenablog.jp/entry/2019/03/31/124941

@@ -47,7 +47,7 @@ zplugin snippet https://hoge.fuga/hoge.zsh
 
 また、Oh-My-ZshやPretzoの特定のファイルを読み込みたい場合、省略記号として`OMZ::`と`PZT::`を使用できます。
 
-例えば以下のように書いた場合
+例えば以下のように書いた場合。
 
 ```
 zplugin snippet OMZ::plugins/git/git.plugin.zsh

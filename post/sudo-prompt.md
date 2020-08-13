@@ -13,11 +13,11 @@ sudoするたびに可愛い女の子に罵ってもらう
 ![](https://blog.katio.net/resource/image/sudo-prompt.png)
 
 
-プロンプトが‥
+プロンプトが‥。
 
 ![](https://blog.katio.net/resource/image/sudo-prompt-2.png)
 
-味気ない‥
+味気ない‥。
 
 ![](https://blog.katio.net/resource/image/sudo-prompt-1.png)
 
@@ -27,9 +27,9 @@ sudoするたびに可愛い女の子に罵ってもらう
 
 # sudoのmanページを読む
 
-こういうときはですね、大体相場は決まっていて、manページ読めば良いんですよ‥
+こういうときはですね、大体相場は決まっていて、manページ読めば良いんですよ‥。
 
-ふむふむ…
+ふむふむ…。
 
 ![](https://blog.katio.net/resource/image/sudo-prompt-man.png)
 
@@ -39,7 +39,7 @@ sudoするたびに可愛い女の子に罵ってもらう
 
 # 環境変数を指定する
 
-zshrc/zprofileに以下を追記します
+zshrc/zprofileに以下を追記します。
 
 ```zsh
 export SUDO_PROMPT="[sudo] さっさとパスワード入れなさいよ、このバカ！ > "

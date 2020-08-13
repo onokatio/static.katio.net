@@ -6,7 +6,7 @@ slide: false
 ---
 # SNI とは
 
-1つのIPアドレスと一つのTCPポートで、複数のWebサイトをホスティングする技術の一つに、`virtualhost`があります。
+1つのIPアドレスと1つのTCPポートで、複数のWebサイトをホスティングする技術の一つに、`virtualhost`があります。
 これは、HTTPリクエスト内で指定するドメイン名から、同じIPに対するアクセスをドメインごとに振り分ける機能です。
 
 たとえば、以下のコマンドを実行すると、こんな出力がされます。
@@ -55,7 +55,7 @@ Nginxなどのサーバーは、このHostを見分けて、同じIPアドレス
 ```
 ( https://www.ipa.go.jp/security/rfc/RFC6066JA.html より )
 
-また、このSNIは、RFCの中で
+また、このSNIは、RFCの中で。
 >「クライアントは、あるサーバをサポートされている名前種別によって見つけ出す（locate）ときはいつでも、その client hello 中に種別が "server_name" の拡張を含むこと」が推奨される（RECOMMENDED）。」
 
 

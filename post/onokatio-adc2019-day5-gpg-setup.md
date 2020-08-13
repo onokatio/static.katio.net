@@ -30,7 +30,7 @@ master keyは主にsubkeyへ署名するためにだけ使用し、普段の操�
 
 今回、gpg鍵はArchlinux内部で生成し、そのmaster keyとsubkeyを、自分が所持しているYubikey 2つに複製し保管します。
 
-参考
+参考。
 
 自分が書いた過去のブログ : https://blog.katio.net/page/Yubikey  
 Archwiki : https://wiki.archlinux.jp/index.php/GnuPG  
@@ -108,7 +108,7 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 ```
 
-すると、`ssh-add -L`でgpg鍵が見れるようですが‥何故か見れない
+すると、`ssh-add -L`でgpg鍵が見れるようですが‥何故か見れない。
 
 # gitで使う
 

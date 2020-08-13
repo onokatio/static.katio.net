@@ -59,7 +59,7 @@ etcにはetckeeperを入れ、定期的にリモートにpushします。
 
 ネットワーク: NetworkManager
 GUI: X11
-音: pulseaudio
+音: pulseaudio。
 
 # ウィンドウマネージャ
 

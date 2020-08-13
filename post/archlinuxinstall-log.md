@@ -62,7 +62,7 @@ wheelグループを追加してsudoersにも追加。
 $ sudo pacman -S xorg-server xfce4 xfce4-goodies compton noto-fonts-cjk
 ```
 
-テーマとアイコン
+テーマとアイコン。
 ```
 $ sudo pacman -S materia-gtk-theme papirus-icon-theme
 ```
@@ -144,7 +144,7 @@ $ sudo pacman -S pigz ccache
 $ ccache --set-config=max_size=10G
 ```
 
-以下 /etc/makepkg.confのdiff
+以下 /etc/makepkg.confのdiff。
 
 ```
 diff --git a/makepkg.conf b/makepkg.conf
@@ -205,7 +205,7 @@ index 72bddc5..e577366 100644
 ```
 # pacmanのミラー追加
 
-https://wiki.archlinux.jp/index.php/%E3%83%9F%E3%83%A9%E3%83%BC を見ながら/etc/pacman.d/mirrorlistに追加
+https://wiki.archlinux.jp/index.php/%E3%83%9F%E3%83%A9%E3%83%BC を見ながら/etc/pacman.d/mirrorlistに追加。
 
 ```
 diff --git a/pacman.d/mirrorlist b/pacman.d/mirrorlist
@@ -253,7 +253,7 @@ yay -S powerpill reflector
 
 rsyncは不安定なため今回は使わない。
 
-`/etc/pacman.d/hooks/mirrorupgrade.hook`を以下のように作成
+`/etc/pacman.d/hooks/mirrorupgrade.hook`を以下のように作成。
 
 ```
 [Trigger]
@@ -270,7 +270,7 @@ Exec = /bin/sh -c "reflector --country 'Japan' --sort rate --age 24 --save /etc/
 
 これでpacman-mirrorlistが更新されるたびに日本のミラーサーバーが速度順にmirrorlistに上書きされる。
 
-ついでに今実行
+ついでに今実行。
 ```
 $ reflector --country 'Japan' --sort rate --age 24 --save /etc/pacman.d/mirrorlist
 ```
@@ -285,7 +285,7 @@ $ sudo systemctl enable preload.service
 
 カーネルパラメーターに`nowatchdog`を追加。
 
-また/etc/modprobe.d/watchnog.confを以下の内容で作成
+また/etc/modprobe.d/watchnog.confを以下の内容で作成。
 
 ```
 blacklist iTCO_wdt
@@ -398,7 +398,7 @@ index c07a283..815641b 100644
 
 # 指紋認証
 
-https://wiki.archlinux.jp/index.php/Fprint を参考に
+https://wiki.archlinux.jp/index.php/Fprint を参考に。
 
 
 # proc、tty、sysctl
@@ -581,13 +581,13 @@ $ xfconf-query -c xfce4-session -p /general/LockCommand -s "i3lock -fon"  --crea
 
 ## General Buttons
 
-When power button is pressedをHibernateに設定
+When power button is pressedをHibernateに設定。
 
 これで電源ボタンを押すとハイバーネートに突入します。
 
 ## General Lapyop Lid
 
-When laptop lid is closedを、On battery, Plugged in両方共Locl screenに設定
+When laptop lid is closedを、On battery, Plugged in両方共Locl screenに設定。
 
 これで、ノートパソコンの蓋を閉じると画面がロックされ画面オフになります。
 
@@ -626,12 +626,12 @@ On batteryとPlugged inを両方共Suspendに設定します。またWhen inacti
 $ yay -S  pulseaudio-modules-bt-git bluez-git
 ```
 
-bluetooth.serviceを編集
+bluetooth.serviceを編集。
 ```
 $ sudo systemctl edit bluetooth.service
 ```
 
-エディタが起動するので以下を入力
+エディタが起動するので以下を入力。
 
 ```
 [Service]
@@ -680,7 +680,7 @@ fi
 
 https://blog.katio.net/#/page/archlinux-video-acceleration
 
-と
+と。
 
 https://wiki.archlinux.jp/index.php/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%93%E3%83%87%E3%82%AA%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%A9%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3
 
@@ -772,7 +772,7 @@ $ yay -S man-pages-ja-git
 $ yay -S man-pages-openssh-ja
 ```
 
-zshrcに以下を追記
+zshrcに以下を追記。
 
 ```
 alias man='LANG=ja_JP.UTF-8 man'

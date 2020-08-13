@@ -33,7 +33,7 @@ yayでインストールします。
 $ yay -S intel-undervolt
 ```
 
-で、とりあえずreadを実行
+で、とりあえずreadを実行。
 
 ```shell
 $ sudo intel-undervolt read
@@ -360,7 +360,7 @@ $ cat /sys/firmware/efi/efivars/CpuSetup-b08f97ff-e6e8-4193-a997-5e9e9b0adb32 | 
 
 # 改めて電圧を変更する
 
-再起動が完了したら、改めてapplyしましょ
+再起動が完了したら、改めてapplyしましょ。
 ```shell
 $ sudo intel-undervolt apply
 CPU (0): -105.47 mV

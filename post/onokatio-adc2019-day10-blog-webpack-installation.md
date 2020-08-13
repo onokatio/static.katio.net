@@ -82,7 +82,7 @@ npxはnpmに含まれているネイティブバイナリ実行ツールだと�
 
 試しに、marked.jsをcdnからではなくnpm経由で読み込みます。
 
-まず、npm install markedして、scriptタグを消して…
+まず、npm install markedして、scriptタグを消して…。
 
 ```diff=
 diff --git a/index.html b/index.html
@@ -99,7 +99,7 @@ index 5a646a2..e2572ca 100644
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emoji-toolkit@5.0.5/extras/css/joypixels.min.css" integrity="sha384-4ok+tBQQdy5hcPT56tzcE11yQ2BkN0Py1uDE8ZOiXYstHOpUB61pJafm+NidByp4" crossorigin="anonymous">
 ```
 
-で、importして…
+で、importして…。
 
 ```diff=
 diff --git a/src/RenderMarkdown.js b/src/RenderMarkdown.js

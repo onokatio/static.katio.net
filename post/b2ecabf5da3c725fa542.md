@@ -29,7 +29,7 @@ WantedBy=multi-user.target
 ```
 私はこんな感じにしました。
 
-そして
+そして。
 
 ```
 $ sudo touch /etc/onboot.sh

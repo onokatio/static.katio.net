@@ -110,7 +110,7 @@ UUID=e8125144-4a36-4f45-bed9-817503407235       /etc/.git       btrfs           
 ## パーティション切り
 
 fdiskで、nvme ssdに３つのパーティションを作成します。
-1つがEFI、もう一つがext4、最後がLVMです。
+1つがEFI、もう1つがext4、最後がLVMです。
 
 ```
 Device           Start       End   Sectors   Size Type
@@ -223,19 +223,19 @@ grubもインストール。あとheader.imgを/boot以下に移しておく。
 
 [Dm-crypt/特記事項#リモート LUKS ヘッダーを使ってシステムを暗号化 - Archwiki](https://wiki.archlinux.jp/index.php/Dm-crypt/%E7%89%B9%E8%A8%98%E4%BA%8B%E9%A0%85#.E3.83.AA.E3.83.A2.E3.83.BC.E3.83.88_LUKS_.E3.83.98.E3.83.83.E3.83.80.E3.83.BC.E3.82.92.E4.BD.BF.E3.81.A3.E3.81.A6.E3.82.B7.E3.82.B9.E3.83.86.E3.83.A0.E3.82.92.E6.9A.97.E5.8F.B7.E5.8C.96) に従ってencryptフックを修正、リモートヘッダーで起動できるようにする。
 
-また、カーネルコマンドラインにcryptdeviecを追加
+また、カーネルコマンドラインにcryptdeviecを追加。
 
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="cryptdevice=PARTUUID=d8f58add-82a9-a34f-8d18-cb3877396a0e:cryptlvm:header resume=/dev/mapper/kirino-swap nowatchdog"
 ```
 
-あと起動後に/bootをマウントできるようにキーファイルをluksに追加して/etc/crypttabに追加
+あと起動後に/bootをマウントできるようにキーファイルをluksに追加して/etc/crypttabに追加。
 
 ```
 cryptboot UUID=94654520-bbb9-47b6-910e-d77e5060ab28 /cryptboot_keyfile luks
 ```
 
-/etc/mkinitcpio.confのhookはこんな感じ
+/etc/mkinitcpio.confのhookはこんな感じ。
 
 ```
 HOOKS=(base udev autodetect modconf keyboard keymap block encrypt2 lvm2 resume filesystems keyboard fsck)
