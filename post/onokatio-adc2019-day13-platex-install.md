@@ -6,7 +6,7 @@ date: 2019-12-13 19:12:00 +0900
 pLaTeXの環境構築をする
 ===
 
-この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 13日目の記事です。  
+この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 13日目の記事です。
 
 
 # 各用語について

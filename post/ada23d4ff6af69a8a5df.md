@@ -26,6 +26,6 @@ ps=`ps ax|/bin/grep -v 'VSZ|grep'|wc -l`
 
 とりあえずここまで来たのでツイート部分は明日。
 
-追記：第二回を投稿しました。
+追記：第2回を投稿しました。
 http://qiita.com/onokatio/items/466665fcf6b0f2d12aea
 

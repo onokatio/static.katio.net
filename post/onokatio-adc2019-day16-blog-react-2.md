@@ -6,7 +6,7 @@ date: 2019-12-17 00:13:00 +0900
 Reactを勉強してブログに導入したその2
 ===
 
-この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 16日目の記事です。  
+この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 16日目の記事です。
 
 昨日に引き続き、ブログのReact移行を行います。
 
@@ -125,7 +125,7 @@ forEachでappendChild()していたところを、.mapでコンポーネント�
 
 # まとめ
 
-ReactDOMを使い、試しに一部分だけ差し替えを行いました。htmlタグ記法を、jsファイル内部に書くのは斬新ですがとても描きやすいと感じました。  
+ReactDOMを使い、試しに一部分だけ差し替えを行いました。htmlタグ記法を、jsファイル内部に書くのは斬新ですがとても描きやすいと感じました。
 
 現在は、View系とControler系がごちゃごちゃになっているので、最終的にはすべての要素をコンポーネントへ置き換え、一番外で一度ReactDOM.render()を呼び出すだけの構造にするのが目標となっています。
 

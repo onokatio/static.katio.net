@@ -130,11 +130,11 @@ https://github.com/kitsunyan/intel-undervolt/blob/ea0e74c583fb0ba4bccd896d3e9c7e
 https://github.com/kitsunyan/intel-undervolt/issues/25
 
 どうやら「そもそも設定ができないCPU/BIOSである」か「設定は完了したがそもそもCPUの電圧のReadが許可されてないCPU/BIOSである」みたいです。  
-うーん、と悩んだところでintel-undervoltの設定ファイルがおいてあったgithubリポジトリに興味深い項目が見つかりました。  
+うーん、と悩んだところでintel-undervoltの設定ファイルがおいてあったgithubリポジトリに興味深い項目が見つかりました。
 
 https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods#enable-cpu-undervolting-feature
 
-そもそもBIOSの設定を変更しないとCPUの低電圧化はできないようです。  
+そもそもBIOSの設定を変更しないとCPUの低電圧化はできないようです。
 
 # と、いうことでBIOSの設定を改変します
 

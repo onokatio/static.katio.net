@@ -6,7 +6,7 @@ date: 2019-12-08 02:17:00 +0900
 Source Han Monoフォントをnerd font化して使ってみる
 ===
 
-この記事は、[onokatio Advent Calendar 2019](https://blog.katio.net/adventcalendar/2019/onokatio) 7日目の記事です。  
+この記事は、[onokatio Advent Calendar 2019](https://blog.katio.net/adventcalendar/2019/onokatio) 7日目の記事です。
 
 皆さん、ターミナルやエディタのフォントは何を使っていますでしょうか。Mac OSであればMonaco、UbuntuであればUbuntu Monoなどが有名どころかなと思います。
 

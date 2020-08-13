@@ -6,7 +6,7 @@ date: 2019-12-12 23:35:00 +0900
 webpackをsass対応 & CSSインポートしてみる
 ===
 
-この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 12日目の記事です。  
+この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 12日目の記事です。
 
 先日、webpackを導入しましたが、今度はsass対応とcssのロードをしてみます。
 

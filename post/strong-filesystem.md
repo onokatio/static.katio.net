@@ -110,7 +110,7 @@ UUID=e8125144-4a36-4f45-bed9-817503407235       /etc/.git       btrfs           
 ## パーティション切り
 
 fdiskで、nvme ssdに３つのパーティションを作成します。
-一つがEFI、もう一つがext4、最後がLVMです。
+1つがEFI、もう一つがext4、最後がLVMです。
 
 ```
 Device           Start       End   Sectors   Size Type

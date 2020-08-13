@@ -31,7 +31,7 @@ sendmailやcronなど、システムで動く様々なプロセス（主にinit.
 
 syslogとinitの時代は今まで説明した構成で何も問題はありませんでした。initは各サービスを起動し、サービスや揮発性のあるカーネルのログはsyslogが受信しファイルに保管してくれていました。
 
-ただ、その後systemdが誕生しました。systemdはUnitファイルにより任意のコマンド（=サービス）を実行します。また、systemdのコンポーネントの一つとしてsystemd journaldが開発されました。
+ただ、その後systemdが誕生しました。systemdはUnitファイルにより任意のコマンド（=サービス）を実行します。また、systemdのコンポーネントの1つとしてsystemd journaldが開発されました。
 systemd journaldが何をしているか解説していきます。
 
 ## journaldの動作

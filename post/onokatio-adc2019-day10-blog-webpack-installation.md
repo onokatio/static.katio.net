@@ -6,7 +6,7 @@ date: 2019-12-11 01:07:00 +0900
 フロントエンドの環境を勉強しつつブログをナウいコードにする
 ===
 
-この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 10日目の記事です。  
+この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 10日目の記事です。
 
 さて、魔改造を続けてきたこのブログですが、純粋なhtml/jsのみで管理することに限界を感じてきました。何でもかんでも`<script>`タグでライブラリを読み込むのにも無理があります。
 
@@ -15,7 +15,7 @@ date: 2019-12-11 01:07:00 +0900
 # 過去のフロントエンド界の歴史について
 
 
-参考: 
+参考:
 - https://havelog.ayumusato.com/develop/others/e630-npm_meets_frontend.html
 - https://qiita.com/jonghyo/items/e931f7b6357995314599
 
@@ -25,7 +25,7 @@ date: 2019-12-11 01:07:00 +0900
 
 # 大体理解してみる
 
-参考: 
+参考:
 - https://goworkship.com/magazine/how-to-webpack/
 - https://www.slideshare.net/ssuser46977e/webpack-why-cant-you-understand-the-webpack
 

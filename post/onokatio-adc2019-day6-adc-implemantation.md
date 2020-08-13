@@ -7,7 +7,7 @@ date: 2019-12-07 00:02:00 +0900
 ===
 
 
-この記事は、[onokatio Advent Calendar 2019](https://blog.katio.net/adventcalendar/2019/onokatio) 6日目の記事です。  
+この記事は、[onokatio Advent Calendar 2019](https://blog.katio.net/adventcalendar/2019/onokatio) 6日目の記事です。
 
 今回の、アドベントカレンダー企画を始めようと思った際、Qiitaや他のアドベントカレンダーサイトを使っても良かったのですが、気分的に自分のブログに実装したいな、と思い、自力実装しました。
 

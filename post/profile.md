@@ -149,7 +149,7 @@ Webサーバー自力で作りたいなーと思ってNginxをさわり、
 - [ICTトラブルシューティングコンテスト 第7回](https://icttoracon.net/archives/category/%e7%ac%ac7%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2017年3月4日、5日)
 - [ICTトラブルシューティングコンテスト 第8回](https://icttoracon.net/archives/category/%e7%ac%ac8%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2017年8月26日、27日)
 - [ICTトラブルシューティングコンテスト 第9回](https://icttoracon.net/archives/category/%e7%ac%ac9%e5%9b%9e%e3%83%88%e3%83%a9%e3%82%b3%e3%83%b3) 本戦出場 (2018年3月3日、4日)
-- [第12回情報危機管理コンテスト](https://www.riis.or.jp/symposium21/crisismanagement/) チームYonelabo経済産業大臣賞兼 優勝 (2017年5月24〜日)
+- [第12回情報危機管理コンテスト](https://www.riis.or.jp/symposium21/crisismanagement/) チームYonelabo経済産業大臣賞兼優勝 (2017年5月24〜日)
 - [SECCON 2017](https://2017.seccon.jp/news/summary/seccon-20171/seccon2017.html) 国内決勝出場 (2017年2月17日)
 - 株式会社ミクシィ [Git challenge 第11回](https://mixi-git-challenge.github.io/publications/events/11.html) 一位 ~~優勝~~
 
@@ -242,18 +242,18 @@ Archlinux。
 
 ## 開発マシンについて
 
-XiaomiのMi Notebook Pro 2017を利用。Mac Bookぽい見た目にi7 8世代目CPUとメモリ16GBが乗ってるので最高。文句をつけるとしたら充電と映像出力に対応したUSB typeCポートが一つしか無いところ。あとtypeC PDが15V 3A入力でないと充電されないところ。
+XiaomiのMi Notebook Pro 2017を利用。Mac Bookぽい見た目にi7 8世代目CPUとメモリ16GBが乗ってるので最高。文句をつけるとしたら充電と映像出力に対応したUSB typeCポートが1つしか無いところ。あとtypeC PDが15V 3A入力でないと充電されないところ。
 
 SSDはもともと256GB nvmeが入っていたが、容量と速度の改善を目的に、分解してSamusungの970 evo plusを2スロット目に挿入した。
 
 ## 開発環境
 
 tmux + zsh + neovim + hyperが普段の開発環境。ちなみにブラウザはfirefox。
-VSCodeとかIDEを見るたびに、俺もああいうの一回使ってみようかなー、と思いながら結局vimを手放せずにいる。今から補完の設定とかプラグインの選定し直すほど移行したい欲はないので、必要にかられるまではvimを使い続けるつもり。
+VSCodeとかIDEを見るたびに、俺もああいうの1回使ってみようかなー、と思いながら結局vimを手放せずにいる。今から補完の設定とかプラグインの選定し直すほど移行したい欲はないので、必要にかられるまではvimを使い続けるつもり。
 
 ## 好きなアニメ
 
-これは一つに絞るのが難しいので、各ジャンルごとに一番好きな作品をまとめてみた。
+これは1つに絞るのが難しいので、各ジャンルごとに一番好きな作品をまとめてみた。
 
 - SF系: STEINS;GATE
 - 日常系: 日常
@@ -275,7 +275,7 @@ J-POP、Vocaloid全般、アニソン全般、Future Bassあたりを好む。
 
 ## 今まで作ってて一番楽しかったもの
 
-基本的にその時作ってるものがその時一番楽しいものなのでこれまた一つに絞りづらい。けど、飽きっぽい自分が珍しく長い時間作り続けられたものがいくつかあるので書いてみる。
+基本的にその時作ってるものがその時一番楽しいものなのでこれまた1つに絞りづらい。けど、飽きっぽい自分が珍しく長い時間作り続けられたものがいくつかあるので書いてみる。
 
 - [onokatio/SoftEtherVpnUtils](https://github.com/onokatio/SoftEtherVpnUtils)  
 母校で高専セキュリティコンテストが開催されて、自分がその運営だったときに作ったスクリプト。  

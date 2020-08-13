@@ -6,7 +6,7 @@ date: 2019-12-18 01:52:00 +0900
 Youtube-dlでプレイリストの並列ダウンロードを行う
 ===
 
-この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 17日目の記事です。本来であればReact第3弾を書こうと思っていたのですが、少し時間がなく今回は走り書き程度の記事になっています。  
+この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 17日目の記事です。本来であればReact第3弾を書こうと思っていたのですが、少し時間がなく今回は走り書き程度の記事になっています。
 
 Youtubeでプレイリストを並列ダウンロードしたい場合、以下のIssueに乗っている方法が使えます。
 

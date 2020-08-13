@@ -35,7 +35,7 @@ WantedBy=multi-user.target
 $ sudo touch /etc/onboot.sh
 ```
 
-こんな感じでroot権限でファイルを作ってあげればOK。 
+こんな感じでroot権限でファイルを作ってあげればOK。
 
 あとはいつもどおり、
 
