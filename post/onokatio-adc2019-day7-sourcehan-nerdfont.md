@@ -38,7 +38,7 @@ Nerd Fontに含まれているフォントには、以下があります。
 
 vimのPowerlineプラグインに使われているPowerline Fontや、awesome Fontは有名だと思います。
 
-ということで、改めて説明すると、今回の目的は **Source Han Monoフォント環境でも、vimやtmuxのアイコンがちゃんと動くようにしたい！　！　！** です。
+ということで、あらためて説明すると、今回の目的は **Source Han Monoフォント環境でも、vimやtmuxのアイコンがちゃんと動くようにしたい！　！　！** です。
 
 # やっていき
 
@@ -73,7 +73,7 @@ https://github.com/ty-edelweiss/source-han-code-jp-powerline/blob/master/bin/ttc
 
 ※2019年現在、試してみたところ、python2のpipが動かなくなったため、このコマンドが動かなくなっていました。その場合代わりにこちらを使用します。 https://gist.github.com/lilydjwg/8877450
 
-※更に追記上のコードもうまく動かなかったので、otfを直接ダウンロードします。 https://github.com/adobe-fonts/source-han-mono/blob/master/Regular/OTC/SourceHanMono-Regular.otf
+※さらに追記上のコードもうまく動かなかったので、otfを直接ダウンロードします。 https://github.com/adobe-fonts/source-han-mono/blob/master/Regular/OTC/SourceHanMono-Regular.otf
 
 ## Nerd Font Patcherを使って、フォントへパッチを当てる
 
@@ -90,6 +90,6 @@ git clone https://github.com/ryanoasis/nerd-fonts --depth 1
 ```
 
 ここでSegmentation Faultが発生しました…。悲しい。
-ということでこの記事は一旦ここまでです。ついでに発生したバグをIssueにまとめました。もし解決できるほうがいればぜひともプルリクエストお願い致します。
+ということでこの記事はいったんここまでです。ついでに発生したバグをIssueにまとめました。もし解決できるほうがいればぜひともプルリクエストお願いいたします。
 
 https://github.com/fontforge/fontforge/issues/4047

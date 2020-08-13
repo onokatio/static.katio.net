@@ -34,7 +34,7 @@ https://www.chromium.org/chromium-os/chromiumos-design-docs/software-architectur
 # ファームウェア/ブートローダー
 
 ブートローダーとしてU-Bootを利用している。
-また、BIOSが既に動作していない端末の場合、Androidと同じくEEPROM上に2つの領域を確保し、A/B Partition方式でファームウェアを起動している。
+また、BIOSがすでに動作していない端末の場合、Androidと同じくEEPROM上に2つの領域を確保し、A/B Partition方式でファームウェアを起動している。
 
 # ウィンドウマネージャー
 

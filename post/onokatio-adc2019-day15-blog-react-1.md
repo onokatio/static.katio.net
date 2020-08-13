@@ -60,7 +60,7 @@ $ npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-
 
 ## webpackからbabelを使う
 
-webpackのインストール自体は既にできているため、割愛します。
+webpackのインストール自体はすでにできているため、割愛します。
 
 webpackからbabelを使えるようになりましょう。babelローダーを追加します。
 

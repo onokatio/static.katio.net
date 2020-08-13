@@ -135,7 +135,7 @@ $ sudo pip install ansible
 $ sudo pip install ansible[azure]
 ```
 
-自分はpyenvを常用しているが、どうやらansibleはライブラリを読み込むのはデフォルトのパス（`/usr/lin/python2.7`）らしいので、一旦`pyenv global system`した。本当はvirtualenvとか使ったほうがいいのかもしれない。
+自分はpyenvを常用しているが、どうやらansibleはライブラリを読み込むのはデフォルトのパス（`/usr/lin/python2.7`）らしいので、いったん`pyenv global system`した。本当はvirtualenvとか使ったほうがいいのかもしれない。
 
 ## playbookの作成
 

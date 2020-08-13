@@ -13,7 +13,7 @@ Linuxマシンをメイン機にされているほうは、Bluetoothヘッドホ
 
 # インストール
 
-既にbluez、pulseaudio、pulseaudio-bluetooth等のパッケージをインストールしていると思います。pulseaudio-bluetoothのみアンインストールしてください。
+すでにbluez、pulseaudio、pulseaudio-bluetooth等のパッケージをインストールしていると思います。pulseaudio-bluetoothのみアンインストールしてください。
 
 その後、以下のリポジトリからpulseaudio-module-btをインストールしてください。
 
