@@ -62,13 +62,13 @@ Linuxのユーザーと一対一にする必要はなく、一対多の関係が
 SELinuxユーザーは、ある程度デフォルトで用意されたものがあります。
 
 
-|ユーザー|ロール|ドメイン|X Window System|su または sudo|ホームディレクトリーおよび /tmp (デフォルト) で実行|ネットワーキング
+|ユーザー|ロール|ドメイン|X Window System|suまたはsudo|ホームディレクトリーおよび /tmp (デフォルト) で実行|ネットワーキング
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|sysadm_u	|sysadm_r	|sysadm_t	|はい	|su および sudo	|はい	|はい
-|staff_u	|staff_r	|staff_t	|はい	|sudo のみ	|はい	|はい
+|sysadm_u	|sysadm_r	|sysadm_t	|はい	|suおよびsudo	|はい	|はい
+|staff_u	|staff_r	|staff_t	|はい	|sudoのみ	|はい	|はい
 |user_u		|user_r		|user_t		|はい	|いいえ	|はい	|はい
 |guest_u	|guest_r	|guest_t	|いいえ	|いいえ|	いいえ|	いいえ
-|xguest_u	|xguest_r	|xguest_t	|はい	|いいえ	|いいえ	|Firefox のみ
+|xguest_u	|xguest_r	|xguest_t	|はい	|いいえ	|いいえ	|Firefoxのみ
 
 ほにゃらら_uと書いてあるのがSELinuxユーザー名です。SELinuxはユーザー名のあとに_uを、ロールのあとに_rを、ドメインのあとに_tをつける風習があります。
 

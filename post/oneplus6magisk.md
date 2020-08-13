@@ -37,4 +37,4 @@ $ sudo fastboot boot ./twrp-3.2.3-x_blu_spark_v9.85v2_op6.img
 
 インストールが終わったら、今度は同じ手順でmagiskのzipファイルをインストールします。
 
-終わったら再起動します。アプリメニューにmagisk managerがあれば成功です。magiskの機能でroot ユーザーが使えます。
+終わったら再起動します。アプリメニューにmagisk managerがあれば成功です。magiskの機能でrootユーザーが使えます。

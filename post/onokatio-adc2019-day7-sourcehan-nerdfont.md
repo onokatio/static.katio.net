@@ -73,7 +73,7 @@ https://github.com/ty-edelweiss/source-han-code-jp-powerline/blob/master/bin/ttc
 
 ※2019年現在、試してみたところ、python2のpipが動かなくなったため、このコマンドが動かなくなっていました。その場合代わりにこちらを使用します。 https://gist.github.com/lilydjwg/8877450
 
-※更に追記 上のコードもうまく動かなかったので、otfを直接ダウンロードします。 https://github.com/adobe-fonts/source-han-mono/blob/master/Regular/OTC/SourceHanMono-Regular.otf
+※更に追記上のコードもうまく動かなかったので、otfを直接ダウンロードします。 https://github.com/adobe-fonts/source-han-mono/blob/master/Regular/OTC/SourceHanMono-Regular.otf
 
 ## Nerd Font Patcherを使って、フォントへパッチを当てる
 

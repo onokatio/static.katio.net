@@ -3,7 +3,7 @@ title: "Reactを勉強してブログに導入した その1"
 date: 2019-12-16 00:39:00 +0900
 ---
 
-Reactを勉強してブログに導入した その1
+Reactを勉強してブログに導入したその1
 ===
 
 この記事は、[onokatio Advent Calendar 2019](/adventcalendar/2019/onokatio) 15日目の記事です。  

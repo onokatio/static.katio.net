@@ -103,6 +103,6 @@ DNSクエリーの中身を覗かれる心配、改ざんされる心配です�
 ESNIを使うことで、先程の問題点などを解決することができ、より安全にインターネットが使えるようになるのはそう遠くないことだと思います。
 もちろん、IPアドレスの逆引きなど、最後の穴はいくつか残っています。これからのESNIの動向に注目したいです。
 
-（参考: https://blog.cloudflare.com/encrypted-sni/ ）
-（また、使っているブラウザがDNSSECやTLS1.3に対応しているかどうかはここで確認できます。 https://www.cloudflare.com/ssl/encrypted-sni/ ）
+（参考: https://blog.cloudflare.com/encrypted-sni/）
+（また、使っているブラウザがDNSSECやTLS1.3に対応しているかどうかはここで確認できます。 https://www.cloudflare.com/ssl/encrypted-sni/）
 

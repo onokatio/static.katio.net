@@ -581,13 +581,13 @@ $ xfconf-query -c xfce4-session -p /general/LockCommand -s "i3lock -fon"  --crea
 
 ## General Buttons
 
-When power button is pressed を Hibernateに設定
+When power button is pressedをHibernateに設定
 
 これで電源ボタンを押すとハイバーネートに突入します。
 
 ## General Lapyop Lid
 
-When laptop lid is closed を、On battery, Plugged in両方共Locl screenに設定
+When laptop lid is closedを、On battery, Plugged in両方共Locl screenに設定
 
 これで、ノートパソコンの蓋を閉じると画面がロックされ画面オフになります。
 

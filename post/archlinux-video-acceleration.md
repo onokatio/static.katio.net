@@ -36,7 +36,7 @@ libvavdpau-va-glを使うことで、Intel内蔵GPUをVDPAUで利用できます
 
 # 設定
 
-今回は、VA-APIでもVDPAUでもIntel 内蔵GPUを利用するように設定します。
+今回は、VA-APIでもVDPAUでもIntel内蔵GPUを利用するように設定します。
 自分は、ノートPCのバッテリー状況によって動的に変えたいので、手動でNvidia GPUに切り替える設定もしています。
 
 ## 通常時の場合

@@ -106,7 +106,7 @@ http://www.ethdocs.org/en/latest/
 
 コアデブが公開しているwikiです。Ethereumのホワイトペーパー、イエローペーパー、その他細かい説明が全て乗っています。Ethereum自体の基本的な仕組み・原理を学ぶにはもってこいです。
 
-### ブロックチェーンアプリケーション 開発の教科書
+### ブロックチェーンアプリケーション開発の教科書
 
 https://www.amazon.co.jp/dp/B0794WJYGW
 
@@ -156,7 +156,7 @@ Ethereumでスマートコントラクトを開発するためのドキュメン
 
 https://github.com/ethereum/EIPs
 
-Ethereum版BIPである、EIPのリポジトリです。ERC20 トークンなどの仕様が保管されています。
+Ethereum版BIPである、EIPのリポジトリです。ERC20トークンなどの仕様が保管されています。
 
 ### Ethereum Smart Contract Best Practices
 

@@ -6,7 +6,7 @@ date: 2018-04-02 23:44:00 +0900
 # Cloudflareが1.1.1.1で超高性能DNS始めたし、いっちょ俺のパソコンもDNS over HTTPSしてみる
 
 はいど〜も！バーチャルYoutuberのおのかちおです！
-先日、Cloudflareが 1.1.1.1:53 でパブリックDNSを始めたことが話題になってますよね。Googleが8.8.8.8でやってるあれと同じです。
+先日、Cloudflareが1.1.1.1:53でパブリックDNSを始めたことが話題になってますよね。Googleが8.8.8.8でやってるあれと同じです。
 
 ![k.png](https://qiita-image-store.s3.amazonaws.com/0/154157/9b498681-c9b9-5adc-39e4-bd87c946f78e.png)
 
@@ -18,10 +18,10 @@ date: 2018-04-02 23:44:00 +0900
 # 1.1.1.1の主な特徴
 
 - ログを保管しない。破棄する。
-- IPv6 対応
-- DNSSEC の対応
-- DNS over HTTPS の対応
-- DNS over SSL の対応
+- IPv6対応
+- DNSSECの対応
+- DNS over HTTPSの対応
+- DNS over SSLの対応
 - …
 
 # IPアドレス
