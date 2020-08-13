@@ -44,10 +44,10 @@ netgroup: files
 
 以下に説明をします。
 
-- `files`: `/etc/hosts`ファイルのことです。ここにはドメイン名とホスト名を予め指定できます。
-- `mymachines`: `systemd-machined`に登録されている、コンテナ（ここでいうコンテナはDockerなどではなくLinuxで実装されているLXC等のことだと思われる）の名前解決。コンテナ名からコンテナのIPアドレスを引けます。
-- `myhostname`: `localhost`と`localhost.localdomain`, `hoge.localhost`, `hoge.localhost.localdomain`を`127.0.0.2`と`::1`として名前解決します。また`_gateway`を引くと、メトリック順に並べ替えた現在のデフォルトゲートウェイのIPアドレスを返す機能も担っています。
-- `resolve`: systemd-resolvedを使用して、実際にDNSサーバーを使用します。systemd-resolvedは、設定ファイルである`/etc/systemd/resolved.conf`や、NetworkManagerなどからDNSサーバーのアドレスを取得し、そこへ名前解決します。またsystemd-resolvedにはDNSレコードをキャッシュする機能があります。
-- `dns`: 従来の通り、`/etc/resolv.conf`にあるDNSサーバーへ問い合わせます。
+- `files`: `/etc/hosts`ファイルのことです。ここにはドメイン名とホスト名を予め指定できます
+- `mymachines`: `systemd-machined`に登録されている、コンテナ（ここでいうコンテナはDockerなどではなくLinuxで実装されているLXC等のことだと思われる）の名前解決。コンテナ名からコンテナのIPアドレスを引けます
+- `myhostname`: `localhost`と`localhost.localdomain`, `hoge.localhost`, `hoge.localhost.localdomain`を`127.0.0.2`と`::1`として名前解決します。また`_gateway`を引くと、メトリック順に並べ替えた現在のデフォルトゲートウェイのIPアドレスを返す機能も担っています
+- `resolve`: systemd-resolvedを使用して、実際にDNSサーバーを使用します。systemd-resolvedは、設定ファイルである`/etc/systemd/resolved.conf`や、NetworkManagerなどからDNSサーバーのアドレスを取得し、そこへ名前解決します。またsystemd-resolvedにはDNSレコードをキャッシュする機能があります
+- `dns`: 従来の通り、`/etc/resolv.conf`にあるDNSサーバーへ問い合わせます
 - `[!UNAVAIL=return]`: 直前（左側）の名前解決が、そもそもサービスが存在しなかったために失敗したときのみ続行して右側を実行します。
-これは、`resolve`で存在しないドメインなどを引いたときに`dns`を実行してほしくないが、そもそも`systemd-resolved`が実行されておらず`resolve`が使用できなかった場合には`dns`を使ってほしい、という意味になります。
+これは、`resolve`で存在しないドメインなどを引いたときに`dns`を実行してほしくないが、そもそも`systemd-resolved`が実行されておらず`resolve`が使用できなかった場合には`dns`を使ってほしい、という意味になります

@@ -33,7 +33,7 @@ pythonには、`../lib/python3.7/sites-packages/`内に`*.pth`と呼ばれるフ
 そのため、今回取る解決策はこうです。
 
 1. LinuxBrewのpythonコマンドを`$PATH`で最優先にする
-2. LinuxBrewの`lib/python3.7/sites-packages`配下に、`custom.pth`という名前のファイルを作成し、その中に`/usr/lib/python3.7/sites-packages`を追記する。
+2. LinuxBrewの`lib/python3.7/sites-packages`配下に、`custom.pth`という名前のファイルを作成し、その中に`/usr/lib/python3.7/sites-packages`を追記する
 
 ※今回、pyenvはglobalとしてsystemを使っています。そのため、pyenvでpipコマンドを実行してもLinuxBrewのpythonが使われる状況になるため、あえてpyenvには何も設定しません。
 

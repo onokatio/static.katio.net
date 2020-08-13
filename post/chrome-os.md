@@ -23,11 +23,11 @@ https://www.chromium.org/chromium-os/chromiumos-design-docs/software-architectur
 
 
 >- D-Bus: The browser uses D-Bus to interact with the rest of the system. Examples of this include the battery meter and network picker. 
->- Connection Manager: Provides a common API for interacting with the network devices, provides a DNS proxy, and manages network services for 3G, wireless, and ethernet.
->- WPA Supplicant: Used to connect to wireless networks.
+>- Connection Manager: Provides a common API for interacting with the network devices, provides a DNS proxy, and manages network services for 3G, wireless, and ethernet
+>- WPA Supplicant: Used to connect to wireless networks
 >- Autoupdate: Our autoupdate daemon silently installs new system images. 
 >- Power Management: (ACPI on Intel) Handles power management events like closing the lid or pushing the power button. 
->- Standard Linux services: NTP, syslog, and cron.
+>- Standard Linux services: NTP, syslog, and cron
 
 内容的にはUbuntu等と変わらず、wpa supplicantやDBusを利用している。
 
@@ -58,7 +58,7 @@ GUIを提供する方法として、概要で見た図の通りX Window System�
 # セキュリティ対策
 
 - SELinux/MACの有効化
-- ルートパーティション以下を書き込み不可でマウントしている。
+- ルートパーティション以下を書き込み不可でマウントしている
 - ホームディレクトリがあるパーテーションには、noexecが付与されている。（そのため実行ファイルの実行ができない）
 - Xorgにケイパビリティをもたせ、非rootユーザーから起動
 - iptablesで標準的なファイアウォール
