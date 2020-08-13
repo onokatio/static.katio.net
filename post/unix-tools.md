@@ -47,8 +47,8 @@ $ tar jf ファイル名 --use-compress-prog=pibzip2
 ```
 >
 > ちなみにtarコマンドの引数は
-xがextractで展開、cがcompressで圧縮、vがverboseで冗長な出力、zがgz、Jがxz、jがbzip2
-です。あと展開の時にはzJjはいらないです。
+`x`がextractで展開、`c`がcompressで圧縮、`v`がverboseで冗長な出力、`z`がgz、`J`がxz、`j`がbzip2
+です。あと展開の時には`zJj`はいらないです。
 
 また、自分の場合はzshrcに関数登録しちゃってます。
 
@@ -71,7 +71,7 @@ function tarbzip2(){tar xvf $@ --use-compress-prog=pbzip2 }
 
 ## make -j 4
 
-Makefileをmakeするときに、-j数字をつけることで、ビルドが並列化されます。内部的には、一般ルールで処理するもの(.c -> .o)とかを並列化しているようです。とりあえずマシンのスレッド数ぶんつけておくと幸せになります。
+Makefileをmakeするときに、`-j数字` をつけることで、ビルドが並列化されます。内部的には、一般ルールで処理するもの(.c -> .o)とかを並列化しているようです。とりあえずマシンのスレッド数ぶんつけておくと幸せになります。
 
 ## bundle install -j 4
 
