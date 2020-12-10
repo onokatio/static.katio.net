@@ -56,7 +56,7 @@ date: 2020-12-10 19:00:00 +0900
 
 ![](https://i.imgur.com/7CEYWiI.png)
 
-sの語、メーリングリストに自分の持っているgmailアドレスを登録し、それをzaiperのメールアドレスにSMTP転送するようgmailに設定を入れます。
+その後、メーリングリストに自分の持っているgmailアドレスを登録し、それをzaiperのメールアドレスにSMTP転送するようgmailに設定を入れます。
 (一部文字を?で伏せています)
 
 ![](https://i.imgur.com/RjMetxY.png)
