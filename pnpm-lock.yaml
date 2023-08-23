@@ -2,13 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   moment: ^2.24.0
-  node-fetch: ^2.6.0
+  node-fetch: ^2.7.0
   xml2js: ^0.4.22
   yaml-front-matter: ^4.0.0
 
 dependencies:
   moment: 2.29.4
-  node-fetch: 2.6.7
+  node-fetch: 2.7.0
   xml2js: 0.4.23
   yaml-front-matter: 4.1.1
 
@@ -43,8 +43,8 @@ packages:
     resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
     dev: false
 
-  /node-fetch/2.6.7:
-    resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
+  /node-fetch/2.7.0:
+    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
     engines: {node: 4.x || >=6.0.0}
     peerDependencies:
       encoding: ^0.1.0
